@@ -31,6 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnOnayla = new System.Windows.Forms.Button();
+            this.btnHesapla = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.cbMisafirSayisi = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -58,8 +60,7 @@
             this.cbCinsiyet = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTelefon = new System.Windows.Forms.TextBox();
-            this.btnHesapla = new System.Windows.Forms.Button();
-            this.btnOnayla = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -76,6 +77,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.groupBox3);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -98,12 +100,32 @@
             this.groupBox2.Controls.Add(this.dtpGirisTarihi);
             this.groupBox2.Controls.Add(this.txtOdaNo);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Location = new System.Drawing.Point(514, 29);
+            this.groupBox2.Location = new System.Drawing.Point(325, 33);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(273, 310);
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Konaklama Bilgileri";
+            // 
+            // btnOnayla
+            // 
+            this.btnOnayla.Location = new System.Drawing.Point(9, 204);
+            this.btnOnayla.Name = "btnOnayla";
+            this.btnOnayla.Size = new System.Drawing.Size(75, 23);
+            this.btnOnayla.TabIndex = 28;
+            this.btnOnayla.Text = "Onayla";
+            this.btnOnayla.UseVisualStyleBackColor = true;
+            this.btnOnayla.Click += new System.EventHandler(this.btnOnayla_Click);
+            // 
+            // btnHesapla
+            // 
+            this.btnHesapla.Location = new System.Drawing.Point(9, 169);
+            this.btnHesapla.Name = "btnHesapla";
+            this.btnHesapla.Size = new System.Drawing.Size(75, 23);
+            this.btnHesapla.TabIndex = 27;
+            this.btnHesapla.Text = "Hesapla";
+            this.btnHesapla.UseVisualStyleBackColor = true;
+            this.btnHesapla.Click += new System.EventHandler(this.btnHesapla_Click);
             // 
             // label13
             // 
@@ -212,7 +234,7 @@
             this.groupBox1.Controls.Add(this.cbCinsiyet);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtTelefon);
-            this.groupBox1.Location = new System.Drawing.Point(221, 29);
+            this.groupBox1.Location = new System.Drawing.Point(32, 33);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(268, 310);
             this.groupBox1.TabIndex = 19;
@@ -370,25 +392,14 @@
             this.txtTelefon.Size = new System.Drawing.Size(135, 20);
             this.txtTelefon.TabIndex = 11;
             // 
-            // btnHesapla
+            // groupBox3
             // 
-            this.btnHesapla.Location = new System.Drawing.Point(9, 169);
-            this.btnHesapla.Name = "btnHesapla";
-            this.btnHesapla.Size = new System.Drawing.Size(75, 23);
-            this.btnHesapla.TabIndex = 27;
-            this.btnHesapla.Text = "Hesapla";
-            this.btnHesapla.UseVisualStyleBackColor = true;
-            this.btnHesapla.Click += new System.EventHandler(this.btnHesapla_Click);
-            // 
-            // btnOnayla
-            // 
-            this.btnOnayla.Location = new System.Drawing.Point(9, 204);
-            this.btnOnayla.Name = "btnOnayla";
-            this.btnOnayla.Size = new System.Drawing.Size(75, 23);
-            this.btnOnayla.TabIndex = 28;
-            this.btnOnayla.Text = "Onayla";
-            this.btnOnayla.UseVisualStyleBackColor = true;
-            this.btnOnayla.Click += new System.EventHandler(this.btnOnayla_Click);
+            this.groupBox3.Location = new System.Drawing.Point(630, 33);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(273, 310);
+            this.groupBox3.TabIndex = 21;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Oda Bilgileri";
             // 
             // frmSatis
             // 
@@ -445,5 +456,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnOnayla;
         private System.Windows.Forms.Button btnHesapla;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
