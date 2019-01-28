@@ -64,6 +64,12 @@
     <Compile Include="frmOdalar.Designer.cs">
       <DependentUpon>frmOdalar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOdaSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdaSec.Designer.cs">
+      <DependentUpon>frmOdaSec.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOtelAnasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOdalar.resx">
       <DependentUpon>frmOdalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdaSec.resx">
+      <DependentUpon>frmOdaSec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOtelAnasayfa.resx">
       <DependentUpon>frmOtelAnasayfa.cs</DependentUpon>
