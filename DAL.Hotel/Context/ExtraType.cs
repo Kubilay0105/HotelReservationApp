@@ -22,5 +22,10 @@ namespace DAL.Hotel.Context
         //Relations
 
         public virtual List<ExtraTransactions> ExtraTransactions { get; set; }
+
+        public override string ToString()
+        {
+            return Type;
+        }
     }
 }

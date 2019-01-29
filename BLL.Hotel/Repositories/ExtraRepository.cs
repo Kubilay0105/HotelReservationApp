@@ -82,5 +82,6 @@ namespace BLL.Hotel.Repositories
         {
             throw new NotImplementedException();
         }
+      
     }
 }

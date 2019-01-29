@@ -33,6 +33,19 @@ namespace PL.Hotel
         private void frmExtralar_Load(object sender, EventArgs e)
         {
             cbEkstra.DataSource = ex.GetExtraTypes();
+            txtDate.Text = DateTime.Now.ToShortDateString();
+        }
+
+        private void txtUnit_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtUnit.Text))
+            {
+                txtSum.Text = (Convert.ToInt32(txtUnit.Text) * Convert.ToDecimal(txtPrice.Text)).ToString();
+            }
+           else
+            {
+                txtSum.Clear();
+            }
         }
     }
 }
