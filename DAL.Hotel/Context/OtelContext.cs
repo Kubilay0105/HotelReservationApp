@@ -19,8 +19,7 @@ namespace DAL.Hotel.Context
         public virtual DbSet<ExtraType> ExtraTypes { get; set; }
         public virtual DbSet<ExtraTransactions> ExtraTransactions { get; set; }
         public virtual DbSet<Campaign> Campaigns { get; set; }
-
-
+      
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
 

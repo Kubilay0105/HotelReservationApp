@@ -37,6 +37,14 @@ namespace BLL.Hotel.Repositories
             throw new NotImplementedException();
         }
 
+        public List<Guest> GetAllGuest(string TC)
+        {
+            List<Guest> gst = (from g in ent.Guests
+                         where g.IdentificationNo == TC
+                         select g).ToList();
+            return gst;
+        }
+
         public int GetGuestIdByTC(string IdentificationNo)
         {
             int GuestId = Convert.ToInt32((from g in ent.Guests
