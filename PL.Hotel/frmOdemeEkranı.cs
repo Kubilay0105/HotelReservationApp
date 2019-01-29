@@ -43,9 +43,9 @@ namespace PL.Hotel
 
             dgvGuest.DataSource = gr.GetAllGuest(btnTC.Text);
             txtBorc.Text = string.Format("{0:#,##0}", liste[0]);
-            txtKazanc.Text= string.Format("{0:#,##0}", liste[1]);
-            txtKalanBorc.Text= string.Format("{0:#,##0}", liste[2]);
-            
+            txtKazanc.Text = string.Format("{0:#,##0}", liste[1]);
+            txtKalanBorc.Text = string.Format("{0:#,##0}", liste[2]);
+
         }
 
         private void dgvGuest_CellContentClick(object sender, DataGridViewCellEventArgs e)
