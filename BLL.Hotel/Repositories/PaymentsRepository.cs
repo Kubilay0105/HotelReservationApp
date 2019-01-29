@@ -25,7 +25,7 @@ namespace BLL.Hotel.Repositories
                              select g.Debt).DefaultIfEmpty(0).Sum();
             payments.Add(borc);
             decimal odenen = (from g in ent.Payments
-                            where g.Status == false && (g.Date < Date)
+                            where g.Status == true && (g.Date < Date)
                             select g.Credit).DefaultIfEmpty(0).Sum();
             payments.Add(odenen);
             payments.Add(borc - odenen);//kalan borç
@@ -58,6 +58,7 @@ namespace BLL.Hotel.Repositories
             return sonuc;
         }
 
+
         public List<decimal> PaymentTransBySalesId(int SalesId)
         {
             List<Decimal> payments = new List<decimal>();
@@ -66,12 +67,31 @@ namespace BLL.Hotel.Repositories
                             select g.Debt).DefaultIfEmpty(0).Sum();
             payments.Add(borc);
             decimal odenen = (from g in ent.Payments
-                              where g.Status == false && g.SalesId == SalesId
+                              where g.Status == true && g.SalesId == SalesId
                               select g.Credit).DefaultIfEmpty(0).Sum();
             payments.Add(odenen);
             payments.Add(borc - odenen);//kalan borç
             return payments;
         }
-        
+        public bool UpdatePaymentBySalesId(int ID)
+        {
+            bool sonuc = false;
+            bool sondeger = (from s in ent.Payments
+                             where s.SalesId == ID
+                             select s.Status).FirstOrDefault();
+            sondeger = false;
+            try
+            {
+                ent.SaveChanges();
+                sonuc = true;
+            }
+            catch (Exception ex)
+            {
+                string hata = ex.Message;
+            }
+            return sonuc;
+
+        }
+
     }
 }

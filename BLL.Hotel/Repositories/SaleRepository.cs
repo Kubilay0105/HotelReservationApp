@@ -62,5 +62,24 @@ namespace BLL.Hotel.Repositories
         {
             throw new NotImplementedException();
         }
+        public bool UpdateSalesByGuestId(int ID)
+        {
+            bool sonuc = false;
+            bool sondeger = (from s in ent.Sales
+                             where s.GuestId == ID
+                             select s.Status).FirstOrDefault();
+            sondeger = false;
+            try
+            {
+                ent.SaveChanges();
+                sonuc = true;
+            }
+            catch (Exception ex)
+            {
+                string hata = ex.Message;
+            }
+            return sonuc;
+
+        }
     }
 }

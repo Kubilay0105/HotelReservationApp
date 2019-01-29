@@ -58,13 +58,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckOut.Designer.cs">
+      <DependentUpon>frmCheckOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOdalar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmOdalar.Designer.cs">
       <DependentUpon>frmOdalar.cs</DependentUpon>
     </Compile>
-
     <Compile Include="frmOdemeEkranı.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +98,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckOut.resx">
+      <DependentUpon>frmCheckOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOdalar.resx">
       <DependentUpon>frmOdalar.cs</DependentUpon>
