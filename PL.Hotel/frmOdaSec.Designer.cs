@@ -30,8 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOdaSec));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlContent = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
+            this.pnlContent = new System.Windows.Forms.Panel();
+            this.btn110 = new System.Windows.Forms.Button();
+            this.btn109 = new System.Windows.Forms.Button();
             this.btn106 = new System.Windows.Forms.Button();
             this.btn107 = new System.Windows.Forms.Button();
             this.btn108 = new System.Windows.Forms.Button();
@@ -42,8 +44,6 @@
             this.btn101 = new System.Windows.Forms.Button();
             this.dtpCikisAra = new System.Windows.Forms.DateTimePicker();
             this.dtpGirisAra = new System.Windows.Forms.DateTimePicker();
-            this.btn109 = new System.Windows.Forms.Button();
-            this.btn110 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnlContent.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +56,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 85);
             this.panel1.TabIndex = 0;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(760, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(28, 23);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pnlContent
             // 
@@ -77,18 +90,23 @@
             this.pnlContent.Size = new System.Drawing.Size(800, 365);
             this.pnlContent.TabIndex = 1;
             // 
-            // btnClose
+            // btn110
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(760, 12);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(28, 23);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btn110.Location = new System.Drawing.Point(596, 138);
+            this.btn110.Name = "btn110";
+            this.btn110.Size = new System.Drawing.Size(50, 39);
+            this.btn110.TabIndex = 34;
+            this.btn110.Text = "110";
+            this.btn110.UseVisualStyleBackColor = true;
+            // 
+            // btn109
+            // 
+            this.btn109.Location = new System.Drawing.Point(596, 195);
+            this.btn109.Name = "btn109";
+            this.btn109.Size = new System.Drawing.Size(50, 39);
+            this.btn109.TabIndex = 33;
+            this.btn109.Text = "109";
+            this.btn109.UseVisualStyleBackColor = true;
             // 
             // btn106
             // 
@@ -165,7 +183,7 @@
             // 
             // dtpCikisAra
             // 
-            this.dtpCikisAra.Location = new System.Drawing.Point(393, 73);
+            this.dtpCikisAra.Location = new System.Drawing.Point(394, 28);
             this.dtpCikisAra.Name = "dtpCikisAra";
             this.dtpCikisAra.Size = new System.Drawing.Size(200, 20);
             this.dtpCikisAra.TabIndex = 23;
@@ -173,29 +191,11 @@
             // 
             // dtpGirisAra
             // 
-            this.dtpGirisAra.Location = new System.Drawing.Point(190, 73);
+            this.dtpGirisAra.Location = new System.Drawing.Point(194, 28);
             this.dtpGirisAra.Name = "dtpGirisAra";
             this.dtpGirisAra.Size = new System.Drawing.Size(181, 20);
             this.dtpGirisAra.TabIndex = 22;
             this.dtpGirisAra.ValueChanged += new System.EventHandler(this.dtpGirisAra_ValueChanged);
-            // 
-            // btn109
-            // 
-            this.btn109.Location = new System.Drawing.Point(596, 195);
-            this.btn109.Name = "btn109";
-            this.btn109.Size = new System.Drawing.Size(50, 39);
-            this.btn109.TabIndex = 33;
-            this.btn109.Text = "109";
-            this.btn109.UseVisualStyleBackColor = true;
-            // 
-            // btn110
-            // 
-            this.btn110.Location = new System.Drawing.Point(596, 138);
-            this.btn110.Name = "btn110";
-            this.btn110.Size = new System.Drawing.Size(50, 39);
-            this.btn110.TabIndex = 34;
-            this.btn110.Text = "110";
-            this.btn110.UseVisualStyleBackColor = true;
             // 
             // frmOdaSec
             // 
