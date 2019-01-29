@@ -14,6 +14,6 @@ namespace BLL.Hotel.Repositories
         bool UpdatePersonnel(Personnel p);
         bool DeletePersonnel(Personnel p);
         bool DeletePersonnel(int ID);
-        int GetSalesId(int ID);
+        int GetSaleIdByGuest(int GuestId);
     }
 }

@@ -30,17 +30,26 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnOdaSec = new System.Windows.Forms.Button();
             this.btnOnayla = new System.Windows.Forms.Button();
             this.btnHesapla = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.cbMisafirSayisi = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtToplamTutar = new System.Windows.Forms.TextBox();
-            this.dtpCikisTarihi = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dtpGirisTarihi = new System.Windows.Forms.DateTimePicker();
             this.txtOdaNo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -60,8 +69,10 @@
             this.cbCinsiyet = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTelefon = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtGirisTarihi = new System.Windows.Forms.TextBox();
+            this.txtCikisTarihi = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -86,18 +97,118 @@
             this.panel2.Size = new System.Drawing.Size(984, 503);
             this.panel2.TabIndex = 1;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label22);
+            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Location = new System.Drawing.Point(630, 33);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(273, 310);
+            this.groupBox3.TabIndex = 21;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Oda Bilgileri";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(30, 228);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(113, 13);
+            this.label22.TabIndex = 28;
+            this.label22.Text = "Saç Kurutma Makinesi";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(30, 204);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(83, 13);
+            this.label21.TabIndex = 27;
+            this.label21.Text = "Güvenlik Kasası";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(30, 179);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(32, 13);
+            this.label20.TabIndex = 26;
+            this.label20.Text = "Klima";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(30, 153);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(41, 13);
+            this.label19.TabIndex = 25;
+            this.label19.Text = "Minibar";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(30, 131);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(74, 13);
+            this.label18.TabIndex = 24;
+            this.label18.Text = "Merkezi Isıtma";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(30, 107);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(58, 13);
+            this.label17.TabIndex = 23;
+            this.label17.Text = "Televizyon";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(30, 82);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(53, 13);
+            this.label16.TabIndex = 22;
+            this.label16.Text = "GirisTarihi";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(30, 55);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(87, 13);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "Açılabilen Camlar";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(30, 30);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(43, 13);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "Telefon";
+            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtCikisTarihi);
+            this.groupBox2.Controls.Add(this.txtGirisTarihi);
+            this.groupBox2.Controls.Add(this.btnOdaSec);
             this.groupBox2.Controls.Add(this.btnOnayla);
             this.groupBox2.Controls.Add(this.btnHesapla);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.cbMisafirSayisi);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.txtToplamTutar);
-            this.groupBox2.Controls.Add(this.dtpCikisTarihi);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.dtpGirisTarihi);
             this.groupBox2.Controls.Add(this.txtOdaNo);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Location = new System.Drawing.Point(325, 33);
@@ -106,6 +217,16 @@
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Konaklama Bilgileri";
+            // 
+            // btnOdaSec
+            // 
+            this.btnOdaSec.Location = new System.Drawing.Point(138, 204);
+            this.btnOdaSec.Name = "btnOdaSec";
+            this.btnOdaSec.Size = new System.Drawing.Size(75, 23);
+            this.btnOdaSec.TabIndex = 29;
+            this.btnOdaSec.Text = "Oda Seç";
+            this.btnOdaSec.UseVisualStyleBackColor = true;
+            this.btnOdaSec.Click += new System.EventHandler(this.btnOdaSec_Click);
             // 
             // btnOnayla
             // 
@@ -140,6 +261,12 @@
             // 
             this.cbMisafirSayisi.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.cbMisafirSayisi.FormattingEnabled = true;
+            this.cbMisafirSayisi.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.cbMisafirSayisi.Location = new System.Drawing.Point(82, 124);
             this.cbMisafirSayisi.Name = "cbMisafirSayisi";
             this.cbMisafirSayisi.Size = new System.Drawing.Size(135, 21);
@@ -164,14 +291,6 @@
             this.txtToplamTutar.Size = new System.Drawing.Size(135, 20);
             this.txtToplamTutar.TabIndex = 23;
             // 
-            // dtpCikisTarihi
-            // 
-            this.dtpCikisTarihi.CalendarMonthBackground = System.Drawing.SystemColors.InactiveCaption;
-            this.dtpCikisTarihi.Location = new System.Drawing.Point(82, 49);
-            this.dtpCikisTarihi.Name = "dtpCikisTarihi";
-            this.dtpCikisTarihi.Size = new System.Drawing.Size(135, 20);
-            this.dtpCikisTarihi.TabIndex = 22;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -190,20 +309,13 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Oda No";
             // 
-            // dtpGirisTarihi
-            // 
-            this.dtpGirisTarihi.CalendarMonthBackground = System.Drawing.SystemColors.InactiveCaption;
-            this.dtpGirisTarihi.Location = new System.Drawing.Point(82, 24);
-            this.dtpGirisTarihi.Name = "dtpGirisTarihi";
-            this.dtpGirisTarihi.Size = new System.Drawing.Size(135, 20);
-            this.dtpGirisTarihi.TabIndex = 20;
-            // 
             // txtOdaNo
             // 
             this.txtOdaNo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtOdaNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOdaNo.Location = new System.Drawing.Point(82, 75);
             this.txtOdaNo.Name = "txtOdaNo";
+            this.txtOdaNo.ReadOnly = true;
             this.txtOdaNo.Size = new System.Drawing.Size(135, 20);
             this.txtOdaNo.TabIndex = 7;
             // 
@@ -264,7 +376,6 @@
             this.txtAdi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAdi.Location = new System.Drawing.Point(82, 23);
             this.txtAdi.Name = "txtAdi";
-            this.txtAdi.ReadOnly = true;
             this.txtAdi.Size = new System.Drawing.Size(135, 20);
             this.txtAdi.TabIndex = 1;
             // 
@@ -301,7 +412,6 @@
             this.txtSoyadi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSoyadi.Location = new System.Drawing.Point(82, 49);
             this.txtSoyadi.Name = "txtSoyadi";
-            this.txtSoyadi.ReadOnly = true;
             this.txtSoyadi.Size = new System.Drawing.Size(135, 20);
             this.txtSoyadi.TabIndex = 3;
             // 
@@ -329,7 +439,6 @@
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Location = new System.Drawing.Point(82, 177);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.ReadOnly = true;
             this.txtEmail.Size = new System.Drawing.Size(135, 20);
             this.txtEmail.TabIndex = 14;
             // 
@@ -339,7 +448,6 @@
             this.txtTc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTc.Location = new System.Drawing.Point(82, 75);
             this.txtTc.Name = "txtTc";
-            this.txtTc.ReadOnly = true;
             this.txtTc.Size = new System.Drawing.Size(135, 20);
             this.txtTc.TabIndex = 5;
             // 
@@ -388,18 +496,28 @@
             this.txtTelefon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTelefon.Location = new System.Drawing.Point(82, 151);
             this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.ReadOnly = true;
             this.txtTelefon.Size = new System.Drawing.Size(135, 20);
             this.txtTelefon.TabIndex = 11;
             // 
-            // groupBox3
+            // txtGirisTarihi
             // 
-            this.groupBox3.Location = new System.Drawing.Point(630, 33);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(273, 310);
-            this.groupBox3.TabIndex = 21;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Oda Bilgileri";
+            this.txtGirisTarihi.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtGirisTarihi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGirisTarihi.Location = new System.Drawing.Point(82, 23);
+            this.txtGirisTarihi.Name = "txtGirisTarihi";
+            this.txtGirisTarihi.ReadOnly = true;
+            this.txtGirisTarihi.Size = new System.Drawing.Size(135, 20);
+            this.txtGirisTarihi.TabIndex = 30;
+            // 
+            // txtCikisTarihi
+            // 
+            this.txtCikisTarihi.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtCikisTarihi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCikisTarihi.Location = new System.Drawing.Point(82, 48);
+            this.txtCikisTarihi.Name = "txtCikisTarihi";
+            this.txtCikisTarihi.ReadOnly = true;
+            this.txtCikisTarihi.Size = new System.Drawing.Size(135, 20);
+            this.txtCikisTarihi.TabIndex = 31;
             // 
             // frmSatis
             // 
@@ -414,6 +532,8 @@
             this.Text = "frmSatis";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -449,13 +569,23 @@
         private System.Windows.Forms.ComboBox cbMisafirSayisi;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtToplamTutar;
-        private System.Windows.Forms.DateTimePicker dtpCikisTarihi;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dtpGirisTarihi;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnOnayla;
         private System.Windows.Forms.Button btnHesapla;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btnOdaSec;
+        private System.Windows.Forms.TextBox txtCikisTarihi;
+        private System.Windows.Forms.TextBox txtGirisTarihi;
     }
 }

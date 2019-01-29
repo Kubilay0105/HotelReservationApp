@@ -45,6 +45,14 @@ namespace BLL.Hotel.Repositories
             return gst;
         }
 
+        public int GetGuestIdByTC(string IdentificationNo)
+        {
+            int GuestId = Convert.ToInt32((from g in ent.Guests
+                                          where g.IdentificationNo == IdentificationNo
+                                          select g.Id).FirstOrDefault());
+            return GuestId;
+        }
+
         public bool UpdateGuest(Guest g)
         {
             throw new NotImplementedException();

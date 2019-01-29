@@ -18,18 +18,20 @@ namespace PL.Hotel
         {
             InitializeComponent();
         }
-        DateTime Giris, Cikis;
         RoomRepository Rp = new RoomRepository();
         SaleRepository Sp = new SaleRepository();
         GuestRepository Gp = new GuestRepository();
-
+        PaymentsRepository Pp = new PaymentsRepository();
+        public static DateTime Giris { get; set; }
+        public static DateTime Cikis { get; set; }
+        public static string OdaNo { get; set; }
         private void btnOnayla_Click(object sender, EventArgs e)
         {
             Guest gue = new Guest();
             gue.FirstName = txtAdi.Text;
             gue.LastName = txtSoyadi.Text;
             gue.IdentificationNo = txtTc.Text;
-            gue.RoomId = Rp.GetRoomId(txtOdaNo.Text);
+            gue.RoomId = Rp.GetRoomId(OdaNo);
             gue.Adress = txtAdres.Text;
             gue.Gender = cbCinsiyet.SelectedText;
             gue.Birthday = dtpDogumTarihi.Value;
@@ -39,23 +41,43 @@ namespace PL.Hotel
             Gp.AddGuest(gue);
 
             Sale sa = new Sale();
-            sa.RoomId = Rp.GetRoomId(txtOdaNo.Text);
-            sa.CheckIn = dtpGirisTarihi.Value;
-            sa.CheckOut = dtpCikisTarihi.Value;
-            sa.NoOfGuests = Convert.ToInt32(cbMisafirSayisi.SelectedText);
+            sa.RoomId = Rp.GetRoomId(OdaNo);
+            sa.CheckIn = Giris;
+            sa.CheckOut = Cikis;
+            sa.NoOfGuests = 1;
             sa.TotalPrice = Convert.ToDecimal(txtToplamTutar.Text);
             sa.PersonnelId = General.PersonelId;
+            sa.GuestId = Gp.GetGuestIdByTC(txtTc.Text);
             sa.Status = true;
             Sp.AddSales(sa);
+
+            Payment pay = new Payment();
+            pay.Date = DateTime.Now;
+            pay.TransType = "Konaklama Ücreti";
+            pay.Debt = Convert.ToDecimal(txtToplamTutar.Text);
+            pay.Credit = 0;
+            pay.SalesId = Sp.GetSaleIdByGuest(sa.GuestId);
+            pay.Status = true;
+            pay.Description = "Konaklama Açılış";
+            Pp.PaymentsAdd(pay);
+            MessageBox.Show("Kayıt yapıldı");
+        }
+
+        private void btnOdaSec_Click(object sender, EventArgs e)
+        {
+            frmOdaSec frm = new frmOdaSec();
+            frm.ShowDialog();
+            txtOdaNo.Text = OdaNo;
+            txtGirisTarihi.Text = Giris.ToShortDateString();
+            txtCikisTarihi.Text = Cikis.ToShortDateString();
         }
 
         private void btnHesapla_Click(object sender, EventArgs e)
         {
-            Giris = dtpGirisTarihi.Value;
-            Cikis = dtpCikisTarihi.Value;
+            
             TimeSpan fark = Cikis - Giris;
             int gunsayisi = fark.Days;
-            decimal OdaFiyat=Rp.GetRoomPrice(txtOdaNo.Text);
+            decimal OdaFiyat=Rp.GetRoomPrice(OdaNo);
             txtToplamTutar.Text = ((gunsayisi + 1) * OdaFiyat).ToString();
         }
     }
