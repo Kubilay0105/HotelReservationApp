@@ -21,7 +21,7 @@ namespace PL.Hotel
         RoomRepository Rp = new RoomRepository();
         SaleRepository Sp = new SaleRepository();
         GuestRepository Gp = new GuestRepository();
-        PaymentRepository Pp = new PaymentRepository();
+        PaymentsRepository Pp = new PaymentsRepository();
         public static DateTime Giris { get; set; }
         public static DateTime Cikis { get; set; }
         public static string OdaNo { get; set; }
@@ -59,7 +59,7 @@ namespace PL.Hotel
             pay.SalesId = Sp.GetSaleIdByGuest(sa.GuestId);
             pay.Status = true;
             pay.Description = "Konaklama Açılış";
-            Pp.AddPayment(pay);
+            Pp.PaymentsAdd(pay);
             MessageBox.Show("Kayıt yapıldı");
         }
 
