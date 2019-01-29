@@ -15,6 +15,6 @@ namespace BLL.Hotel.Repositories
         bool DeleteExtra(int ID);
         int GetRoomId(string RoomNo);
         decimal GetExtraTypePrice(int RoomId);
-        string etExtraTypeAll(int id);
+        string ExtraTypeAll(int id);
     }
 }

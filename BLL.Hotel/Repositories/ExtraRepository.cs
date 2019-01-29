@@ -78,7 +78,7 @@ namespace BLL.Hotel.Repositories
             return sonucId;
         }
 
-        public string etExtraTypeAll(int id)
+        public string ExtraTypeAll(int id)
         {
             throw new NotImplementedException();
         }

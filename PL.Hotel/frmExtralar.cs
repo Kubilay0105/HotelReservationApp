@@ -32,7 +32,7 @@ namespace PL.Hotel
 
         private void frmExtralar_Load(object sender, EventArgs e)
         {
-            cbEkstra.DataSource = ex.GetExtraTypeAll(ID);
+            cbEkstra.DataSource = ex.GetExtraTypes();
         }
     }
 }
