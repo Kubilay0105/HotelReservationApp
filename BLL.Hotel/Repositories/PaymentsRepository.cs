@@ -22,7 +22,7 @@ namespace BLL.Hotel.Repositories
             Date = Convert.ToDateTime(Date.ToShortDateString());
             decimal borc = (from g in ent.Payments
                              where g.Status == true && (g.Date < Date)
-                             select g).Sum(g =>g.Debt);
+                             select g.Debt).DefaultIfEmpty(0).Sum();
             payments.Add(borc);
             decimal odenen = (from g in ent.Payments
                             where g.Status == false && (g.Date < Date)

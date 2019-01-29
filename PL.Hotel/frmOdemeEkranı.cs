@@ -19,8 +19,11 @@ namespace PL.Hotel
             InitializeComponent();
         }
         PaymentsRepository pr = new PaymentsRepository();
+        GuestRepository gr = new GuestRepository();
+       
         private void frmOdemeEkranı_Load(object sender, EventArgs e)
         {
+
             dtpTarih.Value = DateTime.Now;
             dgvPayments.DataSource = pr.GetPayments();
             int Topla = 0;
@@ -38,13 +41,21 @@ namespace PL.Hotel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            GuestRepository gr = new GuestRepository();
-            List<decimal> liste = pr.PaymentsToDate(dtpTarih.Value);
+            if (btnTC.Text != "")
+            {
+                //List<decimal> liste = pr.PaymentsToDate(dtpTarih.Value);
+                List<Guest> gliste = gr.GetAllGuest(btnTC.Text);
 
-            dgvGuest.DataSource = gr.GetAllGuest(btnTC.Text);
-            txtBorc.Text = string.Format("{0:#,##0}", liste[0]);
-            txtKazanc.Text= string.Format("{0:#,##0}", liste[1]);
-            txtKalanBorc.Text= string.Format("{0:#,##0}", liste[2]);
+                txtAdi.Text = gliste[1].ToString();
+                txtSoyadi.Text = gliste[2].ToString();
+                //txtBorc.Text = string.Format("{0:#,##0}", liste[0]);
+                //txtKazanc.Text = string.Format("{0:#,##0}", liste[1]);
+                //txtKalanBorc.Text = string.Format("{0:#,##0}", liste[2]);
+
+            }
+            else
+                MessageBox.Show("Eksik Bilgi Girdiniz");
+        
             
         }
 
@@ -55,13 +66,14 @@ namespace PL.Hotel
 
         private void btnOdemeYap_Click(object sender, EventArgs e)
         {
+            List<Guest> gliste = gr.GetAllGuest(btnTC.Text);
             Payment pym = new Payment();
             SaleRepository sr = new SaleRepository();
             pym.Date = dtpTarih.Value;
             pym.TransType = cbIslemTurleri.SelectedItem.ToString();
             pym.Credit = Convert.ToDecimal(txtOdenenPara.Text);
-            pym.Debt = Convert.ToDecimal(txtBorc.Text)- Convert.ToDecimal(txtOdenenPara.Text);
-            pym.SalesId = sr.GetSalesId(Convert.ToInt16(dgvGuest.CurrentRow.Cells[0].Value));
+            pym.Debt =0;
+            pym.SalesId = sr.GetSalesId(Convert.ToInt16(gliste[0]));
             if (pym.Credit != pym.Debt) pym.Status = true;
             else pym.Status = false;
             pym.Description = txtAciklama.Text;
@@ -82,6 +94,21 @@ namespace PL.Hotel
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnOdemeYap_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
 
         }

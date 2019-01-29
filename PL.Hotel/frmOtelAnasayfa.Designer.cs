@@ -72,7 +72,7 @@
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.Red;
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(40)))), ((int)(((byte)(120)))));
             this.pnlHeader.Controls.Add(this.label1);
             this.pnlHeader.Controls.Add(this.button8);
             this.pnlHeader.Controls.Add(this.button3);
@@ -80,7 +80,7 @@
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1000, 64);
+            this.pnlHeader.Size = new System.Drawing.Size(1000, 71);
             this.pnlHeader.TabIndex = 0;
             // 
             // label1
@@ -133,19 +133,20 @@
             // 
             // pnlLeftMenu
             // 
-            this.pnlLeftMenu.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.pnlLeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(190)))), ((int)(((byte)(200)))));
             this.pnlLeftMenu.Controls.Add(this.button5);
             this.pnlLeftMenu.Controls.Add(this.button1);
             this.pnlLeftMenu.Controls.Add(this.btnOdalar);
             this.pnlLeftMenu.Controls.Add(this.frmSatisIslemleri);
             this.pnlLeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlLeftMenu.Location = new System.Drawing.Point(0, 64);
+            this.pnlLeftMenu.Location = new System.Drawing.Point(0, 71);
             this.pnlLeftMenu.Name = "pnlLeftMenu";
-            this.pnlLeftMenu.Size = new System.Drawing.Size(180, 499);
+            this.pnlLeftMenu.Size = new System.Drawing.Size(180, 492);
             this.pnlLeftMenu.TabIndex = 1;
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(190)))), ((int)(((byte)(200)))));
             this.button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
@@ -162,10 +163,11 @@
             this.button5.Text = "   Odalar";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(190)))), ((int)(((byte)(200)))));
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
@@ -182,10 +184,11 @@
             this.button1.Text = "   Odalar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // btnOdalar
             // 
+            this.btnOdalar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(190)))), ((int)(((byte)(200)))));
             this.btnOdalar.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.btnOdalar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnOdalar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
@@ -202,11 +205,12 @@
             this.btnOdalar.Text = "   Odalar";
             this.btnOdalar.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnOdalar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnOdalar.UseVisualStyleBackColor = true;
+            this.btnOdalar.UseVisualStyleBackColor = false;
             this.btnOdalar.Click += new System.EventHandler(this.btnOdalar_Click);
             // 
             // frmSatisIslemleri
             // 
+            this.frmSatisIslemleri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(190)))), ((int)(((byte)(200)))));
             this.frmSatisIslemleri.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.frmSatisIslemleri.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.frmSatisIslemleri.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
@@ -223,7 +227,7 @@
             this.frmSatisIslemleri.Text = "   Satış İşlemleri";
             this.frmSatisIslemleri.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.frmSatisIslemleri.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.frmSatisIslemleri.UseVisualStyleBackColor = true;
+            this.frmSatisIslemleri.UseVisualStyleBackColor = false;
             this.frmSatisIslemleri.Click += new System.EventHandler(this.frmSatisIslemleri_Click);
             // 
             // panel3
@@ -237,12 +241,12 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.lblTarih);
             this.panel4.Controls.Add(this.lblSaat);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(180, 64);
+            this.panel4.Location = new System.Drawing.Point(180, 71);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(820, 53);
             this.panel4.TabIndex = 3;
@@ -400,11 +404,11 @@
             // 
             // pnlContent
             // 
-            this.pnlContent.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlContent.BackColor = System.Drawing.Color.White;
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(180, 117);
+            this.pnlContent.Location = new System.Drawing.Point(180, 124);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(820, 446);
+            this.pnlContent.Size = new System.Drawing.Size(820, 439);
             this.pnlContent.TabIndex = 4;
             // 
             // timer1

@@ -30,5 +30,6 @@ namespace BLL.Hotel.Repositories
         {
             return ent.Rooms.ToList();
         }
+        //ıd ye göre oda o getiren sorgu yaz
     }
 }
