@@ -58,5 +58,20 @@ namespace BLL.Hotel.Repositories
             return sonuc;
         }
 
+        public List<decimal> PaymentTransBySalesId(int SalesId)
+        {
+            List<Decimal> payments = new List<decimal>();
+            decimal borc = (from g in ent.Payments
+                            where g.Status == true && g.SalesId == SalesId
+                            select g.Debt).DefaultIfEmpty(0).Sum();
+            payments.Add(borc);
+            decimal odenen = (from g in ent.Payments
+                              where g.Status == false && g.SalesId == SalesId
+                              select g.Credit).DefaultIfEmpty(0).Sum();
+            payments.Add(odenen);
+            payments.Add(borc - odenen);//kalan borç
+            return payments;
+        }
+        
     }
 }

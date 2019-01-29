@@ -153,7 +153,7 @@
             this.pnlLeftMenu.Location = new System.Drawing.Point(0, 64);
             this.pnlLeftMenu.Margin = new System.Windows.Forms.Padding(0);
             this.pnlLeftMenu.Name = "pnlLeftMenu";
-            this.pnlLeftMenu.Size = new System.Drawing.Size(188, 536);
+            this.pnlLeftMenu.Size = new System.Drawing.Size(188, 499);
             this.pnlLeftMenu.TabIndex = 1;
             // 
             // btnYonetim
@@ -176,6 +176,7 @@
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.panel5.Controls.Add(this.button6);
             this.panel5.Controls.Add(this.button4);
             this.panel5.Controls.Add(this.btnIcon2);
@@ -184,12 +185,12 @@
             this.panel5.Location = new System.Drawing.Point(0, 53);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(46, 483);
+            this.panel5.Size = new System.Drawing.Size(46, 446);
             this.panel5.TabIndex = 7;
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.button6.BackColor = System.Drawing.Color.Red;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
@@ -202,7 +203,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.button4.BackColor = System.Drawing.Color.Red;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
@@ -215,7 +216,7 @@
             // 
             // btnIcon2
             // 
-            this.btnIcon2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnIcon2.BackColor = System.Drawing.Color.Red;
             this.btnIcon2.FlatAppearance.BorderSize = 0;
             this.btnIcon2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIcon2.Image = ((System.Drawing.Image)(resources.GetObject("btnIcon2.Image")));
@@ -229,7 +230,7 @@
             // 
             // btnIcon1
             // 
-            this.btnIcon1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnIcon1.BackColor = System.Drawing.Color.Red;
             this.btnIcon1.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnIcon1.FlatAppearance.BorderSize = 0;
             this.btnIcon1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
@@ -331,9 +332,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Red;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(188, 563);
+            this.panel3.Location = new System.Drawing.Point(0, 563);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(812, 37);
+            this.panel3.Size = new System.Drawing.Size(1000, 37);
             this.panel3.TabIndex = 2;
             // 
             // panel4
@@ -503,7 +504,7 @@
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContent.Location = new System.Drawing.Point(188, 117);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(812, 483);
+            this.pnlContent.Size = new System.Drawing.Size(812, 446);
             this.pnlContent.TabIndex = 4;
             // 
             // timer1
@@ -526,11 +527,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pnlLeftMenu);
             this.Controls.Add(this.pnlHeader);
+            this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmOtelAnasayfa";
             this.Text = "frmOtelAnasayfa";

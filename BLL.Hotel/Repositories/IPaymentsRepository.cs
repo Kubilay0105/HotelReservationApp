@@ -13,5 +13,6 @@ namespace BLL.Hotel
         List<Payment> GetPayments();
         List<Decimal> PaymentsToDate(DateTime Tarih);
         List<Payment> PaymentsByDate(DateTime Tarih);
+        List<Decimal> PaymentTransBySalesId(int SalesId);
     }
 }

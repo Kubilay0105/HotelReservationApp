@@ -21,23 +21,15 @@ namespace PL.Hotel
         PaymentsRepository pr = new PaymentsRepository();
         GuestRepository gr = new GuestRepository();
         RoomRepository Rp = new RoomRepository();
-       
+        SaleRepository sr = new SaleRepository();
+
+
         private void frmOdemeEkranı_Load(object sender, EventArgs e)
         {
 
             dtpTarih.Value = DateTime.Now;
             dgvPayments.DataSource = pr.GetPayments();
-            int Topla = 0;
-            for (int i = 0; i < dgvPayments.Rows.Count; ++i)
-            {
-                Topla += Convert.ToInt32(dgvPayments.Rows[i].Cells[4].Value);
-            }
-            txtBakiye.Text = Topla.ToString();
-        }
-
-        private void dgvHareketler_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,11 +41,13 @@ namespace PL.Hotel
                 txtAdi.Text = gst.FirstName;
                 txtSoyadi.Text = gst.LastName;
                 txtOdaNo.Text = Rp.GetRoomNo(gst.RoomId);
+                List<decimal> liste = pr.PaymentTransBySalesId(sr.GetSaleIdByGuest(gst.Id));
 
-                
-                //txtBorc.Text = string.Format("{0:#,##0}", liste[0]);
-                //txtKazanc.Text = string.Format("{0:#,##0}", liste[1]);
-                //txtKalanBorc.Text = string.Format("{0:#,##0}", liste[2]);
+
+
+                txtBorc.Text = string.Format("{0:#,##0}", liste[0]);
+                txtKazanc.Text = string.Format("{0:#,##0}", liste[1]);
+                txtKalanBorc.Text = string.Format("{0:#,##0}", liste[2]);
 
             }
             else
@@ -71,7 +65,6 @@ namespace PL.Hotel
         {
             //List<Guest> gliste = gr.GetAllGuest(btnTC.Text);
             Payment pym = new Payment();
-            SaleRepository sr = new SaleRepository();
             pym.Date = dtpTarih.Value;
             pym.TransType = cbIslemTurleri.SelectedItem.ToString();
             pym.Credit = Convert.ToDecimal(txtOdenenPara.Text);
