@@ -30,5 +30,12 @@ namespace BLL.Hotel.Repositories
         {
             return ent.Rooms.ToList();
         }
+        public int FullRoomsCount()
+        {
+            int DoluSayi=(from s in ent.Sales
+                         where s.Status==true
+                         select s).Count();
+            return DoluSayi;
+        }
     }
 }
