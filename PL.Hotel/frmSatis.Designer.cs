@@ -31,6 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnOnayla = new System.Windows.Forms.Button();
+            this.btnHesapla = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.cbMisafirSayisi = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -58,8 +60,6 @@
             this.cbCinsiyet = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTelefon = new System.Windows.Forms.TextBox();
-            this.btnHesapla = new System.Windows.Forms.Button();
-            this.btnOnayla = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -83,6 +83,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(984, 503);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // groupBox2
             // 
@@ -104,6 +105,26 @@
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Konaklama Bilgileri";
+            // 
+            // btnOnayla
+            // 
+            this.btnOnayla.Location = new System.Drawing.Point(9, 204);
+            this.btnOnayla.Name = "btnOnayla";
+            this.btnOnayla.Size = new System.Drawing.Size(75, 23);
+            this.btnOnayla.TabIndex = 28;
+            this.btnOnayla.Text = "Onayla";
+            this.btnOnayla.UseVisualStyleBackColor = true;
+            this.btnOnayla.Click += new System.EventHandler(this.btnOnayla_Click);
+            // 
+            // btnHesapla
+            // 
+            this.btnHesapla.Location = new System.Drawing.Point(9, 169);
+            this.btnHesapla.Name = "btnHesapla";
+            this.btnHesapla.Size = new System.Drawing.Size(75, 23);
+            this.btnHesapla.TabIndex = 27;
+            this.btnHesapla.Text = "Hesapla";
+            this.btnHesapla.UseVisualStyleBackColor = true;
+            this.btnHesapla.Click += new System.EventHandler(this.btnHesapla_Click);
             // 
             // label13
             // 
@@ -369,26 +390,6 @@
             this.txtTelefon.ReadOnly = true;
             this.txtTelefon.Size = new System.Drawing.Size(135, 20);
             this.txtTelefon.TabIndex = 11;
-            // 
-            // btnHesapla
-            // 
-            this.btnHesapla.Location = new System.Drawing.Point(9, 169);
-            this.btnHesapla.Name = "btnHesapla";
-            this.btnHesapla.Size = new System.Drawing.Size(75, 23);
-            this.btnHesapla.TabIndex = 27;
-            this.btnHesapla.Text = "Hesapla";
-            this.btnHesapla.UseVisualStyleBackColor = true;
-            this.btnHesapla.Click += new System.EventHandler(this.btnHesapla_Click);
-            // 
-            // btnOnayla
-            // 
-            this.btnOnayla.Location = new System.Drawing.Point(9, 204);
-            this.btnOnayla.Name = "btnOnayla";
-            this.btnOnayla.Size = new System.Drawing.Size(75, 23);
-            this.btnOnayla.TabIndex = 28;
-            this.btnOnayla.Text = "Onayla";
-            this.btnOnayla.UseVisualStyleBackColor = true;
-            this.btnOnayla.Click += new System.EventHandler(this.btnOnayla_Click);
             // 
             // frmSatis
             // 

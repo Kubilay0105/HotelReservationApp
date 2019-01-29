@@ -95,5 +95,23 @@ namespace PL.Hotel
             frmSatis frm = new frmSatis();
             FormAc(frm);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExtra_Click(object sender, EventArgs e)
+        {
+            pnlContent.Controls.Clear();
+            frmExtralar frm = new frmExtralar();
+            frm.TopLevel = false;
+            pnlContent.Controls.Add(frm);
+            frm.Show();
+            frm.Dock = DockStyle.Fill;
+
+
+
+        }
     }
 }

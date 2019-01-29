@@ -59,6 +59,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.btnExtra = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
             this.pnlLeftMenu.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -68,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pnlContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -163,6 +165,7 @@
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button1
             // 
@@ -401,6 +404,7 @@
             // pnlContent
             // 
             this.pnlContent.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlContent.Controls.Add(this.btnExtra);
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContent.Location = new System.Drawing.Point(180, 117);
             this.pnlContent.Name = "pnlContent";
@@ -421,6 +425,16 @@
             // 
             this.timer3.Interval = 1000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // btnExtra
+            // 
+            this.btnExtra.Location = new System.Drawing.Point(332, 100);
+            this.btnExtra.Name = "btnExtra";
+            this.btnExtra.Size = new System.Drawing.Size(75, 23);
+            this.btnExtra.TabIndex = 0;
+            this.btnExtra.Text = "Ekstra";
+            this.btnExtra.UseVisualStyleBackColor = true;
+            this.btnExtra.Click += new System.EventHandler(this.btnExtra_Click);
             // 
             // frmOtelAnasayfa
             // 
@@ -448,6 +462,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.pnlContent.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -483,5 +498,6 @@
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Label lblSaat;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnExtra;
     }
 }
