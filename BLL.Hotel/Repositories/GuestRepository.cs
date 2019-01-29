@@ -37,11 +37,11 @@ namespace BLL.Hotel.Repositories
             throw new NotImplementedException();
         }
 
-        public List<Guest> GetAllGuest(string TC)
+        public Guest GetGuestByTC(string TC)
         {
-            List<Guest> gst = (from g in ent.Guests
+            Guest gst = (from g in ent.Guests
                          where g.IdentificationNo == TC
-                         select g).ToList();
+                         select g).FirstOrDefault();
             return gst;
         }
 

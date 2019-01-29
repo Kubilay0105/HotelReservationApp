@@ -20,6 +20,7 @@ namespace PL.Hotel
         }
         PaymentsRepository pr = new PaymentsRepository();
         GuestRepository gr = new GuestRepository();
+        RoomRepository Rp = new RoomRepository();
        
         private void frmOdemeEkranı_Load(object sender, EventArgs e)
         {
@@ -44,10 +45,12 @@ namespace PL.Hotel
             if (btnTC.Text != "")
             {
                 //List<decimal> liste = pr.PaymentsToDate(dtpTarih.Value);
-                List<Guest> gliste = gr.GetAllGuest(btnTC.Text);
+                Guest gst = gr.GetGuestByTC(btnTC.Text);
+                txtAdi.Text = gst.FirstName;
+                txtSoyadi.Text = gst.LastName;
+                txtOdaNo.Text = Rp.GetRoomNo(gst.RoomId);
 
-                txtAdi.Text = gliste[1].ToString();
-                txtSoyadi.Text = gliste[2].ToString();
+                
                 //txtBorc.Text = string.Format("{0:#,##0}", liste[0]);
                 //txtKazanc.Text = string.Format("{0:#,##0}", liste[1]);
                 //txtKalanBorc.Text = string.Format("{0:#,##0}", liste[2]);
@@ -66,14 +69,14 @@ namespace PL.Hotel
 
         private void btnOdemeYap_Click(object sender, EventArgs e)
         {
-            List<Guest> gliste = gr.GetAllGuest(btnTC.Text);
+            //List<Guest> gliste = gr.GetAllGuest(btnTC.Text);
             Payment pym = new Payment();
             SaleRepository sr = new SaleRepository();
             pym.Date = dtpTarih.Value;
             pym.TransType = cbIslemTurleri.SelectedItem.ToString();
             pym.Credit = Convert.ToDecimal(txtOdenenPara.Text);
             pym.Debt =0;
-            pym.SalesId = sr.GetSalesId(Convert.ToInt16(gliste[0]));
+            //pym.SalesId = sr.GetSalesId(Convert.ToInt16(gliste[0]));
             if (pym.Credit != pym.Debt) pym.Status = true;
             else pym.Status = false;
             pym.Description = txtAciklama.Text;
@@ -104,11 +107,6 @@ namespace PL.Hotel
         }
 
         private void btnOdemeYap_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
         {
 
         }
