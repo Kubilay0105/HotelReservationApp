@@ -42,6 +42,14 @@ namespace BLL.Hotel.Repositories
             return ent.Sales.ToList();
         }
 
+        public int GetSalesId(int ID)
+        {
+            var sonuc = (from s in ent.Sales
+                         where s.RoomId == ID
+                         select s.Id).FirstOrDefault();
+            return sonuc;
+        }
+
         public bool UpdatePersonnel(Personnel p)
         {
             throw new NotImplementedException();

@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Repositories\IPaymentsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\General.cs" />
     <Compile Include="Repositories\GuestRepository.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Repositories\IPersonnelRepository.cs" />
     <Compile Include="Repositories\IRoomRepository.cs" />
     <Compile Include="Repositories\ISaleRepository.cs" />
+    <Compile Include="Repositories\PaymentsRepository.cs" />
     <Compile Include="Repositories\RoomRepository.cs" />
     <Compile Include="Repositories\SaleRepository.cs" />
   </ItemGroup>
