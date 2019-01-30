@@ -118,6 +118,12 @@ namespace PL.Hotel
             FormAc(frm);
         }
 
+        private void btnExtra_Click(object sender, EventArgs e)
+        {
+            frmExtraIslemler frm = new frmExtraIslemler();
+            FormAc(frm);
+        }
+
         private void btnCheckin_Click(object sender, EventArgs e)
         {
             frmRezervasyon frm = new frmRezervasyon();

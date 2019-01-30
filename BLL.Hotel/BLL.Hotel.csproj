@@ -50,6 +50,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Repositories\IPaymentsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ExtraRepository.cs" />
     <Compile Include="Repositories\General.cs" />
     <Compile Include="Repositories\GuestRepository.cs" />
     <Compile Include="Repositories\IExtraRepository.cs" />
