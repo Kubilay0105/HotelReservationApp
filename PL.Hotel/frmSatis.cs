@@ -27,6 +27,10 @@ namespace PL.Hotel
         public static string OdaNo { get; set; }
         private void btnOnayla_Click(object sender, EventArgs e)
         {
+            if (txtAdi.Text.Trim() == "" || txtSoyadi.Text == "" || txtTc.Text=="")
+            {
+                MessageBox.Show("Zorunlu alanlar girilmedi.", "Dikkat Eksik Bilgi!");
+            }
             Guest gue = new Guest();
             gue.FirstName = txtAdi.Text;
             gue.LastName = txtSoyadi.Text;
@@ -61,7 +65,6 @@ namespace PL.Hotel
             pay.Debt = Convert.ToDecimal(txtToplamTutar.Text);
             pay.Credit = 0;
             pay.SalesId = Sp.GetSaleIdByGuest(sa.GuestId);
-            pay.Status = true;
             pay.Description = "Konaklama Açılış";
             Pp.PaymentsAdd(pay);
             MessageBox.Show("Kayıt yapıldı");
@@ -74,6 +77,10 @@ namespace PL.Hotel
             txtOdaNo.Text = OdaNo;
             txtGirisTarihi.Text = Giris.ToShortDateString();
             txtCikisTarihi.Text = Cikis.ToShortDateString();
+            TimeSpan fark = Cikis - Giris;
+            int gunsayisi = fark.Days;
+            decimal OdaFiyat = Rp.GetRoomPrice(OdaNo);
+            txtToplamTutar.Text = ((gunsayisi + 1) * OdaFiyat).ToString();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

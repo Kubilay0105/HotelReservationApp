@@ -28,5 +28,10 @@ namespace PL.Hotel
         {
             dgvRezervasyon.DataSource = sr.GetSales(dtpGiris.Value);
         }
+
+        private void dtpCikis_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

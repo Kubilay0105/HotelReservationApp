@@ -55,7 +55,7 @@ namespace PL.Hotel
 
         private void btnSorgula_Click(object sender, EventArgs e)
         {
-            dgvPayments.DataSource = pr.PaylistByGuestId(gr.GetGuestIdByTC(txtTcKimlikNo.Text));
+            //dgvPayments.DataSource = pr.PaylistByGuestId(gr.GetGuestIdByTC(txtTcKimlikNo.Text));
             if (txtTcKimlikNo.Text != "")
             {
                 //List<decimal> liste = pr.PaymentsToDate(dtpTarih.Value);

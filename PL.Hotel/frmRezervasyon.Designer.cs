@@ -74,6 +74,7 @@
             this.dtpCikis.Name = "dtpCikis";
             this.dtpCikis.Size = new System.Drawing.Size(200, 20);
             this.dtpCikis.TabIndex = 6;
+            this.dtpCikis.ValueChanged += new System.EventHandler(this.dtpCikis_ValueChanged);
             // 
             // label2
             // 

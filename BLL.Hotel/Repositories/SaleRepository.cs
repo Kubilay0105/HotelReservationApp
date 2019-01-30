@@ -45,7 +45,16 @@ namespace BLL.Hotel.Repositories
                                           select s.Id).FirstOrDefault());
             return SaleId;
         }
-
+        public List<Guest> GetActiveGuest()
+        {
+            return ent.Sales.Where(x=>x.Status==true).Select(x=>x.Guest).ToList();
+        }
+        public List<Guest> GetReservationGuest()
+        {
+            DateTime Tarih;
+            Tarih = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+            return ent.Sales.Where(x => x.Status == false && x.CheckIn>Tarih).Select(x => x.Guest).ToList();
+        }
         public List<Sale> GetSales()
         {
             return ent.Sales.ToList();
@@ -59,7 +68,7 @@ namespace BLL.Hotel.Repositories
         public List<ReservationsModel> GetSales(DateTime today)
         {
             List<ReservationsModel> SaleList = (from sl in ent.Sales
-                                   where sl.CheckIn >= today.Date && sl.Status == true
+                                   where sl.CheckIn >= today.Date && sl.Status == false
                                    select new ReservationsModel { SalesId=sl.Id,GuestId=sl.GuestId,GuestFirstName=sl.Guest.FirstName,GuestLastName=sl.Guest.LastName,GuestIdtf=sl.Guest.IdentificationNo,GuestContactNo=sl.Guest.ContactNo,GuestMail=sl.Guest.Email,CheckIn=sl.CheckIn,CheckOut=sl.CheckOut }).ToList();
             return SaleList;
         }

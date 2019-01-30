@@ -85,7 +85,7 @@ namespace BLL.Hotel.Repositories
                                            where p.SalesId == item.Id && p.Status==true 
                                            from g in ent.Guests
                                            where g.Id == s.GuestId && g.FirstName.StartsWith(ad)
-                                           select new PaymentModel { PaymentId = p.Id, FirstName = g.FirstName, LastName = g.LastName, IdentificationNo = g.IdentificationNo, TransType = p.TransType, Debt = p.Debt, Credit = p.Credit }).ToList();
+                                           select new PaymentModel { PaymentId = p.Id, FirstName = g.FirstName, LastName = g.LastName, IdentificationNo = g.IdentificationNo, TransType = p.TransType, Debt = p.Debt, Credit = p.Credit ,Status=p.Status}).ToList();
                 foreach (PaymentModel paymod in paym)
                 {
                     liste.Add(paymod);
@@ -137,13 +137,36 @@ namespace BLL.Hotel.Repositories
             }
             return sonuc;
         }
-        public List<Payment> PaylistByGuestId(int GuestId)
+        public List<PaymentModel> PaylistByGuestId(int SalesId,string Type)
         {
-            List<Payment> list = (from s in ent.Sales
-                                       where s.GuestId == GuestId
-                                       from p in ent.Payments
-                                       where s.Id == p.SalesId
-                                       select p).ToList();
+            List<PaymentModel> list = new List<PaymentModel>();
+            if (Type == "Hepsi")
+            {
+                 list = (from s in ent.Sales where s.Id==SalesId
+                         from g in ent.Guests where g.Id==s.GuestId
+                         from p in ent.Payments where p.SalesId==SalesId
+                         select new PaymentModel { PaymentId = p.Id, FirstName = g.FirstName, LastName = g.LastName, IdentificationNo = g.IdentificationNo, TransType = p.TransType, Debt = p.Debt, Credit = p.Credit }).ToList();
+            }
+            else if (Type == "Ödemeler")
+            {
+                list = (from s in ent.Sales
+                        where s.Id == SalesId
+                        from g in ent.Guests
+                        where g.Id == s.GuestId
+                        from p in ent.Payments
+                        where p.SalesId == SalesId && p.TransType=="Tahsilat"
+                        select new PaymentModel { PaymentId = p.Id, FirstName = g.FirstName, LastName = g.LastName, IdentificationNo = g.IdentificationNo, TransType = p.TransType, Debt = p.Debt, Credit = p.Credit }).ToList();
+            }
+            else
+            {
+                list = (from s in ent.Sales
+                        where s.Id == SalesId
+                        from g in ent.Guests
+                        where g.Id == s.GuestId
+                        from p in ent.Payments
+                        where p.SalesId == SalesId && p.TransType !="Tahsilat"
+                        select new PaymentModel { PaymentId = p.Id, FirstName = g.FirstName, LastName = g.LastName, IdentificationNo = g.IdentificationNo, TransType = p.TransType, Debt = p.Debt, Credit = p.Credit }).ToList();
+            }
             return list;
         }
         public bool UpdatePaymentBySalesId(int ID)

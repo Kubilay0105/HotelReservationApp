@@ -30,6 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rbTariheGore = new System.Windows.Forms.RadioButton();
+            this.rbAdagore = new System.Windows.Forms.RadioButton();
             this.btnSorgula = new System.Windows.Forms.Button();
             this.txtTcKimlikNo = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -65,8 +67,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dtpTarih = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.rbAdagore = new System.Windows.Forms.RadioButton();
-            this.rbTariheGore = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbMüsteriBilgileri.SuspendLayout();
@@ -120,6 +120,29 @@
             this.panel1.Size = new System.Drawing.Size(1000, 413);
             this.panel1.TabIndex = 2;
             // 
+            // rbTariheGore
+            // 
+            this.rbTariheGore.AutoSize = true;
+            this.rbTariheGore.Location = new System.Drawing.Point(540, 14);
+            this.rbTariheGore.Name = "rbTariheGore";
+            this.rbTariheGore.Size = new System.Drawing.Size(81, 17);
+            this.rbTariheGore.TabIndex = 105;
+            this.rbTariheGore.TabStop = true;
+            this.rbTariheGore.Text = "Tarihe Göre";
+            this.rbTariheGore.UseVisualStyleBackColor = true;
+            // 
+            // rbAdagore
+            // 
+            this.rbAdagore.AutoSize = true;
+            this.rbAdagore.Location = new System.Drawing.Point(6, 245);
+            this.rbAdagore.Name = "rbAdagore";
+            this.rbAdagore.Size = new System.Drawing.Size(73, 17);
+            this.rbAdagore.TabIndex = 104;
+            this.rbAdagore.TabStop = true;
+            this.rbAdagore.Text = "Misafir Adı";
+            this.rbAdagore.UseVisualStyleBackColor = true;
+            this.rbAdagore.CheckedChanged += new System.EventHandler(this.rbAdagore_CheckedChanged);
+            // 
             // btnSorgula
             // 
             this.btnSorgula.Location = new System.Drawing.Point(820, 198);
@@ -133,7 +156,7 @@
             // 
             // txtTcKimlikNo
             // 
-            this.txtTcKimlikNo.Location = new System.Drawing.Point(152, 16);
+            this.txtTcKimlikNo.Location = new System.Drawing.Point(85, 244);
             this.txtTcKimlikNo.Name = "txtTcKimlikNo";
             this.txtTcKimlikNo.Size = new System.Drawing.Size(161, 20);
             this.txtTcKimlikNo.TabIndex = 102;
@@ -381,7 +404,7 @@
             "Konaklama Ücreti",
             "Tahsilat",
             "Ekstra Ücreti"});
-            this.cbIslemTurleri.Location = new System.Drawing.Point(202, 217);
+            this.cbIslemTurleri.Location = new System.Drawing.Point(85, 17);
             this.cbIslemTurleri.Name = "cbIslemTurleri";
             this.cbIslemTurleri.Size = new System.Drawing.Size(99, 21);
             this.cbIslemTurleri.TabIndex = 75;
@@ -462,29 +485,6 @@
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 64;
             this.label2.Text = "TCKimlikNo";
-            // 
-            // rbAdagore
-            // 
-            this.rbAdagore.AutoSize = true;
-            this.rbAdagore.Location = new System.Drawing.Point(73, 17);
-            this.rbAdagore.Name = "rbAdagore";
-            this.rbAdagore.Size = new System.Drawing.Size(73, 17);
-            this.rbAdagore.TabIndex = 104;
-            this.rbAdagore.TabStop = true;
-            this.rbAdagore.Text = "Misafir Adı";
-            this.rbAdagore.UseVisualStyleBackColor = true;
-            this.rbAdagore.CheckedChanged += new System.EventHandler(this.rbAdagore_CheckedChanged);
-            // 
-            // rbTariheGore
-            // 
-            this.rbTariheGore.AutoSize = true;
-            this.rbTariheGore.Location = new System.Drawing.Point(540, 14);
-            this.rbTariheGore.Name = "rbTariheGore";
-            this.rbTariheGore.Size = new System.Drawing.Size(81, 17);
-            this.rbTariheGore.TabIndex = 105;
-            this.rbTariheGore.TabStop = true;
-            this.rbTariheGore.Text = "Tarihe Göre";
-            this.rbTariheGore.UseVisualStyleBackColor = true;
             // 
             // frmOdemeEkranı
             // 

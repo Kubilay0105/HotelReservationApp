@@ -31,7 +31,7 @@ namespace BLL.Hotel.Repositories
         {
             return ent.Guests.ToList();
         }
-
+        
         public List<Guest> GetGuest(int roomId, bool stat)
         {
             throw new NotImplementedException();

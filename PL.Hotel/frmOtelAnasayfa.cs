@@ -129,5 +129,7 @@ namespace PL.Hotel
             frmRezervasyon frm = new frmRezervasyon();
             FormAc(frm);
         }
+
+      
     }
 }
