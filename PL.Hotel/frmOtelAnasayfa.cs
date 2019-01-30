@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL.Hotel.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,8 @@ namespace PL.Hotel
         {
             InitializeComponent();
         }
+        RoomRepository Rp = new RoomRepository();
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -74,6 +77,9 @@ namespace PL.Hotel
         {
             //timer3.Start();
             //lblTarih.Text = DateTime.Now.Date.ToShortDateString() + DateTime.Today.DayOfWeek.ToString();
+            
+            lblDoluOda.Text = Rp.FullRoomsCount().ToString();
+            lblBosOda.Text = (30 - Rp.FullRoomsCount()).ToString();
         }
 
         private void frmOtelAnasayfa_Shown(object sender, EventArgs e)
@@ -94,21 +100,6 @@ namespace PL.Hotel
         {
             frmSatis frm = new frmSatis();
             FormAc(frm);
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnExtra_Click(object sender, EventArgs e)
-        {
-            pnlContent.Controls.Clear();
-            frmExtraIslemler frm = new frmExtraIslemler();
-            frm.TopLevel = false;
-            pnlContent.Controls.Add(frm);
-            frm.Show();
-            frm.Dock = DockStyle.Fill;
         }
     }
 }
