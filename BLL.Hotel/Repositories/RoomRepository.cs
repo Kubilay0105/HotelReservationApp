@@ -17,6 +17,13 @@ namespace BLL.Hotel.Repositories
                          select r.Id).FirstOrDefault();
             return sonuc;
         }
+        public string GetRoomNo(int Id)
+        {
+            string sonuc = (from r in ent.Rooms
+                         where r.Id == Id
+                         select r.RoomNumber).FirstOrDefault();
+            return sonuc;
+        }
         public decimal GetRoomPrice(string RoomNo)
         {
             decimal sonuc = (from r in ent.Rooms
@@ -30,5 +37,13 @@ namespace BLL.Hotel.Repositories
         {
             return ent.Rooms.ToList();
         }
+        public int FullRoomsCount()
+        {
+            int DoluSayi=(from s in ent.Sales
+                         where s.Status==true
+                         select s).Count();
+            return DoluSayi;
+        }
+        //ıd ye göre oda o getiren sorgu yaz
     }
 }

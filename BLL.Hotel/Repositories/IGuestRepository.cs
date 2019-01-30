@@ -11,7 +11,9 @@ namespace BLL.Hotel.Repositories
     {
         List<Guest> GetGuest(int roomId, bool stat);
         List<Guest> GetGuest(int RoomId);
+        Guest GetGuestByTC(string TC);
         bool AddGuest(Guest g);
         bool UpdateGuest(Guest g);
+        int GetGuestIdByTC(string IdentificationNo);
     }
 }

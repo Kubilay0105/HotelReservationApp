@@ -37,9 +37,25 @@ namespace BLL.Hotel.Repositories
             throw new NotImplementedException();
         }
 
+        public int GetSaleIdByGuest(int GuestId)
+        {
+            int SaleId = Convert.ToInt32((from s in ent.Sales
+                                          where s.GuestId==GuestId
+                                          select s.Id).FirstOrDefault());
+            return SaleId;
+        }
+
         public List<Sale> GetSales()
         {
             return ent.Sales.ToList();
+        }
+
+        public int GetSalesId(int ID)
+        {
+            var sonuc = (from s in ent.Sales
+                         where s.RoomId == ID
+                         select s.Id).FirstOrDefault();
+            return sonuc;
         }
 
         public bool UpdatePersonnel(Personnel p)

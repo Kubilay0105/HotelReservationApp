@@ -58,17 +58,41 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExtralar.cs">
+    <Compile Include="frmExtraa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExtralar.Designer.cs">
-      <DependentUpon>frmExtralar.cs</DependentUpon>
+    <Compile Include="frmExtraa.Designer.cs">
+      <DependentUpon>frmExtraa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExtraIslemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExtraIslemler.Designer.cs">
+      <DependentUpon>frmExtraIslemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriSorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriSorgulama.Designer.cs">
+      <DependentUpon>frmMusteriSorgulama.cs</DependentUpon>
     </Compile>
     <Compile Include="frmOdalar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmOdalar.Designer.cs">
       <DependentUpon>frmOdalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdemeEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdemeEkranı.Designer.cs">
+      <DependentUpon>frmOdemeEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdaSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdaSec.Designer.cs">
+      <DependentUpon>frmOdaSec.cs</DependentUpon>
     </Compile>
     <Compile Include="frmOtelAnasayfa.cs">
       <SubType>Form</SubType>
@@ -93,11 +117,23 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExtralar.resx">
-      <DependentUpon>frmExtralar.cs</DependentUpon>
+    <EmbeddedResource Include="frmExtraa.resx">
+      <DependentUpon>frmExtraa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExtraIslemler.resx">
+      <DependentUpon>frmExtraIslemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriSorgulama.resx">
+      <DependentUpon>frmMusteriSorgulama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOdalar.resx">
       <DependentUpon>frmOdalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdemeEkranı.resx">
+      <DependentUpon>frmOdemeEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdaSec.resx">
+      <DependentUpon>frmOdaSec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOtelAnasayfa.resx">
       <DependentUpon>frmOtelAnasayfa.cs</DependentUpon>
@@ -137,7 +173,7 @@
       <Name>BLL.Hotel</Name>
     </ProjectReference>
     <ProjectReference Include="..\DAL.Hotel\DAL.Hotel.csproj">
-      <Project>{EFAE34C6-BAB7-4BB6-A41C-913EB61A6A2D}</Project>
+      <Project>{efae34c6-bab7-4bb6-a41c-913eb61a6a2d}</Project>
       <Name>DAL.Hotel</Name>
     </ProjectReference>
   </ItemGroup>
