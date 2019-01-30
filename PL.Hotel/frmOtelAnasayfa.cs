@@ -101,5 +101,21 @@ namespace PL.Hotel
             frmSatis frm = new frmSatis();
             FormAc(frm);
         }
+
+        private void pnlContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnExtra_Click(object sender, EventArgs e)
+        {
+            pnlContent.Controls.Clear();
+            frmExtraIslemler frm = new frmExtraIslemler();
+            frm.TopLevel = false;
+            pnlContent.Controls.Add(frm);
+            frm.Show();
+            frm.Dock = DockStyle.Fill;
+            frm.BringToFront();
+        }
     }
 }

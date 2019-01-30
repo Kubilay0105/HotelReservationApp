@@ -82,7 +82,6 @@
     <Compile Include="frmOdalar.Designer.cs">
       <DependentUpon>frmOdalar.cs</DependentUpon>
     </Compile>
-
     <Compile Include="frmOdemeEkranı.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,7 +164,7 @@
       <Name>BLL.Hotel</Name>
     </ProjectReference>
     <ProjectReference Include="..\DAL.Hotel\DAL.Hotel.csproj">
-      <Project>{EFAE34C6-BAB7-4BB6-A41C-913EB61A6A2D}</Project>
+      <Project>{efae34c6-bab7-4bb6-a41c-913eb61a6a2d}</Project>
       <Name>DAL.Hotel</Name>
     </ProjectReference>
   </ItemGroup>

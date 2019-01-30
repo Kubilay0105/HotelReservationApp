@@ -20,7 +20,7 @@ namespace PL.Hotel
         }
         ExtraRepository ex = new ExtraRepository();
         ExtraType ET = new ExtraType();
-        int ID;
+  
         private void frmExtraIslemler_Load(object sender, EventArgs e)
         {
             cbEkstra.DataSource = ex.GetExtraTypes();

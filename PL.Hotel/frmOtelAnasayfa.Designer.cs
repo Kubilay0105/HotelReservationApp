@@ -263,6 +263,7 @@
             this.btnExtra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExtra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExtra.UseVisualStyleBackColor = true;
+            this.btnExtra.Click += new System.EventHandler(this.btnExtra_Click);
             // 
             // panel2
             // 
@@ -326,7 +327,6 @@
             this.btnOdalar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOdalar.UseVisualStyleBackColor = true;
             this.btnOdalar.Click += new System.EventHandler(this.btnOdalar_Click);
-            this.btnOdalar.MouseHover += new System.EventHandler(this.btnOdalar_MouseHover);
             // 
             // panel3
             // 
@@ -506,6 +506,7 @@
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(812, 446);
             this.pnlContent.TabIndex = 4;
+            this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContent_Paint);
             // 
             // timer1
             // 
