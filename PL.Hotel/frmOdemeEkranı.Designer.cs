@@ -82,7 +82,7 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Ödeme İşlemleri";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+          
             // 
             // panel1
             // 
@@ -114,7 +114,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1145, 527);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            
             // 
             // groupBox1
             // 
@@ -292,7 +292,7 @@
             this.btnOdemeYap.TabIndex = 86;
             this.btnOdemeYap.Text = "Ödeme Onay";
             this.btnOdemeYap.UseVisualStyleBackColor = true;
-            this.btnOdemeYap.Click += new System.EventHandler(this.btnOdemeYap_Click_1);
+     
             // 
             // button1
             // 

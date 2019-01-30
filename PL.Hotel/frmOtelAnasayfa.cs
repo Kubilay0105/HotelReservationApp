@@ -77,7 +77,7 @@ namespace PL.Hotel
         {
             //timer3.Start();
             //lblTarih.Text = DateTime.Now.Date.ToShortDateString() + DateTime.Today.DayOfWeek.ToString();
-            
+
             lblDoluOda.Text = Rp.FullRoomsCount().ToString();
             lblBosOda.Text = (30 - Rp.FullRoomsCount()).ToString();
         }
@@ -110,6 +110,27 @@ namespace PL.Hotel
         private void BtnIcon1_MouseHover(object sender, EventArgs e)
         {
             btnIcon1.FlatAppearance.MouseOverBackColor = Color.Red;
+        }
+        private void FormAcikmi(Form AcilacakForm)
+        {
+            bool Varmi = false;
+            for (int i = 0; i < this.MdiChildren.Length; i++)
+            {
+                if (AcilacakForm.Name == MdiChildren[i].Name)
+                {
+                    MdiChildren[i].Focus();
+                    Varmi = true;
+                }
+            }
+            if (Varmi == false)
+            {
+                AcilacakForm.MdiParent = this;
+                AcilacakForm.Show();
+            }
+            else
+            {
+                AcilacakForm.Dispose();
+            }
         }
     }
 }

@@ -108,6 +108,7 @@
             this.btnOdemeYap.TabIndex = 106;
             this.btnOdemeYap.Text = "Ödeme Yap";
             this.btnOdemeYap.UseVisualStyleBackColor = true;
+            this.btnOdemeYap.Click += new System.EventHandler(this.btnOdemeYap_Click);
             // 
             // btnCikisOnayla
             // 

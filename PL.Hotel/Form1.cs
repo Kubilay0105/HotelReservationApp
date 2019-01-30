@@ -46,5 +46,18 @@ namespace PL.Hotel
             }
             else MessageBox.Show("Giriş Yapamadınız");
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                txtSifre.PasswordChar = '\0';
+            }
+            else
+            {
+                txtSifre.PasswordChar = '*';
+            }
+        }
     }
 }
+

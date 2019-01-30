@@ -72,6 +72,7 @@ namespace PL.Hotel
             //pym.SalesId = sr.GetSalesId(Convert.ToInt16(gliste[0]));
             if (pym.Credit != pym.Debt) pym.Status = true;
             else pym.Status = false;
+            sr.GetSaleIdByGuest(gr.GetGuestIdByTC(btnTC.Text));
             pym.Description = txtAciklama.Text;
             pr.PaymentsAdd(pym);
             dgvPayments.DataSource = pr.GetPayments();
@@ -79,29 +80,6 @@ namespace PL.Hotel
            
         }
 
-        private void txtGirenToplam_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtKazanc_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnOdemeYap_Click_1(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

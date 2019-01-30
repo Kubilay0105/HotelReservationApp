@@ -31,8 +31,8 @@ namespace PL.Hotel
         private void btnBorcSorgula_Click(object sender, EventArgs e)
         {
 
-            List<Decimal> pay=pr.PaymentTransBySalesId(sr.GetSaleIdByGuest(gr.GetGuestIdByTC(txtTKCNO.Text)));
-            if (!string.IsNullOrEmpty(txtTKCNO.Text))
+            List<Decimal> pay = pr.PaymentTransBySalesId(sr.GetSaleIdByGuest(gr.GetGuestIdByTC(txtTKCNO.Text)));
+            if (txtAdi.Text.Trim() != "" && txtSoyadi.Text.Trim() != "" && txtTKCNO.Text.Trim() != "" && txtOdaNo.Text.Trim() != "")
             {
                 txtBorc.Text = pay[0].ToString();
                 txtKazanc.Text = pay[1].ToString();
@@ -40,7 +40,7 @@ namespace PL.Hotel
             }
             else
                 MessageBox.Show("Eksik Bilgi Girdiniz");
-           
+
 
         }
 
@@ -58,6 +58,34 @@ namespace PL.Hotel
             }
             else
                 MessageBox.Show("Sistemde kayıtlı borç görünmekte");
+        }
+
+        private void btnOdemeYap_Click(object sender, EventArgs e)
+        {
+            frmOdemeEkranı frm = new frmOdemeEkranı();
+            FormAcikmi(frm);
+
+        }
+        private void FormAcikmi(Form AcilacakForm)
+        {
+            bool Varmi = false;
+            for (int i = 0; i < this.MdiChildren.Length; i++)
+            {
+                if (AcilacakForm.Name == MdiChildren[i].Name)
+                {
+                    MdiChildren[i].Focus();
+                    Varmi = true;
+                }
+            }
+            if (Varmi == false)
+            {
+                AcilacakForm.MdiParent = this;
+                AcilacakForm.Show();
+            }
+            else
+            {
+                AcilacakForm.Dispose();
+            }
         }
     }
 }
