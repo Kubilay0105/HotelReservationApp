@@ -111,17 +111,5 @@ namespace PL.Hotel
         {
             btnIcon1.FlatAppearance.MouseOverBackColor = Color.Red;
         }
-
-        private void btnOdemeler_Click(object sender, EventArgs e)
-        {
-            frmOdemeEkranı frm = new frmOdemeEkranı();
-            FormAc(frm);
-        }
-
-        private void btnCheckin_Click(object sender, EventArgs e)
-        {
-            frmCheckin frm = new frmCheckin();
-            FormAc(frm);
-        }
     }
 }

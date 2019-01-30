@@ -76,6 +76,16 @@ namespace PL.Hotel
             txtCikisTarihi.Text = Cikis.ToShortDateString();
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frmSatis_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnHesapla_Click(object sender, EventArgs e)
         {
             

@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOdalar));
             this.tbOdalar = new System.Windows.Forms.TabControl();
             this.tp1Kat = new System.Windows.Forms.TabPage();
-            this.tp2Kat = new System.Windows.Forms.TabPage();
-            this.tp3Kat = new System.Windows.Forms.TabPage();
             this.pnlContent = new System.Windows.Forms.Panel();
+            this.dtpCikisAra = new System.Windows.Forms.DateTimePicker();
+            this.dtpGirisAra = new System.Windows.Forms.DateTimePicker();
             this.panel19 = new System.Windows.Forms.Panel();
             this.btn106 = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
@@ -94,8 +94,8 @@
             this.lb101 = new System.Windows.Forms.Label();
             this.lbl101 = new System.Windows.Forms.Label();
             this.l101 = new System.Windows.Forms.Label();
-            this.dtpCikisAra = new System.Windows.Forms.DateTimePicker();
-            this.dtpGirisAra = new System.Windows.Forms.DateTimePicker();
+            this.tp2Kat = new System.Windows.Forms.TabPage();
+            this.tp3Kat = new System.Windows.Forms.TabPage();
             this.tbOdalar.SuspendLayout();
             this.tp1Kat.SuspendLayout();
             this.pnlContent.SuspendLayout();
@@ -145,27 +145,6 @@
             this.tp1Kat.TabIndex = 0;
             this.tp1Kat.Text = "1.Kat";
             // 
-            // tp2Kat
-            // 
-            this.tp2Kat.Font = new System.Drawing.Font("Verdana", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tp2Kat.Location = new System.Drawing.Point(4, 22);
-            this.tp2Kat.Name = "tp2Kat";
-            this.tp2Kat.Padding = new System.Windows.Forms.Padding(3);
-            this.tp2Kat.Size = new System.Drawing.Size(792, 424);
-            this.tp2Kat.TabIndex = 1;
-            this.tp2Kat.Text = "2.Kat";
-            this.tp2Kat.UseVisualStyleBackColor = true;
-            // 
-            // tp3Kat
-            // 
-            this.tp3Kat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tp3Kat.Location = new System.Drawing.Point(4, 22);
-            this.tp3Kat.Name = "tp3Kat";
-            this.tp3Kat.Size = new System.Drawing.Size(792, 424);
-            this.tp3Kat.TabIndex = 2;
-            this.tp3Kat.Text = "3.Kat";
-            this.tp3Kat.UseVisualStyleBackColor = true;
-            // 
             // pnlContent
             // 
             this.pnlContent.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -206,6 +185,23 @@
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(986, 418);
             this.pnlContent.TabIndex = 0;
+            this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContent_Paint);
+            // 
+            // dtpCikisAra
+            // 
+            this.dtpCikisAra.Location = new System.Drawing.Point(507, 13);
+            this.dtpCikisAra.Name = "dtpCikisAra";
+            this.dtpCikisAra.Size = new System.Drawing.Size(200, 23);
+            this.dtpCikisAra.TabIndex = 61;
+            this.dtpCikisAra.ValueChanged += new System.EventHandler(this.dtpCikisAra_ValueChanged);
+            // 
+            // dtpGirisAra
+            // 
+            this.dtpGirisAra.Location = new System.Drawing.Point(304, 13);
+            this.dtpGirisAra.Name = "dtpGirisAra";
+            this.dtpGirisAra.Size = new System.Drawing.Size(181, 23);
+            this.dtpGirisAra.TabIndex = 60;
+            this.dtpGirisAra.ValueChanged += new System.EventHandler(this.dtpGirisAra_ValueChanged);
             // 
             // panel19
             // 
@@ -897,21 +893,26 @@
             this.l101.Size = new System.Drawing.Size(10, 73);
             this.l101.TabIndex = 30;
             // 
-            // dtpCikisAra
+            // tp2Kat
             // 
-            this.dtpCikisAra.Location = new System.Drawing.Point(507, 13);
-            this.dtpCikisAra.Name = "dtpCikisAra";
-            this.dtpCikisAra.Size = new System.Drawing.Size(200, 23);
-            this.dtpCikisAra.TabIndex = 61;
-            this.dtpCikisAra.ValueChanged += new System.EventHandler(this.dtpCikisAra_ValueChanged);
+            this.tp2Kat.Font = new System.Drawing.Font("Verdana", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tp2Kat.Location = new System.Drawing.Point(4, 22);
+            this.tp2Kat.Name = "tp2Kat";
+            this.tp2Kat.Padding = new System.Windows.Forms.Padding(3);
+            this.tp2Kat.Size = new System.Drawing.Size(992, 424);
+            this.tp2Kat.TabIndex = 1;
+            this.tp2Kat.Text = "2.Kat";
+            this.tp2Kat.UseVisualStyleBackColor = true;
             // 
-            // dtpGirisAra
+            // tp3Kat
             // 
-            this.dtpGirisAra.Location = new System.Drawing.Point(304, 13);
-            this.dtpGirisAra.Name = "dtpGirisAra";
-            this.dtpGirisAra.Size = new System.Drawing.Size(181, 23);
-            this.dtpGirisAra.TabIndex = 60;
-            this.dtpGirisAra.ValueChanged += new System.EventHandler(this.dtpGirisAra_ValueChanged);
+            this.tp3Kat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tp3Kat.Location = new System.Drawing.Point(4, 22);
+            this.tp3Kat.Name = "tp3Kat";
+            this.tp3Kat.Size = new System.Drawing.Size(992, 424);
+            this.tp3Kat.TabIndex = 2;
+            this.tp3Kat.Text = "3.Kat";
+            this.tp3Kat.UseVisualStyleBackColor = true;
             // 
             // frmOdalar
             // 
