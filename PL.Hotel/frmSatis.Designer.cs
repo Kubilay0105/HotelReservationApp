@@ -403,6 +403,7 @@
             this.ShowInTaskbar = false;
             this.Text = "frmSatis";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmSatis_Load);
             this.panel2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

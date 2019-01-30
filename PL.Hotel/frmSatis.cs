@@ -54,6 +54,11 @@ namespace PL.Hotel
 
         }
 
+        private void frmSatis_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnHesapla_Click(object sender, EventArgs e)
         {
             Giris = dtpGirisTarihi.Value;

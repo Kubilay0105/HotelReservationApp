@@ -104,14 +104,11 @@ namespace PL.Hotel
         private void btnExtra_Click(object sender, EventArgs e)
         {
             pnlContent.Controls.Clear();
-            frmExtralar frm = new frmExtralar();
+            frmExtraIslemler frm = new frmExtraIslemler();
             frm.TopLevel = false;
             pnlContent.Controls.Add(frm);
             frm.Show();
             frm.Dock = DockStyle.Fill;
-
-
-
         }
     }
 }

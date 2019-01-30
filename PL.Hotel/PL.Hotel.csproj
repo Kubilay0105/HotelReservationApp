@@ -58,11 +58,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExtralar.cs">
+    <Compile Include="frmExtraa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExtralar.Designer.cs">
-      <DependentUpon>frmExtralar.cs</DependentUpon>
+    <Compile Include="frmExtraa.Designer.cs">
+      <DependentUpon>frmExtraa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExtraIslemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExtraIslemler.Designer.cs">
+      <DependentUpon>frmExtraIslemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriSorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriSorgulama.Designer.cs">
+      <DependentUpon>frmMusteriSorgulama.cs</DependentUpon>
     </Compile>
     <Compile Include="frmOdalar.cs">
       <SubType>Form</SubType>
@@ -87,8 +99,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExtralar.resx">
-      <DependentUpon>frmExtralar.cs</DependentUpon>
+    <EmbeddedResource Include="frmExtraa.resx">
+      <DependentUpon>frmExtraa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExtraIslemler.resx">
+      <DependentUpon>frmExtraIslemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriSorgulama.resx">
+      <DependentUpon>frmMusteriSorgulama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOdalar.resx">
       <DependentUpon>frmOdalar.cs</DependentUpon>

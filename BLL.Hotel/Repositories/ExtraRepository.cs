@@ -10,7 +10,7 @@ namespace BLL.Hotel.Repositories
     public class ExtraRepository : IEktraRepository
     {
         OtelContext ent = new OtelContext();
-        int ID;
+        
         public bool AddExtra(ExtraType Ex)
         {
             bool Sonuc = false;
@@ -54,9 +54,19 @@ namespace BLL.Hotel.Repositories
             return tur;
         }
 
-        public bool UpdateExtra(ExtraType Ex)
+        public bool UpdateExtra()
         {
-            throw new NotImplementedException();
+            bool Sonuc = false;
+            try
+            {
+                ent.SaveChanges(); 
+                Sonuc = true;
+            }
+            catch (Exception ex)
+            {
+                string hata = ex.Message;
+            }
+            return Sonuc;
         }
         public decimal GetExtraTypePrice(int RoomId)
         {
@@ -82,6 +92,30 @@ namespace BLL.Hotel.Repositories
         {
             throw new NotImplementedException();
         }
-      
+        public bool ExtraControl(ExtraType e)
+        {
+            var Extra = (from ext in ent.ExtraTypes
+                            where ext.Type == e.Type
+                            select ext).FirstOrDefault();
+            if (Extra != null)
+                return true;
+            return false;
+        }
+        public ExtraType GetExtraById(int ID)
+        {
+            ExtraType degisen = (from c in ent.ExtraTypes
+                                  where c.Id == ID
+                                  select c).FirstOrDefault();
+            return degisen;
+        }
+        public bool ExtraControlFromUpdate(ExtraType e)
+        {
+            var extra = (from ext in ent.ExtraTypes
+                            where ext.Type == e.Type && ext.Id != e.Id
+                            select ext).FirstOrDefault();
+            if (extra != null)
+                return true;
+            return false;
+        }
     }
 }
