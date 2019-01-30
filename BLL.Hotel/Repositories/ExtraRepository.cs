@@ -7,7 +7,7 @@ using DAL.Hotel.Context;
 
 namespace BLL.Hotel.Repositories
 {
-    public class ExtraRepository : IEktraRepository
+    public class ExtraRepository : IExtraRepository
     {
         OtelContext ent = new OtelContext();
         
@@ -116,6 +116,21 @@ namespace BLL.Hotel.Repositories
             if (extra != null)
                 return true;
             return false;
+        }
+
+        public bool AddExtraTrans(ExtraTransactions Ex)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<ExtraTransactions> GetExtras(int RoomId)
+        {
+            throw new NotImplementedException();
+        }
+
+        ExtraType IExtraRepository.GetExtraType(int TypeName)
+        {
+            throw new NotImplementedException();
         }
     }
 }

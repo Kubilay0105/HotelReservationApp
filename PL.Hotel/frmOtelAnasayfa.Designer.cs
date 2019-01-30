@@ -323,7 +323,6 @@
             this.btnIcon3.Size = new System.Drawing.Size(46, 48);
             this.btnIcon3.TabIndex = 9;
             this.btnIcon3.UseVisualStyleBackColor = false;
-            this.btnIcon3.Click += new System.EventHandler(this.btnOdemeler_Click);
             // 
             // btnIcon2
             // 
@@ -375,6 +374,7 @@
             this.btnExtra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExtra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExtra.UseVisualStyleBackColor = true;
+            this.btnExtra.Click += new System.EventHandler(this.btnExtra_Click);
             // 
             // panel2
             // 

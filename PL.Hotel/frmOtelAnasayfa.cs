@@ -111,5 +111,23 @@ namespace PL.Hotel
         {
             btnIcon1.FlatAppearance.MouseOverBackColor = Color.Red;
         }
+
+        private void btnOdemeler_Click(object sender, EventArgs e)
+        {
+            frmOdemeEkranı frm = new frmOdemeEkranı();
+            FormAc(frm);
+        }
+
+        private void btnExtra_Click(object sender, EventArgs e)
+        {
+            frmExtraIslemler frm = new frmExtraIslemler();
+            FormAc(frm);
+        }
+
+        private void btnCheckin_Click(object sender, EventArgs e)
+        {
+            frmRezervasyon frm = new frmRezervasyon();
+            FormAc(frm);
+        }
     }
 }
