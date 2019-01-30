@@ -22,6 +22,15 @@ namespace PL.Hotel
         private void Form1_Load(object sender, EventArgs e)
         {
             ent.Database.CreateIfNotExists();
+
+            if (checkBox1.Checked)
+            {
+                txtSifre.PasswordChar = '\0';
+            }
+            else
+            {
+                txtSifre.PasswordChar = '*';
+            }
         }
 
         private void btnGiris_Click(object sender, EventArgs e)
@@ -49,14 +58,6 @@ namespace PL.Hotel
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
-            {
-                txtSifre.PasswordChar = '\0';
-            }
-            else
-            {
-                txtSifre.PasswordChar = '*';
-            }
         }
     }
 }

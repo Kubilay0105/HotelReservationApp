@@ -120,7 +120,7 @@ namespace PL.Hotel
 
         private void btnCheckin_Click(object sender, EventArgs e)
         {
-            frmCheckin frm = new frmCheckin();
+            frmRezervasyon frm = new frmRezervasyon();
             FormAc(frm);
         }
     }
