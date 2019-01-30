@@ -73,16 +73,50 @@ namespace BLL.Hotel.Repositories
             payments.Add(borc - odenen);//kalan borç
             return payments;
         }
-        //public List<PaymentModel> GetPaymentsBySalesId(List<Sale> listsa)
-        //{
-        //    List<PaymentModel> PM = new List<PaymentModel>();
-        //    foreach (Sale item in listsa)
-        //    {
-        //        List<Payment> paym = (from p in ent.Payments
-        //                             where p.SalesId == item.Id
-        //                             select p).ToList();
-        //    }
-        //}
+        public List<PaymentModel> GetPaymentsByGuest(List<Sale> Sl,string ad)
+        {
+            List<PaymentModel> liste = new List<PaymentModel>();
+            foreach (Sale item in Sl)
+            {
+                List<PaymentModel> paym = (from s in ent.Sales
+                                           where s.Id == item.Id
+                                           from p in ent.Payments
+                                           where p.SalesId == item.Id && p.Status==true 
+                                           from g in ent.Guests
+                                           where g.Id == s.GuestId && g.FirstName.StartsWith(ad)
+                                           select new PaymentModel { PaymentId = p.Id, FirstName = g.FirstName, LastName = g.LastName, IdentificationNo = g.IdentificationNo, TransType = p.TransType, Debt = p.Debt, Credit = p.Credit }).ToList();
+                foreach (PaymentModel paymod in paym)
+                {
+                    liste.Add(paymod);
+                }
+              
+
+            }
+
+            return liste;
+        }
+        public List<PaymentModel> GetPaymentsByGuest(List<Sale> Sl, DateTime Tarih)
+        {
+            List<PaymentModel> liste = new List<PaymentModel>();
+            foreach (Sale item in Sl)
+            {
+                List<PaymentModel> paym = (from s in ent.Sales
+                                           where s.Id == item.Id
+                                           from p in ent.Payments
+                                           where p.SalesId == item.Id && p.Status == true && p.Date.Month==Tarih.Month &&p.Date.Day==Tarih.Day
+                                           from g in ent.Guests
+                                           where g.Id == s.GuestId 
+                                           select new PaymentModel { PaymentId = p.Id, FirstName = g.FirstName, LastName = g.LastName, IdentificationNo = g.IdentificationNo, TransType = p.TransType, Debt = p.Debt, Credit = p.Credit }).ToList();
+                foreach (PaymentModel paymod in paym)
+                {
+                    liste.Add(paymod);
+                }
+
+
+            }
+
+            return liste;
+        }
         public bool UpdatePaymentStatusForCheckin(int Sales)
         {
             bool sonuc = false;

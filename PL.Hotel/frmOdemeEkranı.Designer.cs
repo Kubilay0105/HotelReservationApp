@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSorgula = new System.Windows.Forms.Button();
             this.txtTcKimlikNo = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBorc = new System.Windows.Forms.TextBox();
@@ -64,7 +65,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dtpTarih = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnSorgula = new System.Windows.Forms.Button();
+            this.rbAdagore = new System.Windows.Forms.RadioButton();
+            this.rbTariheGore = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbMüsteriBilgileri.SuspendLayout();
@@ -87,6 +89,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.rbTariheGore);
+            this.panel1.Controls.Add(this.rbAdagore);
             this.panel1.Controls.Add(this.btnSorgula);
             this.panel1.Controls.Add(this.txtTcKimlikNo);
             this.panel1.Controls.Add(this.groupBox1);
@@ -116,12 +120,24 @@
             this.panel1.Size = new System.Drawing.Size(1000, 413);
             this.panel1.TabIndex = 2;
             // 
+            // btnSorgula
+            // 
+            this.btnSorgula.Location = new System.Drawing.Point(820, 198);
+            this.btnSorgula.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSorgula.Name = "btnSorgula";
+            this.btnSorgula.Size = new System.Drawing.Size(75, 22);
+            this.btnSorgula.TabIndex = 103;
+            this.btnSorgula.Text = "Sorgula";
+            this.btnSorgula.UseVisualStyleBackColor = true;
+            this.btnSorgula.Click += new System.EventHandler(this.btnSorgula_Click);
+            // 
             // txtTcKimlikNo
             // 
             this.txtTcKimlikNo.Location = new System.Drawing.Point(152, 16);
             this.txtTcKimlikNo.Name = "txtTcKimlikNo";
             this.txtTcKimlikNo.Size = new System.Drawing.Size(161, 20);
             this.txtTcKimlikNo.TabIndex = 102;
+            this.txtTcKimlikNo.TextChanged += new System.EventHandler(this.txtTcKimlikNo_TextChanged);
             // 
             // groupBox1
             // 
@@ -290,6 +306,7 @@
             this.btnOdemeYap.TabIndex = 86;
             this.btnOdemeYap.Text = "Ödeme Onay";
             this.btnOdemeYap.UseVisualStyleBackColor = true;
+            this.btnOdemeYap.Click += new System.EventHandler(this.btnOdemeYap_Click);
             // 
             // btnGetir
             // 
@@ -405,8 +422,10 @@
             this.dgvPayments.Location = new System.Drawing.Point(85, 43);
             this.dgvPayments.Name = "dgvPayments";
             this.dgvPayments.ReadOnly = true;
+            this.dgvPayments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPayments.Size = new System.Drawing.Size(741, 144);
             this.dgvPayments.TabIndex = 68;
+            this.dgvPayments.DoubleClick += new System.EventHandler(this.dgvPayments_DoubleClick);
             // 
             // txtKasaTuru
             // 
@@ -429,30 +448,43 @@
             // 
             // dtpTarih
             // 
-            this.dtpTarih.Location = new System.Drawing.Point(619, 13);
+            this.dtpTarih.Location = new System.Drawing.Point(634, 14);
             this.dtpTarih.Name = "dtpTarih";
             this.dtpTarih.Size = new System.Drawing.Size(146, 20);
             this.dtpTarih.TabIndex = 65;
+            this.dtpTarih.ValueChanged += new System.EventHandler(this.dtpTarih_ValueChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 18);
+            this.label2.Location = new System.Drawing.Point(98, 203);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 64;
             this.label2.Text = "TCKimlikNo";
             // 
-            // btnSorgula
+            // rbAdagore
             // 
-            this.btnSorgula.Location = new System.Drawing.Point(321, 14);
-            this.btnSorgula.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSorgula.Name = "btnSorgula";
-            this.btnSorgula.Size = new System.Drawing.Size(75, 22);
-            this.btnSorgula.TabIndex = 103;
-            this.btnSorgula.Text = "Sorgula";
-            this.btnSorgula.UseVisualStyleBackColor = true;
-            this.btnSorgula.Click += new System.EventHandler(this.btnSorgula_Click);
+            this.rbAdagore.AutoSize = true;
+            this.rbAdagore.Location = new System.Drawing.Point(73, 17);
+            this.rbAdagore.Name = "rbAdagore";
+            this.rbAdagore.Size = new System.Drawing.Size(73, 17);
+            this.rbAdagore.TabIndex = 104;
+            this.rbAdagore.TabStop = true;
+            this.rbAdagore.Text = "Misafir Adı";
+            this.rbAdagore.UseVisualStyleBackColor = true;
+            this.rbAdagore.CheckedChanged += new System.EventHandler(this.rbAdagore_CheckedChanged);
+            // 
+            // rbTariheGore
+            // 
+            this.rbTariheGore.AutoSize = true;
+            this.rbTariheGore.Location = new System.Drawing.Point(540, 14);
+            this.rbTariheGore.Name = "rbTariheGore";
+            this.rbTariheGore.Size = new System.Drawing.Size(81, 17);
+            this.rbTariheGore.TabIndex = 105;
+            this.rbTariheGore.TabStop = true;
+            this.rbTariheGore.Text = "Tarihe Göre";
+            this.rbTariheGore.UseVisualStyleBackColor = true;
             // 
             // frmOdemeEkranı
             // 
@@ -516,5 +548,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtTcKimlikNo;
         private System.Windows.Forms.Button btnSorgula;
+        private System.Windows.Forms.RadioButton rbAdagore;
+        private System.Windows.Forms.RadioButton rbTariheGore;
     }
 }

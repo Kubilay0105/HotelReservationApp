@@ -22,13 +22,13 @@ namespace PL.Hotel
         GuestRepository gr = new GuestRepository();
         RoomRepository Rp = new RoomRepository();
         SaleRepository sr = new SaleRepository();
-
+        string TcKno;
 
         private void frmOdemeEkranı_Load(object sender, EventArgs e)
         {
 
             dtpTarih.Value = DateTime.Now;
-            dgvPayments.DataSource = pr.GetPayments();
+            dgvPayments.DataSource = pr.GetPaymentsByGuest(sr.GetSales(),txtTcKimlikNo.Text);
             
         }
 
@@ -44,14 +44,13 @@ namespace PL.Hotel
             pym.TransType = cbIslemTurleri.SelectedItem.ToString();
             pym.Credit = Convert.ToDecimal(txtOdenenPara.Text);
             pym.Debt =0;
-            //pym.SalesId = sr.GetSalesId(Convert.ToInt16(gliste[0]));
-            if (pym.Credit != pym.Debt) pym.Status = true;
-            else pym.Status = false;
+            pym.SalesId = sr.GetSaleIdByGuest(gr.GetGuestIdByTC(TcKno));
+            pym.Status = true;
             pym.Description = txtAciklama.Text;
             pr.PaymentsAdd(pym);
-            dgvPayments.DataSource = pr.GetPayments();
+            dgvPayments.DataSource = pr.GetPaymentsByGuest(sr.GetSales(), dtpTarih.Value);
 
-           
+
         }
 
         private void btnSorgula_Click(object sender, EventArgs e)
@@ -75,6 +74,34 @@ namespace PL.Hotel
             }
             else
                 MessageBox.Show("Eksik Bilgi Girdiniz");
+        }
+
+        private void txtTcKimlikNo_TextChanged(object sender, EventArgs e)
+        {
+            if (rbAdagore.Checked)
+            {
+                dgvPayments.DataSource = pr.GetPaymentsByGuest(sr.GetSales(), txtTcKimlikNo.Text);
+
+            }
+       }
+
+        private void rbAdagore_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpTarih_ValueChanged(object sender, EventArgs e)
+        {
+            if (rbTariheGore.Checked)
+            {
+                dgvPayments.DataSource = pr.GetPaymentsByGuest(sr.GetSales(), dtpTarih.Value);
+
+            }
+        }
+
+        private void dgvPayments_DoubleClick(object sender, EventArgs e)
+        {
+            TcKno = dgvPayments.SelectedRows[0].Cells[3].Value.ToString();
         }
     }
 }

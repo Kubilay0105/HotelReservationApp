@@ -50,6 +50,7 @@ namespace BLL.Hotel.Repositories
         {
             return ent.Sales.ToList();
         }
+        
         public Sale GetSaleById(int SaleId)
         {
             return ent.Sales.Where(x=>x.Id==SaleId).Select(x=>x).FirstOrDefault();

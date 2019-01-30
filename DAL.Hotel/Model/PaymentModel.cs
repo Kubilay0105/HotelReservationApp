@@ -15,5 +15,6 @@ namespace DAL.Hotel
         public string TransType { get; set; }
         public decimal Debt { get; set; }
         public decimal Credit { get; set; }
+        
     }
 }

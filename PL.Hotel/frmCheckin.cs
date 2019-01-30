@@ -1,4 +1,5 @@
 ﻿using BLL.Hotel.Repositories;
+using DAL.Hotel;
 using DAL.Hotel.Context;
 using System;
 using System.Collections.Generic;
@@ -43,7 +44,9 @@ namespace PL.Hotel
 
         private void frmCheckin_Load(object sender, EventArgs e)
         {
-           DgvDuzenle(Gr.GetAllGuest());
+           //DgvDuzenle(Pr.GetPaymentsByGuest(7));
+            //DgvDuzenle(Pr.GetPaymentsByGuest(Sr.GetSales()));
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -53,18 +56,23 @@ namespace PL.Hotel
 
         private void txtAdaGore_TextChanged(object sender, EventArgs e)
         {
-            DgvDuzenle(Gr.GetGuestBySearch(txtAdaGore.Text, txtSoyadaGore.Text, txtTcyeGore.Text));
+            //DgvDuzenle(Gr.GetGuestBySearch(txtAdaGore.Text, txtSoyadaGore.Text, txtTcyeGore.Text));
         }
 
         private void txtSoyadaGore_TextChanged(object sender, EventArgs e)
         {
-            DgvDuzenle(Gr.GetGuestBySearch(txtAdaGore.Text, txtSoyadaGore.Text, txtTcyeGore.Text));
+            //DgvDuzenle(Gr.GetGuestBySearch(txtAdaGore.Text, txtSoyadaGore.Text, txtTcyeGore.Text));
 
         }
 
         private void txtTcyeGore_TextChanged(object sender, EventArgs e)
         {
-            DgvDuzenle(Gr.GetGuestBySearch(txtAdaGore.Text, txtSoyadaGore.Text, txtTcyeGore.Text));
+            //DgvDuzenle(Gr.GetGuestBySearch(txtAdaGore.Text, txtSoyadaGore.Text, txtTcyeGore.Text));
+        }
+
+        private void dgvMusteriler_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         private void dgvMusteriler_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -80,12 +88,12 @@ namespace PL.Hotel
             txtOdaNo.Text = RBilgileri.RoomNumber;
             txtKat.Text = RBilgileri.FloorNumber.ToString();
         }
-        private void DgvDuzenle(List<Guest> liste)
+        private void DgvDuzenle(List<PaymentModel> liste)
         {
             dgvMusteriler.DataSource = liste;
-            dgvMusteriler.Columns[0].Visible = false;
-            dgvMusteriler.Columns[5].Visible = false;
-            dgvMusteriler.Columns[6].Visible = false;
+            //dgvMusteriler.Columns[0].Visible = false;
+            //dgvMusteriler.Columns[5].Visible = false;
+            //dgvMusteriler.Columns[6].Visible = false;
 
         }
     }

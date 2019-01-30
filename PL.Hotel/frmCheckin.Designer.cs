@@ -87,6 +87,7 @@
             this.dgvMusteriler.Name = "dgvMusteriler";
             this.dgvMusteriler.Size = new System.Drawing.Size(828, 235);
             this.dgvMusteriler.TabIndex = 3;
+            this.dgvMusteriler.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMusteriler_CellContentClick);
             this.dgvMusteriler.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvMusteriler_MouseDoubleClick);
             // 
             // groupBox1
