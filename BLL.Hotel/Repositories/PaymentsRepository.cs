@@ -146,7 +146,6 @@ namespace BLL.Hotel.Repositories
                                        select p).ToList();
             return list;
         }
-    }
         public bool UpdatePaymentBySalesId(int ID)
         {
             bool sonuc = false;
@@ -166,6 +165,8 @@ namespace BLL.Hotel.Repositories
             return sonuc;
 
         }
-
     }
+
+
 }
+
