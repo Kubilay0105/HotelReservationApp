@@ -55,9 +55,11 @@
     <Compile Include="Repositories\IExtraRepository.cs" />
     <Compile Include="Repositories\IGuestRepository.cs" />
     <Compile Include="Repositories\IPersonnelRepository.cs" />
+    <Compile Include="Repositories\IReservations.cs" />
     <Compile Include="Repositories\IRoomRepository.cs" />
     <Compile Include="Repositories\ISaleRepository.cs" />
     <Compile Include="Repositories\PaymentsRepository.cs" />
+    <Compile Include="Repositories\Reservations.cs" />
     <Compile Include="Repositories\RoomRepository.cs" />
     <Compile Include="Repositories\SaleRepository.cs" />
   </ItemGroup>

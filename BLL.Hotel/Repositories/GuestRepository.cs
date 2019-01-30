@@ -60,7 +60,36 @@ namespace BLL.Hotel.Repositories
 
         public bool UpdateGuest(Guest g)
         {
-            throw new NotImplementedException();
+            bool Sonuc = false;
+            try
+            {
+                ent.SaveChanges();
+                Sonuc = true;
+            }
+            catch (Exception ex)
+            {
+                string hata = ex.Message;
+            }
+            return Sonuc;
+        }
+        public bool UpdateGuestByTC(string TC)
+        {
+            bool sonuc = false;
+            bool sondeger = (from s in ent.Guests
+                            where s.IdentificationNo == TC
+                            select s.Status).FirstOrDefault();
+            sondeger = false;
+            try
+            {
+                ent.SaveChanges();
+                sonuc = true;
+            }
+            catch (Exception ex)
+            {
+                string hata = ex.Message;
+            }
+            return sonuc;
+
         }
         public bool UpdateGuestStatusForCheckin(int Id)
         {

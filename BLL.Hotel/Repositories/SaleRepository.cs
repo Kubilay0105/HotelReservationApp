@@ -55,6 +55,15 @@ namespace BLL.Hotel.Repositories
         {
             return ent.Sales.Where(x=>x.Id==SaleId).Select(x=>x).FirstOrDefault();
         }
+
+        public List<ReservationsModel> GetSales(DateTime today)
+        {
+            List<ReservationsModel> SaleList = (from sl in ent.Sales
+                                   where sl.CheckIn >= today.Date && sl.Status == true
+                                   select new ReservationsModel { SalesId=sl.Id,GuestId=sl.GuestId,GuestFirstName=sl.Guest.FirstName,GuestLastName=sl.Guest.LastName,GuestIdtf=sl.Guest.IdentificationNo,GuestContactNo=sl.Guest.ContactNo,GuestMail=sl.Guest.Email,CheckIn=sl.CheckIn,CheckOut=sl.CheckOut }).ToList();
+            return SaleList;
+        }
+
         public int GetSalesId(int ID)
         {
             var sonuc = (from s in ent.Sales
@@ -94,6 +103,25 @@ namespace BLL.Hotel.Repositories
 
             }
             return sonuc;
+        }
+        public bool UpdateSalesByGuestId(int ID)
+        {
+            bool sonuc = false;
+            bool sondeger = (from s in ent.Sales
+                             where s.GuestId == ID
+                             select s.Status).FirstOrDefault();
+            sondeger = false;
+            try
+            {
+                ent.SaveChanges();
+                sonuc = true;
+            }
+            catch (Exception ex)
+            {
+                string hata = ex.Message;
+            }
+            return sonuc;
+
         }
     }
 }

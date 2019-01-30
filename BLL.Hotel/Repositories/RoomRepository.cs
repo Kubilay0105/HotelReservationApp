@@ -49,5 +49,24 @@ namespace BLL.Hotel.Repositories
         {
             return ent.Rooms.Where(x => x.Id == Rid).Select(x => x).FirstOrDefault();
         }
+        public bool UpdateRoomByRoomNo(string RoomNum)
+        {
+            bool sonuc = false;
+            bool sondeger = (from s in ent.Rooms
+                             where s.RoomNumber == RoomNum
+                             select s.State).FirstOrDefault();
+            sondeger = false;
+            try
+            {
+                ent.SaveChanges();
+                sonuc = true;
+            }
+            catch (Exception ex)
+            {
+                string hata = ex.Message;
+            }
+            return sonuc;
+
+        }
     }
 }
