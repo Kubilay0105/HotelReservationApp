@@ -45,5 +45,9 @@ namespace BLL.Hotel.Repositories
             return DoluSayi;
         }
         //ıd ye göre oda o getiren sorgu yaz
+        public Room GetRoom(int Rid)
+        {
+            return ent.Rooms.Where(x => x.Id == Rid).Select(x => x).FirstOrDefault();
+        }
     }
 }

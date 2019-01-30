@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL.Hotel;
 using DAL.Hotel.Context;
 
 namespace BLL.Hotel.Repositories
@@ -72,6 +73,43 @@ namespace BLL.Hotel.Repositories
             payments.Add(borc - odenen);//kalan borç
             return payments;
         }
-        
+        //public List<PaymentModel> GetPaymentsBySalesId(List<Sale> listsa)
+        //{
+        //    List<PaymentModel> PM = new List<PaymentModel>();
+        //    foreach (Sale item in listsa)
+        //    {
+        //        List<Payment> paym = (from p in ent.Payments
+        //                             where p.SalesId == item.Id
+        //                             select p).ToList();
+        //    }
+        //}
+        public bool UpdatePaymentStatusForCheckin(int Sales)
+        {
+            bool sonuc = false;
+            try
+            {
+                var sonuc1 = (from p in ent.Payments
+                              where p.SalesId == Sales
+                              select p).FirstOrDefault();
+                sonuc1.Status = true;
+                sonuc = true;
+                ent.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                string hata = ex.Message;
+
+            }
+            return sonuc;
+        }
+        public List<Payment> PaylistByGuestId(int GuestId)
+        {
+            List<Payment> list = (from s in ent.Sales
+                                       where s.GuestId == GuestId
+                                       from p in ent.Payments
+                                       where s.Id == p.SalesId
+                                       select p).ToList();
+            return list;
+        }
     }
 }

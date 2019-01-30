@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL.Hotel.Context;
+using DAL.Hotel.Model;
 
 namespace BLL.Hotel.Repositories
 {
@@ -49,7 +50,10 @@ namespace BLL.Hotel.Repositories
         {
             return ent.Sales.ToList();
         }
-
+        public Sale GetSaleById(int SaleId)
+        {
+            return ent.Sales.Where(x=>x.Id==SaleId).Select(x=>x).FirstOrDefault();
+        }
         public int GetSalesId(int ID)
         {
             var sonuc = (from s in ent.Sales
@@ -61,6 +65,34 @@ namespace BLL.Hotel.Repositories
         public bool UpdatePersonnel(Personnel p)
         {
             throw new NotImplementedException();
+        }
+        //Gelen Tarihteki odteldeki satışlar
+        public List<SaleModel> SalesIdGetByDate(DateTime Tarih)
+        {
+            List<SaleModel> Sales = (from s in ent.Sales
+                                 where s.CheckIn <= Tarih.Date && s.CheckOut >= Tarih.Date
+                                 from g in ent.Guests where g.Id==s.GuestId
+                                 select new SaleModel {SaleID=s.Id,FirstName=g.FirstName,LastName=g.LastName,Identification=g.IdentificationNo }).ToList();
+            return Sales;
+        }
+        public bool UpdateSaleStatusForCheckin(int SalesId)
+        {
+            bool sonuc = false;
+            try
+            {
+                var sonuc1 = (from s in ent.Sales
+                              where s.Id == SalesId
+                              select s).FirstOrDefault();
+                sonuc1.Status = true;
+                sonuc = true;
+                ent.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                string hata = ex.Message;
+
+            }
+            return sonuc;
         }
     }
 }

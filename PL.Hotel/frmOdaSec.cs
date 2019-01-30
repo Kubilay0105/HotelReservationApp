@@ -94,5 +94,45 @@ namespace PL.Hotel
             frmSatis.Cikis = Cara;
             this.Close();
         }
+
+        private void btn102_Click(object sender, EventArgs e)
+        {
+            string odano = (sender as Button).Text;
+            frmSatis frmSatis = new frmSatis();
+            frmSatis.OdaNo = odano;
+            frmSatis.Giris = Gara;
+            frmSatis.Cikis = Cara;
+            this.Close();
+        }
+
+        private void btn103_Click(object sender, EventArgs e)
+        {
+            string odano = (sender as Button).Text;
+            frmSatis frmSatis = new frmSatis();
+            frmSatis.OdaNo = odano;
+            frmSatis.Giris = Gara;
+            frmSatis.Cikis = Cara;
+            this.Close();
+        }
+
+        private void btn104_Click(object sender, EventArgs e)
+        {
+            string odano = (sender as Button).Text;
+            frmSatis frmSatis = new frmSatis();
+            frmSatis.OdaNo = odano;
+            frmSatis.Giris = Gara;
+            frmSatis.Cikis = Cara;
+            this.Close();
+        }
+
+        private void btn105_Click(object sender, EventArgs e)
+        {
+            string odano = (sender as Button).Text;
+            frmSatis frmSatis = new frmSatis();
+            frmSatis.OdaNo = odano;
+            frmSatis.Giris = Gara;
+            frmSatis.Cikis = Cara;
+            this.Close();
+        }
     }
 }

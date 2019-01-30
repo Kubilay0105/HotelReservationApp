@@ -58,6 +58,8 @@
     <Compile Include="Context\RoomType.cs" />
     <Compile Include="Context\Sale.cs" />
     <Compile Include="Context\Payment.cs" />
+    <Compile Include="Model\PaymentModel.cs" />
+    <Compile Include="Model\SaleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
