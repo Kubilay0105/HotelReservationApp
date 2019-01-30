@@ -61,31 +61,32 @@ namespace PL.Hotel
         }
 
         private void btnOdemeYap_Click(object sender, EventArgs e)
-        {
+        { 
             frmOdemeEkranı frm = new frmOdemeEkranı();
-            FormAcikmi(frm);
+            frm.Show();
+            //    FormAcikmi(frm);
 
         }
-        private void FormAcikmi(Form AcilacakForm)
-        {
-            bool Varmi = false;
-            for (int i = 0; i < this.MdiChildren.Length; i++)
-            {
-                if (AcilacakForm.Name == MdiChildren[i].Name)
-                {
-                    MdiChildren[i].Focus();
-                    Varmi = true;
-                }
-            }
-            if (Varmi == false)
-            {
-                AcilacakForm.MdiParent = this;
-                AcilacakForm.Show();
-            }
-            else
-            {
-                AcilacakForm.Dispose();
-            }
-        }
+        //private void FormAcikmi(Form AcilacakForm)
+        //{
+        //    bool Varmi = false;
+        //    for (int i = 0; i < this.MdiChildren.Length; i++)
+        //    {
+        //        if (AcilacakForm.Name == MdiChildren[i].Name)
+        //        {
+        //            MdiChildren[i].Focus();
+        //            Varmi = true;
+        //        }
+        //    }
+        //    if (Varmi == false)
+        //    {
+        //        AcilacakForm.MdiParent = this;
+        //        AcilacakForm.Show();
+        //    }
+        //    else
+        //    {
+        //        AcilacakForm.Dispose();
+        //    }
+        //}
     }
 }

@@ -58,6 +58,7 @@
     <Compile Include="Context\RoomType.cs" />
     <Compile Include="Context\Sale.cs" />
     <Compile Include="Context\Payment.cs" />
+    <Compile Include="Model\ReservationsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

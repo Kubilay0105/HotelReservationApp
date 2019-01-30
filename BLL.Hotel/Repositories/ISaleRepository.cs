@@ -1,4 +1,5 @@
 ﻿using DAL.Hotel.Context;
+using DAL.Hotel.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,6 @@ namespace BLL.Hotel.Repositories
         bool DeletePersonnel(Personnel p);
         bool DeletePersonnel(int ID);
         int GetSaleIdByGuest(int GuestId);
+        List<ReservationsModel> GetSales(DateTime today);
     }
 }

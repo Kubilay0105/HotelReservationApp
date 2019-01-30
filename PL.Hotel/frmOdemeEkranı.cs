@@ -29,7 +29,11 @@ namespace PL.Hotel
 
             dtpTarih.Value = DateTime.Now;
             dgvPayments.DataSource = pr.GetPayments();
-            
+            for (int i = 0; i < dgvPayments.Rows.Count; ++i)
+            {
+                txtBakiye.Text += Convert.ToDecimal(dgvPayments.Rows[i].Cells[4].Value);
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -55,31 +59,25 @@ namespace PL.Hotel
         
             
         }
+        
+        
 
-        private void dgvGuest_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void btnOdemeYap_Click(object sender, EventArgs e)
+        private void btnOdemeYap_Click_1(object sender, EventArgs e)
         {
             //List<Guest> gliste = gr.GetAllGuest(btnTC.Text);
             Payment pym = new Payment();
             pym.Date = dtpTarih.Value;
             pym.TransType = cbIslemTurleri.SelectedItem.ToString();
             pym.Credit = Convert.ToDecimal(txtOdenenPara.Text);
-            pym.Debt =0;
-            //pym.SalesId = sr.GetSalesId(Convert.ToInt16(gliste[0]));
+            pym.Debt = 0;
+            pym.SalesId = sr.GetSaleIdByGuest(gr.GetGuestIdByTC(btnTC.Text));
             if (pym.Credit != pym.Debt) pym.Status = true;
             else pym.Status = false;
             sr.GetSaleIdByGuest(gr.GetGuestIdByTC(btnTC.Text));
             pym.Description = txtAciklama.Text;
             pr.PaymentsAdd(pym);
             dgvPayments.DataSource = pr.GetPayments();
-
            
         }
-
-       
     }
 }
