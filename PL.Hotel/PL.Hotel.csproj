@@ -180,6 +180,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="frm.Designer.MisafirSorgulama" />
+    <None Include="frm.MisafirSorgulama">
+      <SubType>Form</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

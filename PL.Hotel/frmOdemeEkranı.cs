@@ -103,5 +103,10 @@ namespace PL.Hotel
         {
             TcKno = dgvPayments.SelectedRows[0].Cells[3].Value.ToString();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

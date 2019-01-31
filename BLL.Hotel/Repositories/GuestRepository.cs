@@ -27,22 +27,35 @@ namespace BLL.Hotel.Repositories
             return Sonuc;
         }
 
+        public List<Guest> GetGuestByRoomId(int RoomId)
+        {
+            List<Guest> listg = (from lg in ent.Guests
+                                 where lg.RoomId == RoomId
+                                 select lg).ToList();
+            return listg;
+        }
 
+        public int NOG(int RoomId)
+        {
+            List<Guest> listg = (from lg in ent.Guests
+                                 where lg.RoomId == RoomId
+                                 select lg).ToList();
+            return listg.Count();
+        }
 
         public List<Guest> GetAllGuest()
         {
             return ent.Guests.ToList();
         }
-
-        public List<Guest> GetGuest(int roomId, bool stat)
+        public List<Guest> GetAllGuestByStatus()
         {
-            throw new NotImplementedException();
+            List<Guest> liste = (from ls in ent.Guests
+                                 where ls.Status == true
+                                 select ls).ToList();
+
+            return liste;
         }
 
-        public List<Guest> GetGuest(int RoomId)
-        {
-            throw new NotImplementedException();
-        }
 
         public Guest GetGuestByTC(string TC)
         {
@@ -55,8 +68,8 @@ namespace BLL.Hotel.Repositories
         public int GetGuestIdByTC(string IdentificationNo)
         {
             int GuestId = Convert.ToInt32((from g in ent.Guests
-                                          where g.IdentificationNo == IdentificationNo
-                                          select g.Id).FirstOrDefault());
+                                           where g.IdentificationNo == IdentificationNo
+                                           select g.Id).FirstOrDefault());
             return GuestId;
         }
 
@@ -78,8 +91,8 @@ namespace BLL.Hotel.Repositories
         {
             bool sonuc = false;
             bool sondeger = (from s in ent.Guests
-                            where s.IdentificationNo == TC
-                            select s.Status).FirstOrDefault();
+                             where s.IdentificationNo == TC
+                             select s.Status).FirstOrDefault();
             sondeger = false;
             try
             {
@@ -112,9 +125,45 @@ namespace BLL.Hotel.Repositories
             }
             return sonuc;
         }
-        public List<Guest> GetGuestBySearch(string Ad,string Soyad,string Tc)
+        public List<Guest> GetGuestBySearch(string Ad, string Soyad, string Tc)
         {
             return ent.Guests.Where(x => x.FirstName.StartsWith(Ad) && x.LastName.StartsWith(Soyad) && x.IdentificationNo.StartsWith(Tc)).ToList();
         }
+
+        public List<Guest> GetGuest(int roomId, bool stat)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Guest> GetGuest(int RoomId)
+        {
+            throw new NotImplementedException();
+        }
+        public List<Guest> GetGuestByName(string Name)
+        {
+               
+                List<Guest> paym = (from s in ent.Guests
+                                    where  s.FirstName.StartsWith(Name)
+                                    select s).ToList();
+                return paym;
+         }
+        public List<Guest> GetGuestByLastName(string LastName)
+        {
+
+            List<Guest> paym = (from s in ent.Guests
+                                where s.FirstName.StartsWith(LastName)
+                                select s).ToList();
+            return paym;
+        }
+        public List<Guest> GetGuestByTCkno(string TC)
+        {
+
+            List<Guest> paym = (from s in ent.Guests
+                                where s.FirstName.StartsWith(TC)
+                                select s).ToList();
+            
+            return paym;
+        }
+     
     }
 }

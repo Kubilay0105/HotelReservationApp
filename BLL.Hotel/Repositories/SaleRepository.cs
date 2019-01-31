@@ -137,6 +137,7 @@ namespace BLL.Hotel.Repositories
             }
             return sonuc;
         }
+       
         public bool UpdateSalesByGuestId(int ID)
         {
             bool sonuc = false;
@@ -144,6 +145,25 @@ namespace BLL.Hotel.Repositories
                              where s.GuestId == ID
                              select s.Status).FirstOrDefault();
             sondeger = false;
+            try
+            {
+                ent.SaveChanges();
+                sonuc = true;
+            }
+            catch (Exception ex)
+            {
+                string hata = ex.Message;
+            }
+            return sonuc;
+
+        }
+        public bool UpdateSalesNOGByRoomId(int RoomId,int NOG)
+        {
+            bool sonuc = false;
+           var sondeger = (from s in ent.Sales
+                             where s.RoomId ==RoomId
+                             select s).FirstOrDefault();
+            sondeger.NoOfGuests=NOG;
             try
             {
                 ent.SaveChanges();

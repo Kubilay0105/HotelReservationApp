@@ -30,19 +30,27 @@ namespace PL.Hotel
             g.IdentificationNo = txtMisafirTC.Text;
             g.ContactNo = txtTelefon.Text;
             g.Birthday = dtpMisafirDogumTarihi.Value;
-            g.Gender =(dateTimePicker1.Value - dtpMisafirDogumTarihi.Value).ToString();
+            g.Gender = cbMisafirCinsiyet.SelectedItem.ToString();
             g.Adress = richTextBox1.Text;
             g.Email = txtMail.Text;
             g.Status = true;
             g.RoomId = r.GetRoomId(txtOdaNo.Text);
             gr.AddGuest(g);
-            dgwMisafirListesi.DataSource =gr.GetAllGuest();
-
+            dgwMisafirListesi.DataSource =gr.GetGuestByRoomId(g.RoomId);
+            this.dgwMisafirListesi.Columns["Id"].Visible = false;
+            this.dgwMisafirListesi.Columns["RoomId"].Visible = false;
+            this.dgwMisafirListesi.Columns["Email"].Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            sr.UpdateSales(sr.GetSaleIdByByRoomId(r.GetRoomId(txtOdaNo.Text)), dgwMisafirListesi.RowCount);
+            int NOG = gr.NOG(g.RoomId);
+            sr.UpdateSalesNOGByRoomId(g.RoomId, NOG);
+        }
+
+        private void frmMisafirKayıt_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
