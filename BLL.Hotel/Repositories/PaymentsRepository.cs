@@ -179,10 +179,13 @@ namespace BLL.Hotel.Repositories
         public bool UpdatePaymentBySalesId(int ID)
         {
             bool sonuc = false;
-            bool sondeger = (from s in ent.Payments
+            List<Payment> sondeger = (from s in ent.Payments
                              where s.SalesId == ID
-                             select s.Status).FirstOrDefault();
-            sondeger = false;
+                             select s).ToList();
+            foreach (Payment item in sondeger)
+            {
+                item.Status = false;
+            }
             try
             {
                 ent.SaveChanges();

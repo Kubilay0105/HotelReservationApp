@@ -46,7 +46,7 @@ namespace PL.Hotel
 
         private void btnCikisOnayla_Click(object sender, EventArgs e)
         {
-            if (txtKalanBorc.Text == "0")
+            if (Convert.ToDecimal(txtKalanBorc.Text) == 0)
             {
                 gr.UpdateGuestByTC(txtTKCNO.Text);
                 rr.UpdateRoomByRoomNo(txtOdaNo.Text);

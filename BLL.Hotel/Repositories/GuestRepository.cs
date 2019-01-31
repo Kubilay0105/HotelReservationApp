@@ -75,10 +75,10 @@ namespace BLL.Hotel.Repositories
         public bool UpdateGuestByTC(string TC)
         {
             bool sonuc = false;
-            bool sondeger = (from s in ent.Guests
+            Guest sondeger = (from s in ent.Guests
                             where s.IdentificationNo == TC
-                            select s.Status).FirstOrDefault();
-            sondeger = false;
+                            select s).FirstOrDefault();
+            sondeger.Status = false;
             try
             {
                 ent.SaveChanges();

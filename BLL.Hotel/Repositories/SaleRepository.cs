@@ -116,10 +116,10 @@ namespace BLL.Hotel.Repositories
         public bool UpdateSalesByGuestId(int ID)
         {
             bool sonuc = false;
-            bool sondeger = (from s in ent.Sales
+            Sale sondeger = (from s in ent.Sales
                              where s.GuestId == ID
-                             select s.Status).FirstOrDefault();
-            sondeger = false;
+                             select s).FirstOrDefault();
+            sondeger.Status = false;
             try
             {
                 ent.SaveChanges();
