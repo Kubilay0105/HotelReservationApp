@@ -27,31 +27,31 @@ namespace PL.Hotel
            
             txtDate.Text = DateTime.Now.ToShortDateString();
             dgvExtralar.DataSource = ex.GetExtraTypes();
+      
         }
-
+        
       
 
-        private void tsEkle_Click(object sender, EventArgs e)
+        private void tsEkle_Click_1(object sender, EventArgs e)
         {
-           
-            if (!string.IsNullOrEmpty(txtExtraTur.Text ))
+            if (!string.IsNullOrEmpty(txtExtraTur.Text))
             {
                 //Yeni bir nesne oluşturulur.
                 ExtraType yeni = new ExtraType();
                 //Özellikleri girilir.
                 yeni.Type = txtExtraTur.Text;
-            
+
                 if (ex.ExtraControl(yeni))
                 {
                     MessageBox.Show("Bu extra kayıtlı!", "Aynı extra zaten var!");
                 }
                 else
                 {
-                    yeni.Price =Convert.ToDecimal (txtFiyat.Text);
+                    yeni.Price = Convert.ToDecimal(txtFiyat.Text);
                     if (ex.AddExtra(yeni))
                     {
                         MessageBox.Show("Yeni extra eklendi.", "Kayıt gerçekleşti.");
-                      dgvExtralar.DataSource = ex.GetExtraTypes();
+                        dgvExtralar.DataSource = ex.GetExtraTypes();
                         //btnKaydet.Enabled = false;
                         //Temizle();
                     }
@@ -64,8 +64,9 @@ namespace PL.Hotel
             txtExtraTur.Focus();
         }
 
-        private void tsGuncelle_Click(object sender, EventArgs e)
+        private void tsGuncelle_Click_1(object sender, EventArgs e)
         {
+
             if (!string.IsNullOrEmpty(txtExtraTur.Text))
             {
                 ExtraType degisen = ex.GetExtraById(ID);
@@ -93,7 +94,12 @@ namespace PL.Hotel
             txtExtraTur.Focus();
         }
 
-        private void dgvExtralar_DoubleClick(object sender, EventArgs e)
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvExtralar_DoubleClick_1(object sender, EventArgs e)
         {
             ID = Convert.ToInt32(dgvExtralar.SelectedRows[0].Cells[0].Value);
             txtExtraTur.Text = dgvExtralar.SelectedRows[0].Cells[1].Value.ToString();
@@ -103,7 +109,5 @@ namespace PL.Hotel
             //btnKaydet.Enabled = false;
             txtExtraTur.Focus();
         }
-
-       
     }
 }

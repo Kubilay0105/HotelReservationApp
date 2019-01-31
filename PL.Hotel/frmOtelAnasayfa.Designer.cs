@@ -52,7 +52,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblBosOda = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -66,6 +65,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnlHeader.SuspendLayout();
             this.pnlLeftMenu.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -73,10 +73,10 @@
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -114,6 +114,7 @@
             this.button8.Size = new System.Drawing.Size(36, 35);
             this.button8.TabIndex = 2;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button3
             // 
@@ -330,7 +331,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Red;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 563);
             this.panel3.Name = "panel3";
@@ -339,7 +340,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlText;
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.lblTarih);
             this.panel4.Controls.Add(this.lblSaat);
@@ -389,18 +390,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "50";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.ErrorImage")));
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(19, 4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 13;
-            this.pictureBox5.TabStop = false;
             // 
             // label3
             // 
@@ -484,6 +473,7 @@
             // 
             // lblTarih
             // 
+            this.lblTarih.BackColor = System.Drawing.SystemColors.MenuText;
             this.lblTarih.Location = new System.Drawing.Point(4, 8);
             this.lblTarih.Name = "lblTarih";
             this.lblTarih.Size = new System.Drawing.Size(142, 23);
@@ -523,6 +513,18 @@
             this.timer3.Interval = 1000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.ErrorImage")));
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(19, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 13;
+            this.pictureBox5.TabStop = false;
+            // 
             // frmOtelAnasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -547,10 +549,10 @@
             this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -570,7 +572,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label lblBosOda;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblDoluOda;
@@ -593,5 +594,6 @@
         private System.Windows.Forms.Button btnIcon1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

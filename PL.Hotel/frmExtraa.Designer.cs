@@ -34,6 +34,7 @@
             this.tsGuncelle = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.tsEkle = new System.Windows.Forms.ToolStripButton();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.label6 = new System.Windows.Forms.Label();
             this.txtExtraTur = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -41,6 +42,9 @@
             this.dgvExtralar = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.txtDate = new System.Windows.Forms.TextBox();
+            this.tsGuncelle = new System.Windows.Forms.ToolStripButton();
+            this.tsEkle = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExtralar)).BeginInit();
@@ -52,7 +56,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(346, 100);
+            this.panel1.Size = new System.Drawing.Size(812, 100);
             this.panel1.TabIndex = 0;
             // 
             // toolStrip1
@@ -106,12 +110,24 @@
             this.tsEkle.Size = new System.Drawing.Size(90, 100);
             this.tsEkle.Text = "toolStripButton1";
             this.tsEkle.Click += new System.EventHandler(this.tsEkle_Click);
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsEkle,
+            this.tsGuncelle,
+            this.toolStripButton3});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(812, 100);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.Location = new System.Drawing.Point(193, 327);
+            this.label6.Location = new System.Drawing.Point(239, 327);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(36, 13);
             this.label6.TabIndex = 42;
@@ -119,9 +135,9 @@
             // 
             // txtExtraTur
             // 
-            this.txtExtraTur.Location = new System.Drawing.Point(252, 327);
+            this.txtExtraTur.Location = new System.Drawing.Point(298, 327);
             this.txtExtraTur.Name = "txtExtraTur";
-            this.txtExtraTur.Size = new System.Drawing.Size(78, 20);
+            this.txtExtraTur.Size = new System.Drawing.Size(103, 20);
             this.txtExtraTur.TabIndex = 41;
             // 
             // label9
@@ -136,9 +152,9 @@
             // 
             // txtFiyat
             // 
-            this.txtFiyat.Location = new System.Drawing.Point(252, 353);
+            this.txtFiyat.Location = new System.Drawing.Point(298, 353);
             this.txtFiyat.Name = "txtFiyat";
-            this.txtFiyat.Size = new System.Drawing.Size(78, 20);
+            this.txtFiyat.Size = new System.Drawing.Size(103, 20);
             this.txtFiyat.TabIndex = 39;
             // 
             // dgvExtralar
@@ -146,11 +162,12 @@
             this.dgvExtralar.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
             this.dgvExtralar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvExtralar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExtralar.Location = new System.Drawing.Point(12, 171);
+            this.dgvExtralar.Location = new System.Drawing.Point(40, 171);
             this.dgvExtralar.Name = "dgvExtralar";
             this.dgvExtralar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvExtralar.Size = new System.Drawing.Size(318, 150);
+            this.dgvExtralar.Size = new System.Drawing.Size(361, 150);
             this.dgvExtralar.TabIndex = 38;
+            this.dgvExtralar.DoubleClick += new System.EventHandler(this.dgvExtralar_DoubleClick_1);
             // 
             // label5
             // 
@@ -164,16 +181,29 @@
             // 
             // txtDate
             // 
-            this.txtDate.Location = new System.Drawing.Point(67, 133);
+            this.txtDate.Location = new System.Drawing.Point(82, 133);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(78, 20);
+            this.txtDate.Size = new System.Drawing.Size(98, 20);
             this.txtDate.TabIndex = 36;
+            // 
+            // tsEkle
+            // 
+            this.tsEkle.AutoSize = false;
+            this.tsEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
+            this.tsEkle.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsEkle.Image = ((System.Drawing.Image)(resources.GetObject("tsEkle.Image")));
+            this.tsEkle.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsEkle.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsEkle.Name = "tsEkle";
+            this.tsEkle.Size = new System.Drawing.Size(90, 100);
+            this.tsEkle.Text = "toolStripButton1";
+            this.tsEkle.Click += new System.EventHandler(this.tsEkle_Click);
             // 
             // frmExtraa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(346, 446);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtExtraTur);
@@ -201,8 +231,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton tsGuncelle;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtExtraTur;
         private System.Windows.Forms.Label label9;
@@ -210,6 +238,8 @@
         private System.Windows.Forms.DataGridView dgvExtralar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtDate;
-        private System.Windows.Forms.ToolStripButton tsEkle;
+        public System.Windows.Forms.ToolStripButton tsEkle;
+        public System.Windows.Forms.ToolStripButton tsGuncelle;
+        public System.Windows.Forms.ToolStripButton toolStripButton3;
     }
 }
