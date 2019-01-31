@@ -117,5 +117,17 @@ namespace PL.Hotel
             frm.Dock = DockStyle.Fill;
             frm.BringToFront();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            pnlContent.Controls.Clear();
+            frmAdminIslemleri frm = new frmAdminIslemleri();
+            frm.TopLevel = false;
+            pnlContent.Controls.Add(frm);
+            frm.Show();
+            frm.Dock = DockStyle.Fill;
+            frm.BringToFront();
+        
+        }
     }
 }

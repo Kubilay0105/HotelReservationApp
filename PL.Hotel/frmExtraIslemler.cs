@@ -28,6 +28,14 @@ namespace PL.Hotel
            
         }
 
+        private void cbEkstra_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbEkstra.SelectedIndex != -1)
+            {
+                txtPrice.Text = (cbEkstra.SelectedItem as ExtraType).Price.ToString();
+            }
+        }
+
         private void txtUnit_TextChanged(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtUnit.Text))
@@ -38,24 +46,6 @@ namespace PL.Hotel
             {
                 txtSum.Clear();
             }
-        }
-
-        private void cbEkstra_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbEkstra.SelectedIndex != -1)
-            {
-                txtPrice.Text = (cbEkstra.SelectedItem as ExtraType).Price.ToString();
-            }
-        }
-
-        private void btnAdminn_Click(object sender, EventArgs e)
-        {
-            pnlExtraa.Controls.Clear();
-            frmExtraa frm = new frmExtraa();
-            frm.TopLevel = false;
-            pnlExtraa.Controls.Add(frm);
-            frm.Show();
-            frm.Dock = DockStyle.Fill;
         }
     }
 }

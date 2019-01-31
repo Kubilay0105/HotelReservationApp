@@ -59,6 +59,7 @@
     <Compile Include="Repositories\IRoomRepository.cs" />
     <Compile Include="Repositories\ISaleRepository.cs" />
     <Compile Include="Repositories\PaymentsRepository.cs" />
+    <Compile Include="Repositories\PersonelRepository.cs" />
     <Compile Include="Repositories\RoomRepository.cs" />
     <Compile Include="Repositories\SaleRepository.cs" />
   </ItemGroup>

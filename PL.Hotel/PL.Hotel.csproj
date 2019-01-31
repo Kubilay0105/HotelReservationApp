@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdminIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminIslemleri.Designer.cs">
+      <DependentUpon>frmAdminIslemleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmExtraa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     <Compile Include="frmOtelAnasayfa.Designer.cs">
       <DependentUpon>frmOtelAnasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPersonelIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonelIslem.Designer.cs">
+      <DependentUpon>frmPersonelIslem.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSatis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +122,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminIslemleri.resx">
+      <DependentUpon>frmAdminIslemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmExtraa.resx">
       <DependentUpon>frmExtraa.cs</DependentUpon>
@@ -131,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOtelAnasayfa.resx">
       <DependentUpon>frmOtelAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonelIslem.resx">
+      <DependentUpon>frmPersonelIslem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSatis.resx">
       <DependentUpon>frmSatis.cs</DependentUpon>
