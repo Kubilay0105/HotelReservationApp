@@ -10,5 +10,7 @@ namespace BLL.Hotel.Repositories
     {
         public static int PersonelId { get; set; }
         public static string PersonelAdi { get; set; }
+        
+
     }
 }

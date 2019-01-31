@@ -22,12 +22,21 @@ namespace PL.Hotel
         private void Form1_Load(object sender, EventArgs e)
         {
             ent.Database.CreateIfNotExists();
+
+            if (checkBoxSifre.Checked)
+            {
+                txtSifre.PasswordChar = '\0';
+            }
+            else
+            {
+                txtSifre.PasswordChar = '*';
+            }
         }
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
             var sonuc = (from p in ent.Personnel
-                         where p.Uname == txtKullaniciAdi.Text && p.Upwd == txtSifre.Text
+                         where p.Uname == txtKullaniciAdi.Text && p.Upwd ==txtSifre.Text
                          select p);
 
             if (sonuc.Count() > 0)
@@ -46,5 +55,8 @@ namespace PL.Hotel
             }
             else MessageBox.Show("Giriş Yapamadınız");
         }
+
+       
     }
 }
+

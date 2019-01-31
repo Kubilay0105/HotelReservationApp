@@ -22,86 +22,90 @@ namespace PL.Hotel
         GuestRepository gr = new GuestRepository();
         RoomRepository Rp = new RoomRepository();
         SaleRepository sr = new SaleRepository();
-
+        int SId, GId;
 
         private void frmOdemeEkranı_Load(object sender, EventArgs e)
         {
+            dgvPayments.DataSource = pr.PaymentsByDate(dtpTarih.Value);
+            cbIslemTurleri.SelectedIndex = 0;
+            GunlukToplamlariGoster();
+            //dtpTarih.Value = DateTime.Now;
+            //dgvPayments.DataSource = pr.GetPaymentsByGuest(sr.GetSales(),txtTcKimlikNo.Text);
 
-            dtpTarih.Value = DateTime.Now;
-            dgvPayments.DataSource = pr.GetPayments();
-            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void dtpTarih_ValueChanged(object sender, EventArgs e)
         {
-            if (btnTC.Text != "")
+            dgvPayments.DataSource = pr.PaymentsByDate(dtpTarih.Value);
+            cbIslemTurleri.SelectedIndex = 0;
+            GunlukToplamlariGoster();
+        }
+
+        private void dgvPayments_DoubleClick(object sender, EventArgs e)
+        {
+            List<decimal> liste = pr.PaymentTransBySalesId((Convert.ToInt32(dgvPayments.SelectedRows[0].Cells[5].Value)));
+
+            txtBorc.Text = string.Format("{0:#,##0}", liste[0]);
+            txtKazanc.Text = string.Format("{0:#,##0}", liste[1]);
+            txtKalanBorc.Text = string.Format("{0:#,##0}", liste[2]);
+
+            SId = Convert.ToInt32(dgvPayments.SelectedRows[0].Cells[5].Value);
+            Sale ss = sr.GetSaleById(SId);
+            txtOdaNo.Text = Rp.GetRoomNo(ss.RoomId).ToString();
+        }
+        private void GunlukToplamlariGoster()
+        {
+            decimal GirenToplam = 0;
+            decimal CikanToplam = 0;
+            foreach (DataGridViewRow dr in dgvPayments.Rows)
             {
-                //List<decimal> liste = pr.PaymentsToDate(dtpTarih.Value);
-                Guest gst = gr.GetGuestByTC(btnTC.Text);
-                txtAdi.Text = gst.FirstName;
-                txtSoyadi.Text = gst.LastName;
-                txtOdaNo.Text = Rp.GetRoomNo(gst.RoomId);
-                List<decimal> liste = pr.PaymentTransBySalesId(sr.GetSaleIdByGuest(gst.Id));
+                GirenToplam += Convert.ToDecimal(dr.Cells[4].Value);
+                CikanToplam += Convert.ToDecimal(dr.Cells[3].Value);
+                //dr.Cells[6].Value = Convert.ToDecimal(string.Format("{0:#,##0}", Convert.ToDecimal(dr.Cells[6].Value)));
+                //dr.Cells[7].Value = Convert.ToDecimal(string.Format("{0:#,##0}", Convert.ToDecimal(dr.Cells[7].Value)));
+            }
+            txtGirenToplam.Text = string.Format("{0:#,##0}", GirenToplam);
+            txtCikanToplam.Text = string.Format("{0:#,##0}", CikanToplam);
+            txtBakiye.Text = string.Format("{0:#,##0}", GirenToplam - CikanToplam);
+            Temizle();
 
+        }
 
+        private void cbIslemTurleri_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbIslemTurleri.SelectedItem.ToString() == "Tümü")
+            {
+                dgvPayments.DataSource = pr.PaymentsByDate(dtpTarih.Value);
+                GunlukToplamlariGoster();
 
-                txtBorc.Text = string.Format("{0:#,##0}", liste[0]);
-                txtKazanc.Text = string.Format("{0:#,##0}", liste[1]);
-                txtKalanBorc.Text = string.Format("{0:#,##0}", liste[2]);
+            }
+            else if (cbIslemTurleri.SelectedItem.ToString() == "Konaklama Ücreti")
+            {
+                dgvPayments.DataSource = pr.PaymentsByDate(dtpTarih.Value, "Konaklama Ücreti");
+                GunlukToplamlariGoster();
+
+            }
+            else if (cbIslemTurleri.SelectedItem.ToString() == "Tahsilat")
+            {
+                dgvPayments.DataSource = pr.PaymentsByDate(dtpTarih.Value, "Tahsilat");
+                GunlukToplamlariGoster();
 
             }
             else
-                MessageBox.Show("Eksik Bilgi Girdiniz");
-        
-            
+            {
+                dgvPayments.DataSource = pr.PaymentsByDate(dtpTarih.Value, "Extra");
+                GunlukToplamlariGoster();
+
+            }
         }
-
-        private void dgvGuest_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Temizle()
         {
-
-        }
-
-        private void btnOdemeYap_Click(object sender, EventArgs e)
-        {
-            //List<Guest> gliste = gr.GetAllGuest(btnTC.Text);
-            Payment pym = new Payment();
-            pym.Date = dtpTarih.Value;
-            pym.TransType = cbIslemTurleri.SelectedItem.ToString();
-            pym.Credit = Convert.ToDecimal(txtOdenenPara.Text);
-            pym.Debt =0;
-            //pym.SalesId = sr.GetSalesId(Convert.ToInt16(gliste[0]));
-            if (pym.Credit != pym.Debt) pym.Status = true;
-            else pym.Status = false;
-            pym.Description = txtAciklama.Text;
-            pr.PaymentsAdd(pym);
-            dgvPayments.DataSource = pr.GetPayments();
-
-           
-        }
-
-        private void txtGirenToplam_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtKazanc_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnOdemeYap_Click_1(object sender, EventArgs e)
-        {
-
+            txtAdi.Clear();
+            txtSoyadi.Clear();
+            txtOdaNo.Clear();
+            txtKalanBorc.Clear();
+            txtKazanc.Clear();
+            txtBorc.Clear();
         }
     }
 }

@@ -27,6 +27,10 @@ namespace PL.Hotel
         public static string OdaNo { get; set; }
         private void btnOnayla_Click(object sender, EventArgs e)
         {
+            if (txtAdi.Text.Trim() == "" || txtSoyadi.Text == "" || txtTc.Text=="")
+            {
+                MessageBox.Show("Zorunlu alanlar girilmedi.", "Dikkat Eksik Bilgi!");
+            }
             Guest gue = new Guest();
             gue.FirstName = txtAdi.Text;
             gue.LastName = txtSoyadi.Text;
@@ -37,7 +41,8 @@ namespace PL.Hotel
             gue.Birthday = dtpDogumTarihi.Value;
             gue.ContactNo = txtTelefon.Text;
             gue.Email = txtEmail.Text;
-            gue.Status = true;
+            if (Giris.Date == DateTime.Now.Date) { gue.Status = true; }
+            else gue.Status = false;
             Gp.AddGuest(gue);
 
             Sale sa = new Sale();
@@ -48,16 +53,18 @@ namespace PL.Hotel
             sa.TotalPrice = Convert.ToDecimal(txtToplamTutar.Text);
             sa.PersonnelId = General.PersonelId;
             sa.GuestId = Gp.GetGuestIdByTC(txtTc.Text);
-            sa.Status = true;
+            if (Giris.Date == DateTime.Now.Date) { sa.Status = true; }
+            else sa.Status = false;
             Sp.AddSales(sa);
 
             Payment pay = new Payment();
             pay.Date = DateTime.Now;
-            pay.TransType = "Konaklama Ücreti";
+            if (Giris.Date == DateTime.Now.Date) { pay.TransType = "Konaklama Ücreti";  pay.Status = true; }
+            else { pay.TransType = "Rezervasyon Ücreti"; pay.Status = false; }
+
             pay.Debt = Convert.ToDecimal(txtToplamTutar.Text);
             pay.Credit = 0;
             pay.SalesId = Sp.GetSaleIdByGuest(sa.GuestId);
-            pay.Status = true;
             pay.Description = "Konaklama Açılış";
             Pp.PaymentsAdd(pay);
             MessageBox.Show("Kayıt yapıldı");
@@ -70,6 +77,10 @@ namespace PL.Hotel
             txtOdaNo.Text = OdaNo;
             txtGirisTarihi.Text = Giris.ToShortDateString();
             txtCikisTarihi.Text = Cikis.ToShortDateString();
+            TimeSpan fark = Cikis - Giris;
+            int gunsayisi = fark.Days;
+            decimal OdaFiyat = Rp.GetRoomPrice(OdaNo);
+            txtToplamTutar.Text = ((gunsayisi + 1) * OdaFiyat).ToString();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

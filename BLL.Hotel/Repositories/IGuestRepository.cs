@@ -9,6 +9,7 @@ namespace BLL.Hotel.Repositories
 {
     public interface IGuestRepository
     {
+        List<Guest> GetAllGuest();
         List<Guest> GetGuest(int roomId, bool stat);
         List<Guest> GetGuest(int RoomId);
         Guest GetGuestByTC(string TC);

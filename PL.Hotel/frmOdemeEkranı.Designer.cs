@@ -30,6 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtBakiye = new System.Windows.Forms.TextBox();
+            this.txtCikanToplam = new System.Windows.Forms.TextBox();
+            this.txtGirenToplam = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBorc = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -44,25 +48,10 @@
             this.txtAdi = new System.Windows.Forms.TextBox();
             this.txtSoyadi = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtAciklama = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnOdemeYap = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnTC = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cbIslemTurleri = new System.Windows.Forms.ComboBox();
-            this.txtPara = new System.Windows.Forms.TextBox();
-            this.txtOdenenPara = new System.Windows.Forms.TextBox();
-            this.txtBakiye = new System.Windows.Forms.TextBox();
             this.dgvPayments = new System.Windows.Forms.DataGridView();
-            this.txtKasaTuru = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.dtpTarih = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbMüsteriBilgileri.SuspendLayout();
@@ -74,45 +63,68 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(859, 65);
+            this.label1.Size = new System.Drawing.Size(1093, 80);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ödeme İşlemleri";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.txtBakiye);
+            this.panel1.Controls.Add(this.txtCikanToplam);
+            this.panel1.Controls.Add(this.txtGirenToplam);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.gbMüsteriBilgileri);
-            this.panel1.Controls.Add(this.txtAciklama);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.btnOdemeYap);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.btnTC);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.cbIslemTurleri);
-            this.panel1.Controls.Add(this.txtPara);
-            this.panel1.Controls.Add(this.txtOdenenPara);
-            this.panel1.Controls.Add(this.txtBakiye);
             this.panel1.Controls.Add(this.dgvPayments);
-            this.panel1.Controls.Add(this.txtKasaTuru);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.dtpTarih);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 65);
+            this.panel1.Location = new System.Drawing.Point(0, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(859, 428);
+            this.panel1.Size = new System.Drawing.Size(1093, 520);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(84, 358);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 23);
+            this.label3.TabIndex = 109;
+            this.label3.Text = "Günlük Toplamlar";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtBakiye
+            // 
+            this.txtBakiye.Location = new System.Drawing.Point(395, 361);
+            this.txtBakiye.Name = "txtBakiye";
+            this.txtBakiye.ReadOnly = true;
+            this.txtBakiye.Size = new System.Drawing.Size(90, 20);
+            this.txtBakiye.TabIndex = 108;
+            this.txtBakiye.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtCikanToplam
+            // 
+            this.txtCikanToplam.Location = new System.Drawing.Point(299, 361);
+            this.txtCikanToplam.Name = "txtCikanToplam";
+            this.txtCikanToplam.ReadOnly = true;
+            this.txtCikanToplam.Size = new System.Drawing.Size(90, 20);
+            this.txtCikanToplam.TabIndex = 107;
+            this.txtCikanToplam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtGirenToplam
+            // 
+            this.txtGirenToplam.Location = new System.Drawing.Point(203, 361);
+            this.txtGirenToplam.Name = "txtGirenToplam";
+            this.txtGirenToplam.ReadOnly = true;
+            this.txtGirenToplam.Size = new System.Drawing.Size(90, 20);
+            this.txtGirenToplam.TabIndex = 106;
+            this.txtGirenToplam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox1
             // 
@@ -122,9 +134,9 @@
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.txtKazanc);
             this.groupBox1.Controls.Add(this.txtKalanBorc);
-            this.groupBox1.Location = new System.Drawing.Point(613, 15);
+            this.groupBox1.Location = new System.Drawing.Point(832, 172);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(191, 122);
+            this.groupBox1.Size = new System.Drawing.Size(258, 122);
             this.groupBox1.TabIndex = 99;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ödeme Bilgileri";
@@ -167,7 +179,7 @@
             // 
             // txtKazanc
             // 
-            this.txtKazanc.Location = new System.Drawing.Point(70, 54);
+            this.txtKazanc.Location = new System.Drawing.Point(70, 55);
             this.txtKazanc.Name = "txtKazanc";
             this.txtKazanc.ReadOnly = true;
             this.txtKazanc.Size = new System.Drawing.Size(90, 20);
@@ -191,7 +203,7 @@
             this.gbMüsteriBilgileri.Controls.Add(this.txtAdi);
             this.gbMüsteriBilgileri.Controls.Add(this.txtSoyadi);
             this.gbMüsteriBilgileri.Controls.Add(this.label16);
-            this.gbMüsteriBilgileri.Location = new System.Drawing.Point(345, 14);
+            this.gbMüsteriBilgileri.Location = new System.Drawing.Point(832, 43);
             this.gbMüsteriBilgileri.Name = "gbMüsteriBilgileri";
             this.gbMüsteriBilgileri.Size = new System.Drawing.Size(254, 123);
             this.gbMüsteriBilgileri.TabIndex = 98;
@@ -255,94 +267,10 @@
             this.label16.TabIndex = 94;
             this.label16.Text = "Soyadı";
             // 
-            // txtAciklama
-            // 
-            this.txtAciklama.Location = new System.Drawing.Point(343, 188);
-            this.txtAciklama.Name = "txtAciklama";
-            this.txtAciklama.Size = new System.Drawing.Size(123, 20);
-            this.txtAciklama.TabIndex = 88;
-            this.txtAciklama.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(340, 163);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 13);
-            this.label7.TabIndex = 87;
-            this.label7.Text = "Açıklama";
-            // 
-            // btnOdemeYap
-            // 
-            this.btnOdemeYap.Location = new System.Drawing.Point(516, 176);
-            this.btnOdemeYap.Margin = new System.Windows.Forms.Padding(2);
-            this.btnOdemeYap.Name = "btnOdemeYap";
-            this.btnOdemeYap.Size = new System.Drawing.Size(65, 42);
-            this.btnOdemeYap.TabIndex = 86;
-            this.btnOdemeYap.Text = "Ödeme Onay";
-            this.btnOdemeYap.UseVisualStyleBackColor = true;
-            this.btnOdemeYap.Click += new System.EventHandler(this.btnOdemeYap_Click_1);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(274, 88);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 22);
-            this.button1.TabIndex = 84;
-            this.button1.Text = "Getir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnTC
-            // 
-            this.btnTC.Location = new System.Drawing.Point(124, 89);
-            this.btnTC.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTC.Name = "btnTC";
-            this.btnTC.Size = new System.Drawing.Size(140, 20);
-            this.btnTC.TabIndex = 81;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(61, 95);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(21, 13);
-            this.label12.TabIndex = 80;
-            this.label12.Text = "TC";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(495, 397);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 13);
-            this.label11.TabIndex = 79;
-            this.label11.Text = "Otel Kasa";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(269, 163);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(50, 13);
-            this.label10.TabIndex = 78;
-            this.label10.Text = "Para Brm";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(165, 165);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 13);
-            this.label8.TabIndex = 77;
-            this.label8.Text = "Ödenen Tutar";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(59, 166);
+            this.label5.Location = new System.Drawing.Point(82, 1);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 76;
@@ -353,40 +281,15 @@
             this.cbIslemTurleri.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbIslemTurleri.FormattingEnabled = true;
             this.cbIslemTurleri.Items.AddRange(new object[] {
+            "Tümü",
             "Konaklama Ücreti",
             "Tahsilat",
-            "Ektra Ücret"});
-            this.cbIslemTurleri.Location = new System.Drawing.Point(63, 190);
+            "Ekstra Ücreti"});
+            this.cbIslemTurleri.Location = new System.Drawing.Point(85, 17);
             this.cbIslemTurleri.Name = "cbIslemTurleri";
             this.cbIslemTurleri.Size = new System.Drawing.Size(99, 21);
             this.cbIslemTurleri.TabIndex = 75;
-            // 
-            // txtPara
-            // 
-            this.txtPara.Location = new System.Drawing.Point(272, 188);
-            this.txtPara.Name = "txtPara";
-            this.txtPara.ReadOnly = true;
-            this.txtPara.Size = new System.Drawing.Size(50, 20);
-            this.txtPara.TabIndex = 74;
-            this.txtPara.Text = "TL";
-            this.txtPara.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtOdenenPara
-            // 
-            this.txtOdenenPara.Location = new System.Drawing.Point(167, 190);
-            this.txtOdenenPara.Name = "txtOdenenPara";
-            this.txtOdenenPara.Size = new System.Drawing.Size(90, 20);
-            this.txtOdenenPara.TabIndex = 73;
-            this.txtOdenenPara.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtBakiye
-            // 
-            this.txtBakiye.Location = new System.Drawing.Point(562, 393);
-            this.txtBakiye.Name = "txtBakiye";
-            this.txtBakiye.ReadOnly = true;
-            this.txtBakiye.Size = new System.Drawing.Size(72, 20);
-            this.txtBakiye.TabIndex = 72;
-            this.txtBakiye.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cbIslemTurleri.SelectedIndexChanged += new System.EventHandler(this.cbIslemTurleri_SelectedIndexChanged);
             // 
             // dgvPayments
             // 
@@ -394,52 +297,27 @@
             this.dgvPayments.AllowUserToDeleteRows = false;
             this.dgvPayments.BackgroundColor = System.Drawing.Color.White;
             this.dgvPayments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPayments.Location = new System.Drawing.Point(63, 229);
+            this.dgvPayments.Location = new System.Drawing.Point(85, 43);
             this.dgvPayments.Name = "dgvPayments";
             this.dgvPayments.ReadOnly = true;
-            this.dgvPayments.Size = new System.Drawing.Size(741, 158);
+            this.dgvPayments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPayments.Size = new System.Drawing.Size(741, 312);
             this.dgvPayments.TabIndex = 68;
-            // 
-            // txtKasaTuru
-            // 
-            this.txtKasaTuru.Location = new System.Drawing.Point(124, 50);
-            this.txtKasaTuru.Name = "txtKasaTuru";
-            this.txtKasaTuru.ReadOnly = true;
-            this.txtKasaTuru.Size = new System.Drawing.Size(146, 20);
-            this.txtKasaTuru.TabIndex = 67;
-            this.txtKasaTuru.Text = "Merkez Kasa";
-            this.txtKasaTuru.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(61, 51);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 66;
-            this.label3.Text = "Kasa Türü";
+            this.dgvPayments.DoubleClick += new System.EventHandler(this.dgvPayments_DoubleClick);
             // 
             // dtpTarih
             // 
-            this.dtpTarih.Location = new System.Drawing.Point(124, 15);
+            this.dtpTarih.Location = new System.Drawing.Point(634, 14);
             this.dtpTarih.Name = "dtpTarih";
             this.dtpTarih.Size = new System.Drawing.Size(146, 20);
             this.dtpTarih.TabIndex = 65;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
-            this.label2.TabIndex = 64;
-            this.label2.Text = "Tarih";
+            this.dtpTarih.ValueChanged += new System.EventHandler(this.dtpTarih_ValueChanged);
             // 
             // frmOdemeEkranı
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 493);
+            this.ClientSize = new System.Drawing.Size(1093, 600);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -465,28 +343,13 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtAciklama;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnOdemeYap;
         private System.Windows.Forms.TextBox txtKazanc;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox btnTC;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cbIslemTurleri;
-        private System.Windows.Forms.TextBox txtPara;
-        private System.Windows.Forms.TextBox txtOdenenPara;
-        private System.Windows.Forms.TextBox txtBakiye;
         private System.Windows.Forms.TextBox txtKalanBorc;
         private System.Windows.Forms.TextBox txtBorc;
         private System.Windows.Forms.DataGridView dgvPayments;
-        private System.Windows.Forms.TextBox txtKasaTuru;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dtpTarih;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox gbMüsteriBilgileri;
         private System.Windows.Forms.TextBox txtOdaNo;
@@ -495,5 +358,9 @@
         private System.Windows.Forms.TextBox txtAdi;
         private System.Windows.Forms.TextBox txtSoyadi;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtBakiye;
+        private System.Windows.Forms.TextBox txtCikanToplam;
+        private System.Windows.Forms.TextBox txtGirenToplam;
     }
 }

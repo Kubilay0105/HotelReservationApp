@@ -69,19 +69,19 @@ namespace PL.Hotel
                     }
                 }
             }
-            foreach (Control item in pnlContent.Controls)
+            foreach (Control item in tabControl1.Controls)
             {
-                if (item is Button)
+                //if (item is Button)
+                //{
+                foreach (Room rm in rr.GetRooms())
                 {
-                    foreach (Room rm in rr.GetRooms())
-                    {
-                        if (rm.RoomNumber == item.Text)
-                        {
-                            if (rm.State) item.BackColor = Color.Red;
-                            else item.BackColor = Color.GreenYellow;
-                        }
-                    }
+                    //if (rm.RoomNumber == item.Name.Substring(3))
+                    //{
+                    if (rm.State) item.BackgroundImage = ımageList1.Images[0];
+                    else item.BackgroundImage = ımageList1.Images[1];
                 }
+                // }
+                //}
             }
         }
 
@@ -93,6 +93,66 @@ namespace PL.Hotel
             frmSatis.Giris = Gara;
             frmSatis.Cikis = Cara;
             this.Close();
+            btn101.ImageIndex = 0;
+        }
+        
+        private void btn102_Click(object sender, EventArgs e)
+        {
+            string odano = (sender as Button).Text;
+            frmSatis frmSatis = new frmSatis();
+            frmSatis.OdaNo = odano;
+            frmSatis.Giris = Gara;
+            frmSatis.Cikis = Cara;
+            this.Close();
+        }
+
+        private void btn103_Click(object sender, EventArgs e)
+        {
+            string odano = (sender as Button).Text;
+            frmSatis frmSatis = new frmSatis();
+            frmSatis.OdaNo = odano;
+            frmSatis.Giris = Gara;
+            frmSatis.Cikis = Cara;
+            this.Close();
+        }
+
+        private void btn104_Click(object sender, EventArgs e)
+        {
+            string odano = (sender as Button).Text;
+            frmSatis frmSatis = new frmSatis();
+            frmSatis.OdaNo = odano;
+            frmSatis.Giris = Gara;
+            frmSatis.Cikis = Cara;
+            this.Close();
+        }
+
+        private void btn105_Click(object sender, EventArgs e)
+        {
+            string odano = (sender as Button).Text;
+            frmSatis frmSatis = new frmSatis();
+            frmSatis.OdaNo = odano;
+            frmSatis.Giris = Gara;
+            frmSatis.Cikis = Cara;
+            this.Close();
+        }
+
+
+        Random rnd = new Random();
+        private void frmOdaSec_Load(object sender, EventArgs e)
+        {
+            foreach (Control item in tabPage1.Controls)
+            {
+                if (item is Button)
+                {
+                    if (rnd.Next(1, 25) % 2 == 0) item.BackgroundImage = ımageList1.Images[1];
+                    else item.BackgroundImage = ımageList1.Images[1];
+                }
+            }
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
