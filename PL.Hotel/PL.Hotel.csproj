@@ -70,6 +70,12 @@
     <Compile Include="frmExtraIslemler.Designer.cs">
       <DependentUpon>frmExtraIslemler.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmExtraSecenek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExtraSecenek.Designer.cs">
+      <DependentUpon>frmExtraSecenek.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMusteriSorgulama.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmExtraIslemler.resx">
       <DependentUpon>frmExtraIslemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExtraSecenek.resx">
+      <DependentUpon>frmExtraSecenek.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMusteriSorgulama.resx">
       <DependentUpon>frmMusteriSorgulama.cs</DependentUpon>

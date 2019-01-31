@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExtraIslemler));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAdminn = new System.Windows.Forms.Button();
             this.btnOda = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbEkstra = new System.Windows.Forms.ComboBox();
             this.pnlExtraa = new System.Windows.Forms.Panel();
-            this.btnAdminn = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -62,10 +62,20 @@
             this.panel1.Size = new System.Drawing.Size(92, 446);
             this.panel1.TabIndex = 0;
             // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(92, 96);
+            this.button2.TabIndex = 35;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(728, 0);
             this.panel2.Name = "panel2";
@@ -92,25 +102,18 @@
             this.panel3.Size = new System.Drawing.Size(288, 446);
             this.panel3.TabIndex = 33;
             // 
-            // button2
+            // btnAdminn
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 96);
-            this.button2.TabIndex = 35;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 96);
-            this.button1.TabIndex = 35;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdminn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdminn.FlatAppearance.BorderSize = 0;
+            this.btnAdminn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdminn.Image = ((System.Drawing.Image)(resources.GetObject("btnAdminn.Image")));
+            this.btnAdminn.Location = new System.Drawing.Point(222, 12);
+            this.btnAdminn.Name = "btnAdminn";
+            this.btnAdminn.Size = new System.Drawing.Size(36, 35);
+            this.btnAdminn.TabIndex = 44;
+            this.btnAdminn.UseVisualStyleBackColor = true;
+            this.btnAdminn.Click += new System.EventHandler(this.btnAdminn_Click);
             // 
             // btnOda
             // 
@@ -181,6 +184,7 @@
             this.txtUnit.Name = "txtUnit";
             this.txtUnit.Size = new System.Drawing.Size(30, 20);
             this.txtUnit.TabIndex = 36;
+            this.txtUnit.TextChanged += new System.EventHandler(this.txtUnit_TextChanged_1);
             // 
             // txtPrice
             // 
@@ -207,6 +211,7 @@
             this.cbEkstra.Name = "cbEkstra";
             this.cbEkstra.Size = new System.Drawing.Size(151, 21);
             this.cbEkstra.TabIndex = 33;
+            this.cbEkstra.SelectedIndexChanged += new System.EventHandler(this.cbEkstra_SelectedIndexChanged_1);
             // 
             // pnlExtraa
             // 
@@ -216,18 +221,14 @@
             this.pnlExtraa.Size = new System.Drawing.Size(348, 446);
             this.pnlExtraa.TabIndex = 34;
             // 
-            // btnAdminn
+            // panel4
             // 
-            this.btnAdminn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdminn.FlatAppearance.BorderSize = 0;
-            this.btnAdminn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdminn.Image = ((System.Drawing.Image)(resources.GetObject("btnAdminn.Image")));
-            this.btnAdminn.Location = new System.Drawing.Point(222, 12);
-            this.btnAdminn.Name = "btnAdminn";
-            this.btnAdminn.Size = new System.Drawing.Size(36, 35);
-            this.btnAdminn.TabIndex = 44;
-            this.btnAdminn.UseVisualStyleBackColor = true;
-            this.btnAdminn.Click += new System.EventHandler(this.btnAdminn_Click);
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(92, 100);
+            this.panel4.TabIndex = 0;
             // 
             // frmExtraIslemler
             // 
@@ -255,7 +256,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnOda;
         private System.Windows.Forms.Label label5;
@@ -270,5 +270,6 @@
         private System.Windows.Forms.ComboBox cbEkstra;
         private System.Windows.Forms.Panel pnlExtraa;
         private System.Windows.Forms.Button btnAdminn;
+        private System.Windows.Forms.Panel panel4;
     }
 }

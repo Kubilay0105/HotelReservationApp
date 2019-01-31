@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExtraa));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsGuncelle = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tsEkle = new System.Windows.Forms.ToolStripButton();
             this.label6 = new System.Windows.Forms.Label();
             this.txtExtraTur = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -40,7 +41,6 @@
             this.dgvExtralar = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.txtDate = new System.Windows.Forms.TextBox();
-            this.tsEkle = new System.Windows.Forms.ToolStripButton();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExtralar)).BeginInit();
@@ -54,6 +54,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(346, 100);
             this.panel1.TabIndex = 0;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsGuncelle,
+            this.toolStripButton3,
+            this.tsEkle});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(346, 100);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
             // 
             // tsGuncelle
             // 
@@ -80,79 +94,6 @@
             this.toolStripButton3.Size = new System.Drawing.Size(90, 100);
             this.toolStripButton3.Text = "toolStripButton3";
             // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsGuncelle,
-            this.toolStripButton3,
-            this.tsEkle});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(346, 100);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(193, 327);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 13);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Extra";
-            // 
-            // txtExtraTur
-            // 
-            this.txtExtraTur.Location = new System.Drawing.Point(252, 327);
-            this.txtExtraTur.Name = "txtExtraTur";
-            this.txtExtraTur.Size = new System.Drawing.Size(78, 20);
-            this.txtExtraTur.TabIndex = 41;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(193, 353);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 13);
-            this.label9.TabIndex = 40;
-            this.label9.Text = "Price";
-            // 
-            // txtFiyat
-            // 
-            this.txtFiyat.Location = new System.Drawing.Point(252, 353);
-            this.txtFiyat.Name = "txtFiyat";
-            this.txtFiyat.Size = new System.Drawing.Size(78, 20);
-            this.txtFiyat.TabIndex = 39;
-            // 
-            // dgvExtralar
-            // 
-            this.dgvExtralar.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dgvExtralar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvExtralar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExtralar.Location = new System.Drawing.Point(12, 171);
-            this.dgvExtralar.Name = "dgvExtralar";
-            this.dgvExtralar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvExtralar.Size = new System.Drawing.Size(318, 150);
-            this.dgvExtralar.TabIndex = 38;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 133);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 13);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "Date";
-            // 
-            // txtDate
-            // 
-            this.txtDate.Location = new System.Drawing.Point(67, 133);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(78, 20);
-            this.txtDate.TabIndex = 36;
-            // 
             // tsEkle
             // 
             this.tsEkle.AutoSize = false;
@@ -166,11 +107,73 @@
             this.tsEkle.Text = "toolStripButton1";
             this.tsEkle.Click += new System.EventHandler(this.tsEkle_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(193, 327);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(36, 13);
+            this.label6.TabIndex = 42;
+            this.label6.Text = "Extra";
+            // 
+            // txtExtraTur
+            // 
+            this.txtExtraTur.Location = new System.Drawing.Point(252, 327);
+            this.txtExtraTur.Name = "txtExtraTur";
+            this.txtExtraTur.Size = new System.Drawing.Size(78, 20);
+            this.txtExtraTur.TabIndex = 41;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(193, 353);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(36, 13);
+            this.label9.TabIndex = 40;
+            this.label9.Text = "Price";
+            // 
+            // txtFiyat
+            // 
+            this.txtFiyat.Location = new System.Drawing.Point(252, 353);
+            this.txtFiyat.Name = "txtFiyat";
+            this.txtFiyat.Size = new System.Drawing.Size(78, 20);
+            this.txtFiyat.TabIndex = 39;
+            // 
+            // dgvExtralar
+            // 
+            this.dgvExtralar.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
+            this.dgvExtralar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvExtralar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvExtralar.Location = new System.Drawing.Point(12, 171);
+            this.dgvExtralar.Name = "dgvExtralar";
+            this.dgvExtralar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvExtralar.Size = new System.Drawing.Size(318, 150);
+            this.dgvExtralar.TabIndex = 38;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(9, 133);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "Date";
+            // 
+            // txtDate
+            // 
+            this.txtDate.Location = new System.Drawing.Point(67, 133);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(78, 20);
+            this.txtDate.TabIndex = 36;
+            // 
             // frmExtraa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(346, 446);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtExtraTur);

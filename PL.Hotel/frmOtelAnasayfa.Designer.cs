@@ -81,7 +81,7 @@
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.Red;
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.pnlHeader.Controls.Add(this.label1);
             this.pnlHeader.Controls.Add(this.button8);
             this.pnlHeader.Controls.Add(this.button3);
@@ -190,7 +190,7 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Red;
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
@@ -203,7 +203,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
@@ -216,7 +216,7 @@
             // 
             // btnIcon2
             // 
-            this.btnIcon2.BackColor = System.Drawing.Color.Red;
+            this.btnIcon2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.btnIcon2.FlatAppearance.BorderSize = 0;
             this.btnIcon2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIcon2.Image = ((System.Drawing.Image)(resources.GetObject("btnIcon2.Image")));
@@ -230,7 +230,7 @@
             // 
             // btnIcon1
             // 
-            this.btnIcon1.BackColor = System.Drawing.Color.Red;
+            this.btnIcon1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.btnIcon1.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnIcon1.FlatAppearance.BorderSize = 0;
             this.btnIcon1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
@@ -278,7 +278,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Comic Sans MS", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.label7.Location = new System.Drawing.Point(40, 11);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 34);
@@ -339,7 +339,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel4.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.lblTarih);
             this.panel4.Controls.Add(this.lblSaat);
