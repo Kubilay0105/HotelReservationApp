@@ -27,6 +27,8 @@ namespace BLL.Hotel.Repositories
             return Sonuc;
         }
 
+
+
         public List<Guest> GetAllGuest()
         {
             return ent.Guests.ToList();

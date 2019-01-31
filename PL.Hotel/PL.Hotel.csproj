@@ -64,12 +64,6 @@
     <Compile Include="frmCheckOut.Designer.cs">
       <DependentUpon>frmCheckOut.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmCheckin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +81,12 @@
     </Compile>
     <Compile Include="frmExtraIslemler.Designer.cs">
       <DependentUpon>frmExtraIslemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMisafirKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMisafirKayıt.Designer.cs">
+      <DependentUpon>frmMisafirKayıt.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMusteriSorgulama.cs">
       <SubType>Form</SubType>
@@ -141,14 +141,14 @@
     <EmbeddedResource Include="frmExtraIslemler.resx">
       <DependentUpon>frmExtraIslemler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMisafirKayıt.resx">
+      <DependentUpon>frmMisafirKayıt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMusteriSorgulama.resx">
       <DependentUpon>frmMusteriSorgulama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCheckOut.resx">
       <DependentUpon>frmCheckOut.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCheckin.resx">
       <DependentUpon>frmCheckin.cs</DependentUpon>

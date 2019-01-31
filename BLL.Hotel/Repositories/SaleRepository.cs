@@ -59,12 +59,45 @@ namespace BLL.Hotel.Repositories
         public List<ReservationsModel> GetSales(DateTime today)
         {
             List<ReservationsModel> SaleList = (from sl in ent.Sales
-                                   where sl.CheckIn >= today.Date && sl.Status == true
+                                   where sl.CheckIn >= today.Date && sl.Status == false
                                    select new ReservationsModel { SalesId=sl.Id,GuestId=sl.GuestId,GuestFirstName=sl.Guest.FirstName,GuestLastName=sl.Guest.LastName,GuestIdtf=sl.Guest.IdentificationNo,GuestContactNo=sl.Guest.ContactNo,GuestMail=sl.Guest.Email,CheckIn=sl.CheckIn,CheckOut=sl.CheckOut }).ToList();
             return SaleList;
         }
+        public bool UpdateSales(int SaleID,int NOG)
+        {
+            bool Sonuc = false;
+            int st = (from sale in ent.Sales
+                      where sale.Id == SaleID
+                      select sale.NoOfGuests).FirstOrDefault();
+            st = NOG;
+            try
+            {
+                ent.SaveChanges();
+                Sonuc = true;
+            }
+            catch (Exception ex)
+            {
+                string hata = ex.Message;
+            }
+            return Sonuc;
+        }
 
         public int GetSalesId(int ID)
+        {
+            var sonuc = (from s in ent.Sales
+                         where s.RoomId == ID
+                         select s.Id).FirstOrDefault();
+            return sonuc;
+        }
+
+        public int GetRoomIdBySalesId(int ID)
+        {
+            var sonuc = (from s in ent.Sales
+                         where s.Id == ID
+                         select s.RoomId).FirstOrDefault();
+            return sonuc;
+        }
+        public int GetSaleIdByByRoomId(int ID)
         {
             var sonuc = (from s in ent.Sales
                          where s.RoomId == ID
@@ -121,6 +154,14 @@ namespace BLL.Hotel.Repositories
                 string hata = ex.Message;
             }
             return sonuc;
+
+        }
+        public List<Sale> GetSales (int RoomId)
+        {
+            List<Sale> list = (from s in ent.Sales
+                               where s.RoomId == RoomId
+                               select s).ToList();
+            return list;
 
         }
     }
