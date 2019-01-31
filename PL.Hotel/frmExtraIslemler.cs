@@ -20,7 +20,7 @@ namespace PL.Hotel
         }
         ExtraRepository ex = new ExtraRepository();
         ExtraType ET = new ExtraType();
-        int ID;
+  
         private void frmExtraIslemler_Load(object sender, EventArgs e)
         {
             cbEkstra.DataSource = ex.GetExtraTypes();
@@ -28,7 +28,38 @@ namespace PL.Hotel
            
         }
 
-        private void txtUnit_TextChanged(object sender, EventArgs e)
+       
+
+        private void btnAdminn_Click(object sender, EventArgs e)
+        {
+            label1.Visible = false;
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            cbEkstra.Visible = false;
+            txtPrice.Visible = false;
+            txtUnit.Visible = false;
+            txtSum.Visible = false;
+            btnAdminn.Visible = false;
+            btnOda.Visible = false;
+
+            pnlExtraa.Controls.Clear();
+            frmExtraa frm = new frmExtraa();
+            frm.TopLevel = false;
+            pnlExtraa.Controls.Add(frm);
+            frm.Show();
+            frm.Dock = DockStyle.Fill;
+            panel3.Controls.Clear();
+            frmExtraSecenek frm2 = new frmExtraSecenek();
+            frm2.TopLevel = false;
+            pnlExtraa.Controls.Add(frm2);
+            frm2.Show();
+            frm2.Dock = DockStyle.Fill;
+
+        }
+
+        private void txtUnit_TextChanged_1(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtUnit.Text))
             {
@@ -40,22 +71,14 @@ namespace PL.Hotel
             }
         }
 
-        private void cbEkstra_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbEkstra_SelectedIndexChanged_1(object sender, EventArgs e)
         {
+
             if (cbEkstra.SelectedIndex != -1)
             {
                 txtPrice.Text = (cbEkstra.SelectedItem as ExtraType).Price.ToString();
             }
-        }
 
-        private void btnAdminn_Click(object sender, EventArgs e)
-        {
-            pnlExtraa.Controls.Clear();
-            frmExtraa frm = new frmExtraa();
-            frm.TopLevel = false;
-            pnlExtraa.Controls.Add(frm);
-            frm.Show();
-            frm.Dock = DockStyle.Fill;
         }
     }
 }

@@ -36,22 +36,15 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnMenuAc = new System.Windows.Forms.Button();
             this.pnlLeftMenu = new System.Windows.Forms.Panel();
-            this.btnCheckin = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btnOdemeler = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.btnYonetim = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.btnIcon3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.btnIcon2 = new System.Windows.Forms.Button();
             this.btnIcon1 = new System.Windows.Forms.Button();
             this.btnExtra = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.frmSatisIslemleri = new System.Windows.Forms.Button();
             this.btnOdalar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -59,7 +52,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblBosOda = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -73,6 +65,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnlHeader.SuspendLayout();
             this.pnlLeftMenu.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -80,15 +73,15 @@
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.pnlHeader.Controls.Add(this.label1);
             this.pnlHeader.Controls.Add(this.button8);
             this.pnlHeader.Controls.Add(this.button3);
@@ -121,6 +114,7 @@
             this.button8.Size = new System.Drawing.Size(36, 35);
             this.button8.TabIndex = 2;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button3
             // 
@@ -150,15 +144,10 @@
             // pnlLeftMenu
             // 
             this.pnlLeftMenu.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.pnlLeftMenu.Controls.Add(this.btnCheckin);
-            this.pnlLeftMenu.Controls.Add(this.button5);
-            this.pnlLeftMenu.Controls.Add(this.btnOdemeler);
-            this.pnlLeftMenu.Controls.Add(this.button4);
             this.pnlLeftMenu.Controls.Add(this.btnYonetim);
             this.pnlLeftMenu.Controls.Add(this.panel5);
             this.pnlLeftMenu.Controls.Add(this.btnExtra);
             this.pnlLeftMenu.Controls.Add(this.panel2);
-            this.pnlLeftMenu.Controls.Add(this.button2);
             this.pnlLeftMenu.Controls.Add(this.frmSatisIslemleri);
             this.pnlLeftMenu.Controls.Add(this.btnOdalar);
             this.pnlLeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -168,82 +157,16 @@
             this.pnlLeftMenu.Size = new System.Drawing.Size(188, 499);
             this.pnlLeftMenu.TabIndex = 1;
             // 
-            // btnCheckin
-            // 
-            this.btnCheckin.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.btnCheckin.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCheckin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
-            this.btnCheckin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheckin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCheckin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCheckin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCheckin.Location = new System.Drawing.Point(46, 293);
-            this.btnCheckin.Name = "btnCheckin";
-            this.btnCheckin.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCheckin.Size = new System.Drawing.Size(142, 48);
-            this.btnCheckin.TabIndex = 9;
-            this.btnCheckin.Text = "Check-In";
-            this.btnCheckin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCheckin.UseVisualStyleBackColor = true;
-            this.btnCheckin.Click += new System.EventHandler(this.btnCheckin_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.Location = new System.Drawing.Point(70, 457);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(92, 21);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Ödemeler";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // btnOdemeler
-            // 
-            this.btnOdemeler.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.btnOdemeler.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnOdemeler.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
-            this.btnOdemeler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOdemeler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeler.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnOdemeler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOdemeler.Location = new System.Drawing.Point(46, 149);
-            this.btnOdemeler.Name = "btnOdemeler";
-            this.btnOdemeler.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnOdemeler.Size = new System.Drawing.Size(142, 48);
-            this.btnOdemeler.TabIndex = 8;
-            this.btnOdemeler.Text = "Ödemeler";
-            this.btnOdemeler.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOdemeler.UseVisualStyleBackColor = true;
-            this.btnOdemeler.Click += new System.EventHandler(this.btnOdemeler_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(86, 408);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(64, 43);
-            this.button4.TabIndex = 2;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // btnYonetim
             // 
             this.btnYonetim.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.btnYonetim.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnYonetim.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
+            this.btnYonetim.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btnYonetim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnYonetim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnYonetim.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnYonetim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnYonetim.Location = new System.Drawing.Point(46, 245);
+            this.btnYonetim.Location = new System.Drawing.Point(46, 197);
             this.btnYonetim.Name = "btnYonetim";
             this.btnYonetim.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnYonetim.Size = new System.Drawing.Size(142, 48);
@@ -255,10 +178,8 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel5.Controls.Add(this.button9);
-            this.panel5.Controls.Add(this.button1);
             this.panel5.Controls.Add(this.button6);
-            this.panel5.Controls.Add(this.btnIcon3);
+            this.panel5.Controls.Add(this.button4);
             this.panel5.Controls.Add(this.btnIcon2);
             this.panel5.Controls.Add(this.btnIcon1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
@@ -268,39 +189,10 @@
             this.panel5.Size = new System.Drawing.Size(46, 446);
             this.panel5.TabIndex = 7;
             // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(0, 240);
-            this.button9.Margin = new System.Windows.Forms.Padding(0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(46, 48);
-            this.button9.TabIndex = 12;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(0, 192);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 48);
-            this.button1.TabIndex = 11;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.Location = new System.Drawing.Point(0, 144);
@@ -310,25 +202,23 @@
             this.button6.TabIndex = 10;
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // btnIcon3
+            // button4
             // 
-            this.btnIcon3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
-            this.btnIcon3.FlatAppearance.BorderSize = 0;
-            this.btnIcon3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
-            this.btnIcon3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIcon3.Image = ((System.Drawing.Image)(resources.GetObject("btnIcon3.Image")));
-            this.btnIcon3.Location = new System.Drawing.Point(0, 96);
-            this.btnIcon3.Margin = new System.Windows.Forms.Padding(0);
-            this.btnIcon3.Name = "btnIcon3";
-            this.btnIcon3.Size = new System.Drawing.Size(46, 48);
-            this.btnIcon3.TabIndex = 9;
-            this.btnIcon3.UseVisualStyleBackColor = false;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(0, 96);
+            this.button4.Margin = new System.Windows.Forms.Padding(0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(46, 48);
+            this.button4.TabIndex = 9;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // btnIcon2
             // 
-            this.btnIcon2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
+            this.btnIcon2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.btnIcon2.FlatAppearance.BorderSize = 0;
-            this.btnIcon2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
             this.btnIcon2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIcon2.Image = ((System.Drawing.Image)(resources.GetObject("btnIcon2.Image")));
             this.btnIcon2.Location = new System.Drawing.Point(0, 48);
@@ -341,11 +231,11 @@
             // 
             // btnIcon1
             // 
-            this.btnIcon1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
+            this.btnIcon1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.btnIcon1.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnIcon1.FlatAppearance.BorderSize = 0;
             this.btnIcon1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.btnIcon1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
+            this.btnIcon1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnIcon1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIcon1.Image = ((System.Drawing.Image)(resources.GetObject("btnIcon1.Image")));
             this.btnIcon1.Location = new System.Drawing.Point(0, 0);
@@ -360,12 +250,12 @@
             // 
             this.btnExtra.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.btnExtra.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnExtra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
+            this.btnExtra.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btnExtra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnExtra.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnExtra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExtra.Location = new System.Drawing.Point(46, 197);
+            this.btnExtra.Location = new System.Drawing.Point(46, 149);
             this.btnExtra.Name = "btnExtra";
             this.btnExtra.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnExtra.Size = new System.Drawing.Size(142, 48);
@@ -389,7 +279,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Comic Sans MS", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.label7.Location = new System.Drawing.Point(40, 11);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 34);
@@ -397,22 +287,11 @@
             this.label7.Text = "OTEL";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(59, 397);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 96);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // frmSatisIslemleri
             // 
             this.frmSatisIslemleri.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.frmSatisIslemleri.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.frmSatisIslemleri.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
+            this.frmSatisIslemleri.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.frmSatisIslemleri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.frmSatisIslemleri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.frmSatisIslemleri.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -433,7 +312,7 @@
             // 
             this.btnOdalar.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.btnOdalar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnOdalar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
+            this.btnOdalar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnOdalar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOdalar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOdalar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -449,11 +328,10 @@
             this.btnOdalar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOdalar.UseVisualStyleBackColor = true;
             this.btnOdalar.Click += new System.EventHandler(this.btnOdalar_Click);
-            this.btnOdalar.MouseHover += new System.EventHandler(this.btnOdalar_MouseHover);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Red;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 563);
             this.panel3.Name = "panel3";
@@ -462,7 +340,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlText;
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.lblTarih);
             this.panel4.Controls.Add(this.lblSaat);
@@ -512,18 +390,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "50";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.ErrorImage")));
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(19, 4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 13;
-            this.pictureBox5.TabStop = false;
             // 
             // label3
             // 
@@ -607,6 +473,7 @@
             // 
             // lblTarih
             // 
+            this.lblTarih.BackColor = System.Drawing.SystemColors.MenuText;
             this.lblTarih.Location = new System.Drawing.Point(4, 8);
             this.lblTarih.Name = "lblTarih";
             this.lblTarih.Size = new System.Drawing.Size(142, 23);
@@ -623,12 +490,13 @@
             // 
             // pnlContent
             // 
-            this.pnlContent.BackColor = System.Drawing.Color.White;
+            this.pnlContent.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContent.Location = new System.Drawing.Point(188, 117);
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(812, 446);
             this.pnlContent.TabIndex = 4;
+            this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContent_Paint);
             // 
             // timer1
             // 
@@ -644,6 +512,18 @@
             // 
             this.timer3.Interval = 1000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.ErrorImage")));
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(19, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 13;
+            this.pictureBox5.TabStop = false;
             // 
             // frmOtelAnasayfa
             // 
@@ -669,10 +549,10 @@
             this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -692,7 +572,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label lblBosOda;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblDoluOda;
@@ -710,17 +589,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button btnIcon3;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnIcon2;
         private System.Windows.Forms.Button btnIcon1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnOdemeler;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnCheckin;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

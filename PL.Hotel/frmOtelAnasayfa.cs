@@ -102,34 +102,32 @@ namespace PL.Hotel
             FormAc(frm);
         }
 
-        private void btnOdalar_MouseHover(object sender, EventArgs e)
+        private void pnlContent_Paint(object sender, PaintEventArgs e)
         {
-            btnIcon1.FlatAppearance.MouseOverBackColor = Color.Red;
-        }
 
-        private void BtnIcon1_MouseHover(object sender, EventArgs e)
-        {
-            btnIcon1.FlatAppearance.MouseOverBackColor = Color.Red;
-        }
-
-        private void btnOdemeler_Click(object sender, EventArgs e)
-        {
-            frmOdemeEkranı frm = new frmOdemeEkranı();
-            FormAc(frm);
         }
 
         private void btnExtra_Click(object sender, EventArgs e)
         {
+            pnlContent.Controls.Clear();
             frmExtraIslemler frm = new frmExtraIslemler();
-            FormAc(frm);
+            frm.TopLevel = false;
+            pnlContent.Controls.Add(frm);
+            frm.Show();
+            frm.Dock = DockStyle.Fill;
+            frm.BringToFront();
         }
 
-        private void btnCheckin_Click(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e)
         {
-            frmRezervasyon frm = new frmRezervasyon();
-            FormAc(frm);
+            pnlContent.Controls.Clear();
+            frmAdminIslemleri frm = new frmAdminIslemleri();
+            frm.TopLevel = false;
+            pnlContent.Controls.Add(frm);
+            frm.Show();
+            frm.Dock = DockStyle.Fill;
+            frm.BringToFront();
+        
         }
-
-      
     }
 }

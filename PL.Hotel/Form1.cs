@@ -23,7 +23,7 @@ namespace PL.Hotel
         {
             ent.Database.CreateIfNotExists();
 
-            if (checkBox1.Checked)
+            if (checkBoxSifre.Checked)
             {
                 txtSifre.PasswordChar = '\0';
             }
@@ -36,7 +36,7 @@ namespace PL.Hotel
         private void btnGiris_Click(object sender, EventArgs e)
         {
             var sonuc = (from p in ent.Personnel
-                         where p.Uname == txtKullaniciAdi.Text && p.Upwd == txtSifre.Text
+                         where p.Uname == txtKullaniciAdi.Text && p.Upwd ==txtSifre.Text
                          select p);
 
             if (sonuc.Count() > 0)
@@ -56,9 +56,7 @@ namespace PL.Hotel
             else MessageBox.Show("Giriş Yapamadınız");
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-        }
+       
     }
 }
 

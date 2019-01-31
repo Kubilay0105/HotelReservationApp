@@ -80,5 +80,10 @@ namespace PL.Hotel
         {
 
         }
+
+        private void txtOdenenPara_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

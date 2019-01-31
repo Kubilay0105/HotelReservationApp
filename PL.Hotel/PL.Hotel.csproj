@@ -58,24 +58,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCheckOut.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCheckOut.Designer.cs">
-      <DependentUpon>frmCheckOut.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCheckin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCheckin.Designer.cs">
-      <DependentUpon>frmCheckin.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmExtraa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +70,11 @@
     <Compile Include="frmExtraIslemler.Designer.cs">
       <DependentUpon>frmExtraIslemler.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMusteriOdeme.cs">
+    <Compile Include="frmExtraSecenek.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMusteriOdeme.Designer.cs">
-      <DependentUpon>frmMusteriOdeme.cs</DependentUpon>
+    <Compile Include="frmExtraSecenek.Designer.cs">
+      <DependentUpon>frmExtraSecenek.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMusteriSorgulama.cs">
       <SubType>Form</SubType>
@@ -124,17 +106,17 @@
     <Compile Include="frmOtelAnasayfa.Designer.cs">
       <DependentUpon>frmOtelAnasayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRezervasyon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRezervasyon.Designer.cs">
-      <DependentUpon>frmRezervasyon.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmSatis.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSatis.Designer.cs">
       <DependentUpon>frmSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmZiyaretciler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZiyaretciler.Designer.cs">
+      <DependentUpon>frmZiyaretciler.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -147,20 +129,11 @@
     <EmbeddedResource Include="frmExtraIslemler.resx">
       <DependentUpon>frmExtraIslemler.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMusteriOdeme.resx">
-      <DependentUpon>frmMusteriOdeme.cs</DependentUpon>
+    <EmbeddedResource Include="frmExtraSecenek.resx">
+      <DependentUpon>frmExtraSecenek.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMusteriSorgulama.resx">
       <DependentUpon>frmMusteriSorgulama.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCheckOut.resx">
-      <DependentUpon>frmCheckOut.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCheckin.resx">
-      <DependentUpon>frmCheckin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOdalar.resx">
       <DependentUpon>frmOdalar.cs</DependentUpon>
@@ -174,11 +147,11 @@
     <EmbeddedResource Include="frmOtelAnasayfa.resx">
       <DependentUpon>frmOtelAnasayfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRezervasyon.resx">
-      <DependentUpon>frmRezervasyon.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmSatis.resx">
       <DependentUpon>frmSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZiyaretciler.resx">
+      <DependentUpon>frmZiyaretciler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -209,7 +182,7 @@
       <Name>BLL.Hotel</Name>
     </ProjectReference>
     <ProjectReference Include="..\DAL.Hotel\DAL.Hotel.csproj">
-      <Project>{EFAE34C6-BAB7-4BB6-A41C-913EB61A6A2D}</Project>
+      <Project>{efae34c6-bab7-4bb6-a41c-913eb61a6a2d}</Project>
       <Name>DAL.Hotel</Name>
     </ProjectReference>
   </ItemGroup>

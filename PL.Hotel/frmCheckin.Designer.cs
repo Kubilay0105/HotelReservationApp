@@ -66,13 +66,13 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(59, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "TCKimlikNo";
+            this.label1.Text = "Saoyadı";
             // 
             // btnCheckin
             // 
-            this.btnCheckin.Location = new System.Drawing.Point(697, 415);
+            this.btnCheckin.Location = new System.Drawing.Point(581, 413);
             this.btnCheckin.Name = "btnCheckin";
             this.btnCheckin.Size = new System.Drawing.Size(75, 23);
             this.btnCheckin.TabIndex = 2;
@@ -85,7 +85,7 @@
             this.dgvMusteriler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMusteriler.Location = new System.Drawing.Point(62, 109);
             this.dgvMusteriler.Name = "dgvMusteriler";
-            this.dgvMusteriler.Size = new System.Drawing.Size(828, 235);
+            this.dgvMusteriler.Size = new System.Drawing.Size(594, 235);
             this.dgvMusteriler.TabIndex = 3;
             this.dgvMusteriler.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMusteriler_CellContentClick);
             this.dgvMusteriler.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvMusteriler_MouseDoubleClick);
@@ -106,7 +106,7 @@
             this.groupBox1.Controls.Add(this.txtCheckin);
             this.groupBox1.Location = new System.Drawing.Point(62, 359);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(603, 125);
+            this.groupBox1.Size = new System.Drawing.Size(495, 125);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rezervasyon Bilgileri";
@@ -219,9 +219,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(59, 23);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 13);
+            this.label8.Size = new System.Drawing.Size(22, 13);
             this.label8.TabIndex = 6;
-            this.label8.Text = "TCKimlikNo";
+            this.label8.Text = "Adı";
             // 
             // txtAdaGore
             // 
@@ -252,7 +252,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 496);
+            this.ClientSize = new System.Drawing.Size(679, 486);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtSoyadaGore);
             this.Controls.Add(this.label8);
