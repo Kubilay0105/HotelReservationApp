@@ -37,7 +37,14 @@ namespace BLL.Hotel.Repositories
         public List<Payment> PaymentsByDate(DateTime Date)
         {
             var payments = (from p in ent.Payments
-                            where p.Status == true && p.Date == Date
+                            where p.Status == true && p.Date.Month == Date.Month && p.Date.Day==Date.Day
+                            select p).ToList();
+            return payments;
+        }
+        public List<Payment> PaymentsByDate(DateTime Date,string TransType)
+        {
+            var payments = (from p in ent.Payments
+                            where p.Status == true && p.Date.Month == Date.Month && p.Date.Day == Date.Day && p.TransType==TransType
                             select p).ToList();
             return payments;
         }

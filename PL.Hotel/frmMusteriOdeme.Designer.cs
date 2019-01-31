@@ -75,6 +75,7 @@
             this.dgvMusteriler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMusteriler.Size = new System.Drawing.Size(892, 197);
             this.dgvMusteriler.TabIndex = 1;
+            this.dgvMusteriler.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMusteriler_CellContentClick);
             this.dgvMusteriler.DoubleClick += new System.EventHandler(this.dgvMusteriler_DoubleClick);
             this.dgvMusteriler.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvMusteriler_MouseClick);
             // 

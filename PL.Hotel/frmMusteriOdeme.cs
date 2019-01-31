@@ -75,5 +75,10 @@ namespace PL.Hotel
             else MessageBox.Show("Eklenmedi");
 
         }
+
+        private void dgvMusteriler_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
