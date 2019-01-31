@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personelEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personelGüncelleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personelSilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ekstraİşlemlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ekstraEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ekstraGüncelleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ekstraSilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlAdminIslemler = new System.Windows.Forms.Panel();
+            this.personelEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelGüncelleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelSilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmAnasayfa = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +46,7 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmAnasayfa,
             this.personelİşlemleriToolStripMenuItem,
             this.ekstraİşlemlerToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -52,42 +54,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(812, 44);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // personelİşlemleriToolStripMenuItem
-            // 
-            this.personelİşlemleriToolStripMenuItem.AutoSize = false;
-            this.personelİşlemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.personelEkleToolStripMenuItem,
-            this.personelGüncelleToolStripMenuItem,
-            this.personelSilToolStripMenuItem});
-            this.personelİşlemleriToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
-            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(170, 40);
-            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
-            // 
-            // personelEkleToolStripMenuItem
-            // 
-            this.personelEkleToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.personelEkleToolStripMenuItem.Name = "personelEkleToolStripMenuItem";
-            this.personelEkleToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
-            this.personelEkleToolStripMenuItem.Text = "Personel Ekle";
-            this.personelEkleToolStripMenuItem.Click += new System.EventHandler(this.personelEkleToolStripMenuItem_Click);
-            // 
-            // personelGüncelleToolStripMenuItem
-            // 
-            this.personelGüncelleToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.personelGüncelleToolStripMenuItem.Name = "personelGüncelleToolStripMenuItem";
-            this.personelGüncelleToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
-            this.personelGüncelleToolStripMenuItem.Text = "Personel Güncelle";
-            this.personelGüncelleToolStripMenuItem.Click += new System.EventHandler(this.personelGüncelleToolStripMenuItem_Click);
-            // 
-            // personelSilToolStripMenuItem
-            // 
-            this.personelSilToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.personelSilToolStripMenuItem.Name = "personelSilToolStripMenuItem";
-            this.personelSilToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
-            this.personelSilToolStripMenuItem.Text = "Personel Sil";
-            this.personelSilToolStripMenuItem.Click += new System.EventHandler(this.personelSilToolStripMenuItem_Click);
             // 
             // ekstraİşlemlerToolStripMenuItem
             // 
@@ -133,6 +99,51 @@
             this.pnlAdminIslemler.Size = new System.Drawing.Size(812, 402);
             this.pnlAdminIslemler.TabIndex = 1;
             // 
+            // personelEkleToolStripMenuItem
+            // 
+            this.personelEkleToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.personelEkleToolStripMenuItem.Name = "personelEkleToolStripMenuItem";
+            this.personelEkleToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.personelEkleToolStripMenuItem.Text = "Personel Ekle";
+            this.personelEkleToolStripMenuItem.Click += new System.EventHandler(this.personelEkleToolStripMenuItem_Click);
+            // 
+            // personelGüncelleToolStripMenuItem
+            // 
+            this.personelGüncelleToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.personelGüncelleToolStripMenuItem.Name = "personelGüncelleToolStripMenuItem";
+            this.personelGüncelleToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.personelGüncelleToolStripMenuItem.Text = "Personel Güncelle";
+            this.personelGüncelleToolStripMenuItem.Click += new System.EventHandler(this.personelGüncelleToolStripMenuItem_Click);
+            // 
+            // personelSilToolStripMenuItem
+            // 
+            this.personelSilToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.personelSilToolStripMenuItem.Name = "personelSilToolStripMenuItem";
+            this.personelSilToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.personelSilToolStripMenuItem.Text = "Personel Sil";
+            this.personelSilToolStripMenuItem.Click += new System.EventHandler(this.personelSilToolStripMenuItem_Click);
+            // 
+            // personelİşlemleriToolStripMenuItem
+            // 
+            this.personelİşlemleriToolStripMenuItem.AutoSize = false;
+            this.personelİşlemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.personelEkleToolStripMenuItem,
+            this.personelGüncelleToolStripMenuItem,
+            this.personelSilToolStripMenuItem});
+            this.personelİşlemleriToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
+            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(170, 40);
+            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
+            // 
+            // tsmAnasayfa
+            // 
+            this.tsmAnasayfa.AutoSize = false;
+            this.tsmAnasayfa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.tsmAnasayfa.Name = "tsmAnasayfa";
+            this.tsmAnasayfa.Size = new System.Drawing.Size(170, 40);
+            this.tsmAnasayfa.Text = "Anasayfa";
+            this.tsmAnasayfa.Click += new System.EventHandler(this.tsmAnasayfa_Click);
+            // 
             // frmAdminIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,14 +166,15 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem personelEkleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem personelGüncelleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem personelSilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ekstraİşlemlerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ekstraEkleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ekstraGüncelleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ekstraSilToolStripMenuItem;
         private System.Windows.Forms.Panel pnlAdminIslemler;
+        private System.Windows.Forms.ToolStripMenuItem tsmAnasayfa;
+        private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelEkleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelGüncelleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelSilToolStripMenuItem;
     }
 }

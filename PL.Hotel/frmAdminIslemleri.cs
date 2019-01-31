@@ -33,8 +33,6 @@ namespace PL.Hotel
             frm.BringToFront();
             frm.tsGuncelle.Enabled = false;
             frm.toolStripButton3.Enabled = false;
-
-
         }
 
         private void ekstraGüncelleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,6 +99,12 @@ namespace PL.Hotel
             frm.BringToFront();
             frm.tsEkle.Enabled = false;
             frm.tsGuncelle.Enabled = false;
+        }
+
+        private void tsmAnasayfa_Click(object sender, EventArgs e)
+        {
+            frmOtelAnasayfa frm = new frmOtelAnasayfa();
+            frm.Show();
         }
         //}
     }
