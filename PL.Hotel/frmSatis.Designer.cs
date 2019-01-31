@@ -41,6 +41,8 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtCikisTarihi = new System.Windows.Forms.TextBox();
+            this.txtGirisTarihi = new System.Windows.Forms.TextBox();
             this.btnOdaSec = new System.Windows.Forms.Button();
             this.btnOnayla = new System.Windows.Forms.Button();
             this.btnHesapla = new System.Windows.Forms.Button();
@@ -69,8 +71,6 @@
             this.cbCinsiyet = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTelefon = new System.Windows.Forms.TextBox();
-            this.txtGirisTarihi = new System.Windows.Forms.TextBox();
-            this.txtCikisTarihi = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -82,7 +82,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 58);
+            this.panel1.Size = new System.Drawing.Size(909, 58);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -94,7 +94,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 58);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(984, 503);
+            this.panel2.Size = new System.Drawing.Size(909, 392);
             this.panel2.TabIndex = 1;
             // 
             // groupBox3
@@ -217,6 +217,26 @@
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Konaklama Bilgileri";
+            // 
+            // txtCikisTarihi
+            // 
+            this.txtCikisTarihi.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtCikisTarihi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCikisTarihi.Location = new System.Drawing.Point(82, 48);
+            this.txtCikisTarihi.Name = "txtCikisTarihi";
+            this.txtCikisTarihi.ReadOnly = true;
+            this.txtCikisTarihi.Size = new System.Drawing.Size(135, 20);
+            this.txtCikisTarihi.TabIndex = 31;
+            // 
+            // txtGirisTarihi
+            // 
+            this.txtGirisTarihi.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtGirisTarihi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGirisTarihi.Location = new System.Drawing.Point(82, 23);
+            this.txtGirisTarihi.Name = "txtGirisTarihi";
+            this.txtGirisTarihi.ReadOnly = true;
+            this.txtGirisTarihi.Size = new System.Drawing.Size(135, 20);
+            this.txtGirisTarihi.TabIndex = 30;
             // 
             // btnOdaSec
             // 
@@ -499,31 +519,11 @@
             this.txtTelefon.Size = new System.Drawing.Size(135, 20);
             this.txtTelefon.TabIndex = 11;
             // 
-            // txtGirisTarihi
-            // 
-            this.txtGirisTarihi.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtGirisTarihi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtGirisTarihi.Location = new System.Drawing.Point(82, 23);
-            this.txtGirisTarihi.Name = "txtGirisTarihi";
-            this.txtGirisTarihi.ReadOnly = true;
-            this.txtGirisTarihi.Size = new System.Drawing.Size(135, 20);
-            this.txtGirisTarihi.TabIndex = 30;
-            // 
-            // txtCikisTarihi
-            // 
-            this.txtCikisTarihi.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtCikisTarihi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCikisTarihi.Location = new System.Drawing.Point(82, 48);
-            this.txtCikisTarihi.Name = "txtCikisTarihi";
-            this.txtCikisTarihi.ReadOnly = true;
-            this.txtCikisTarihi.Size = new System.Drawing.Size(135, 20);
-            this.txtCikisTarihi.TabIndex = 31;
-            // 
             // frmSatis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.ClientSize = new System.Drawing.Size(909, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

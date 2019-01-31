@@ -81,13 +81,12 @@
             // 
             this.btnOnay.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOnay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOnay.Location = new System.Drawing.Point(668, 447);
+            this.btnOnay.Location = new System.Drawing.Point(631, 464);
             this.btnOnay.Margin = new System.Windows.Forms.Padding(2);
             this.btnOnay.Name = "btnOnay";
-            this.btnOnay.Size = new System.Drawing.Size(109, 40);
+            this.btnOnay.Size = new System.Drawing.Size(83, 40);
             this.btnOnay.TabIndex = 50;
             this.btnOnay.Text = "ONAYLA";
-            this.btnOnay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOnay.UseVisualStyleBackColor = true;
             this.btnOnay.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -109,14 +108,14 @@
             this.btnIptal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnIptal.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnIptal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIptal.Location = new System.Drawing.Point(668, 491);
+            this.btnIptal.Location = new System.Drawing.Point(631, 508);
             this.btnIptal.Margin = new System.Windows.Forms.Padding(2);
             this.btnIptal.Name = "btnIptal";
-            this.btnIptal.Size = new System.Drawing.Size(109, 40);
+            this.btnIptal.Size = new System.Drawing.Size(83, 40);
             this.btnIptal.TabIndex = 48;
-            this.btnIptal.Text = "İPTAL";
-            this.btnIptal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnIptal.Text = "ÇIKIŞ";
             this.btnIptal.UseVisualStyleBackColor = false;
+            this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
             // gbMisafirKonaklama
             // 
@@ -129,7 +128,7 @@
             this.gbMisafirKonaklama.Controls.Add(this.label11);
             this.gbMisafirKonaklama.Controls.Add(this.dateTimePicker2);
             this.gbMisafirKonaklama.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gbMisafirKonaklama.Location = new System.Drawing.Point(375, 82);
+            this.gbMisafirKonaklama.Location = new System.Drawing.Point(355, 82);
             this.gbMisafirKonaklama.Margin = new System.Windows.Forms.Padding(2);
             this.gbMisafirKonaklama.Name = "gbMisafirKonaklama";
             this.gbMisafirKonaklama.Padding = new System.Windows.Forms.Padding(2);
@@ -414,13 +413,12 @@
             // 
             this.btnEkle.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEkle.Location = new System.Drawing.Point(668, 404);
+            this.btnEkle.Location = new System.Drawing.Point(631, 421);
             this.btnEkle.Margin = new System.Windows.Forms.Padding(2);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(109, 40);
+            this.btnEkle.Size = new System.Drawing.Size(83, 40);
             this.btnEkle.TabIndex = 51;
             this.btnEkle.Text = "EKLE";
-            this.btnEkle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEkle.UseVisualStyleBackColor = true;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 

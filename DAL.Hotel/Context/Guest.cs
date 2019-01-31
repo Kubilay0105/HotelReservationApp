@@ -34,5 +34,7 @@ namespace DAL.Hotel.Context
         [ForeignKey("RoomId")]
         public virtual Room Rooms { get; set; }
         public virtual List<Sale> Sales { get; set; }
+
+       
     }
 }

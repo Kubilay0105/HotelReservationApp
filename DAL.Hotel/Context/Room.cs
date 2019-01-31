@@ -28,5 +28,10 @@ namespace DAL.Hotel.Context
         public virtual List<Guest> Guests { get; set; }
         public virtual List<Sale> Sales { get; set; }
         public virtual List<ExtraTransactions> ExtraTransactions { get; set; }
+
+        public override string ToString()
+        {
+            return RoomNumber;
+        }
     }
 }

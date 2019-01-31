@@ -164,6 +164,5 @@ namespace BLL.Hotel.Repositories
             
             return paym;
         }
-     
     }
 }
