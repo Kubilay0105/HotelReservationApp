@@ -37,133 +37,57 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn112 = new System.Windows.Forms.Button();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
+            this.btn111 = new System.Windows.Forms.Button();
+            this.btn110 = new System.Windows.Forms.Button();
+            this.btn109 = new System.Windows.Forms.Button();
+            this.btn108 = new System.Windows.Forms.Button();
+            this.btn107 = new System.Windows.Forms.Button();
+            this.btn106 = new System.Windows.Forms.Button();
+            this.btn105 = new System.Windows.Forms.Button();
             this.btn104 = new System.Windows.Forms.Button();
-            this.btn103 = new System.Windows.Forms.Button();
             this.btn102 = new System.Windows.Forms.Button();
             this.btn101 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button14 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.button15 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.button16 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.button18 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.button19 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.button20 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.button21 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.button22 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
-            this.label26 = new System.Windows.Forms.Label();
-            this.button23 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
-            this.label27 = new System.Windows.Forms.Label();
-            this.button24 = new System.Windows.Forms.Button();
+            this.btn212 = new System.Windows.Forms.Button();
+            this.btn211 = new System.Windows.Forms.Button();
+            this.btn210 = new System.Windows.Forms.Button();
+            this.btn209 = new System.Windows.Forms.Button();
+            this.btn208 = new System.Windows.Forms.Button();
+            this.btn207 = new System.Windows.Forms.Button();
+            this.btn206 = new System.Windows.Forms.Button();
+            this.btn205 = new System.Windows.Forms.Button();
+            this.btn204 = new System.Windows.Forms.Button();
+            this.btn203 = new System.Windows.Forms.Button();
+            this.btn202 = new System.Windows.Forms.Button();
+            this.btn201 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btn312 = new System.Windows.Forms.Button();
+            this.btn311 = new System.Windows.Forms.Button();
+            this.btn310 = new System.Windows.Forms.Button();
+            this.btn309 = new System.Windows.Forms.Button();
+            this.btn308 = new System.Windows.Forms.Button();
+            this.btn307 = new System.Windows.Forms.Button();
+            this.btn306 = new System.Windows.Forms.Button();
+            this.btn305 = new System.Windows.Forms.Button();
+            this.btn304 = new System.Windows.Forms.Button();
+            this.btn303 = new System.Windows.Forms.Button();
+            this.btn302 = new System.Windows.Forms.Button();
             this.btn301 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.dtpGirisAra = new System.Windows.Forms.DateTimePicker();
             this.dtpCikisAra = new System.Windows.Forms.DateTimePicker();
+            this.btn103 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnlContent.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tableLayoutPanel14.SuspendLayout();
-            this.tableLayoutPanel15.SuspendLayout();
-            this.tableLayoutPanel16.SuspendLayout();
-            this.tableLayoutPanel17.SuspendLayout();
-            this.tableLayoutPanel18.SuspendLayout();
-            this.tableLayoutPanel19.SuspendLayout();
-            this.tableLayoutPanel20.SuspendLayout();
-            this.tableLayoutPanel21.SuspendLayout();
-            this.tableLayoutPanel22.SuspendLayout();
-            this.tableLayoutPanel23.SuspendLayout();
-            this.tableLayoutPanel24.SuspendLayout();
-            this.tableLayoutPanel25.SuspendLayout();
-            this.tableLayoutPanel26.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel12.SuspendLayout();
-            this.tableLayoutPanel10.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
-            this.tableLayoutPanel11.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
-            this.tableLayoutPanel9.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -236,16 +160,16 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.button25);
-            this.tabPage1.Controls.Add(this.button26);
-            this.tabPage1.Controls.Add(this.button27);
-            this.tabPage1.Controls.Add(this.label39);
-            this.tabPage1.Controls.Add(this.label37);
-            this.tabPage1.Controls.Add(this.label38);
-            this.tabPage1.Controls.Add(this.label35);
-            this.tabPage1.Controls.Add(this.btn104);
             this.tabPage1.Controls.Add(this.btn103);
+            this.tabPage1.Controls.Add(this.btn112);
+            this.tabPage1.Controls.Add(this.btn111);
+            this.tabPage1.Controls.Add(this.btn110);
+            this.tabPage1.Controls.Add(this.btn109);
+            this.tabPage1.Controls.Add(this.btn108);
+            this.tabPage1.Controls.Add(this.btn107);
+            this.tabPage1.Controls.Add(this.btn106);
+            this.tabPage1.Controls.Add(this.btn105);
+            this.tabPage1.Controls.Add(this.btn104);
             this.tabPage1.Controls.Add(this.btn102);
             this.tabPage1.Controls.Add(this.btn101);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -255,23 +179,26 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // button1
+            // btn112
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.ImageList = this.ımageList1;
-            this.button1.Location = new System.Drawing.Point(249, 153);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(43, 74);
-            this.button1.TabIndex = 42;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn112.BackColor = System.Drawing.Color.Transparent;
+            this.btn112.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn112.FlatAppearance.BorderSize = 0;
+            this.btn112.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn112.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn112.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn112.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn112.ForeColor = System.Drawing.Color.Black;
+            this.btn112.ImageList = this.ımageList1;
+            this.btn112.Location = new System.Drawing.Point(456, 226);
+            this.btn112.Name = "btn112";
+            this.btn112.Size = new System.Drawing.Size(121, 74);
+            this.btn112.TabIndex = 46;
+            this.btn112.Text = "112";
+            this.btn112.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn112.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn112.UseVisualStyleBackColor = false;
             // 
             // ımageList1
             // 
@@ -280,1519 +207,742 @@
             this.ımageList1.Images.SetKeyName(0, "door (1).png");
             this.ımageList1.Images.SetKeyName(1, "doorway (1).png");
             // 
-            // button25
+            // btn111
             // 
-            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button25.FlatAppearance.BorderSize = 0;
-            this.button25.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.ForeColor = System.Drawing.Color.Transparent;
-            this.button25.ImageList = this.ımageList1;
-            this.button25.Location = new System.Drawing.Point(180, 150);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(41, 74);
-            this.button25.TabIndex = 39;
-            this.button25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button25.UseVisualStyleBackColor = true;
+            this.btn111.BackColor = System.Drawing.Color.Transparent;
+            this.btn111.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn111.FlatAppearance.BorderSize = 0;
+            this.btn111.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn111.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn111.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn111.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn111.ForeColor = System.Drawing.Color.Black;
+            this.btn111.ImageList = this.ımageList1;
+            this.btn111.Location = new System.Drawing.Point(311, 226);
+            this.btn111.Name = "btn111";
+            this.btn111.Size = new System.Drawing.Size(121, 74);
+            this.btn111.TabIndex = 43;
+            this.btn111.Text = "111";
+            this.btn111.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn111.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn111.UseVisualStyleBackColor = false;
             // 
-            // button26
+            // btn110
             // 
-            this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button26.FlatAppearance.BorderSize = 0;
-            this.button26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.ForeColor = System.Drawing.Color.Transparent;
-            this.button26.ImageList = this.ımageList1;
-            this.button26.Location = new System.Drawing.Point(111, 150);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(41, 74);
-            this.button26.TabIndex = 40;
-            this.button26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button26.UseVisualStyleBackColor = true;
+            this.btn110.BackColor = System.Drawing.Color.Transparent;
+            this.btn110.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn110.FlatAppearance.BorderSize = 0;
+            this.btn110.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn110.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn110.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn110.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn110.ForeColor = System.Drawing.Color.Black;
+            this.btn110.ImageList = this.ımageList1;
+            this.btn110.Location = new System.Drawing.Point(166, 225);
+            this.btn110.Name = "btn110";
+            this.btn110.Size = new System.Drawing.Size(121, 74);
+            this.btn110.TabIndex = 44;
+            this.btn110.Text = "110";
+            this.btn110.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn110.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn110.UseVisualStyleBackColor = false;
             // 
-            // button27
+            // btn109
             // 
-            this.button27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button27.FlatAppearance.BorderSize = 0;
-            this.button27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.ForeColor = System.Drawing.Color.Transparent;
-            this.button27.ImageKey = "(none)";
-            this.button27.ImageList = this.ımageList1;
-            this.button27.Location = new System.Drawing.Point(42, 153);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(41, 74);
-            this.button27.TabIndex = 41;
-            this.button27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button27.UseVisualStyleBackColor = true;
+            this.btn109.BackColor = System.Drawing.Color.Transparent;
+            this.btn109.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn109.FlatAppearance.BorderSize = 0;
+            this.btn109.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn109.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn109.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn109.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn109.ForeColor = System.Drawing.Color.Black;
+            this.btn109.ImageKey = "(none)";
+            this.btn109.ImageList = this.ımageList1;
+            this.btn109.Location = new System.Drawing.Point(21, 225);
+            this.btn109.Name = "btn109";
+            this.btn109.Size = new System.Drawing.Size(121, 74);
+            this.btn109.TabIndex = 45;
+            this.btn109.Text = "109";
+            this.btn109.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn109.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn109.UseVisualStyleBackColor = false;
             // 
-            // label39
+            // btn108
             // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label39.Location = new System.Drawing.Point(32, 98);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(51, 26);
-            this.label39.TabIndex = 19;
-            this.label39.Text = "101";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn108.BackColor = System.Drawing.Color.Transparent;
+            this.btn108.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn108.FlatAppearance.BorderSize = 0;
+            this.btn108.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn108.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn108.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn108.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn108.ForeColor = System.Drawing.Color.Black;
+            this.btn108.ImageList = this.ımageList1;
+            this.btn108.Location = new System.Drawing.Point(456, 123);
+            this.btn108.Name = "btn108";
+            this.btn108.Size = new System.Drawing.Size(121, 74);
+            this.btn108.TabIndex = 42;
+            this.btn108.Text = "108";
+            this.btn108.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn108.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn108.UseVisualStyleBackColor = false;
             // 
-            // label37
+            // btn107
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label37.Location = new System.Drawing.Point(101, 98);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(51, 26);
-            this.label37.TabIndex = 19;
-            this.label37.Text = "102";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn107.BackColor = System.Drawing.Color.Transparent;
+            this.btn107.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn107.FlatAppearance.BorderSize = 0;
+            this.btn107.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn107.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn107.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn107.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn107.ForeColor = System.Drawing.Color.Black;
+            this.btn107.ImageList = this.ımageList1;
+            this.btn107.Location = new System.Drawing.Point(311, 123);
+            this.btn107.Name = "btn107";
+            this.btn107.Size = new System.Drawing.Size(121, 74);
+            this.btn107.TabIndex = 39;
+            this.btn107.Text = "107";
+            this.btn107.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn107.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn107.UseVisualStyleBackColor = false;
             // 
-            // label38
+            // btn106
             // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label38.Location = new System.Drawing.Point(170, 98);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(51, 26);
-            this.label38.TabIndex = 19;
-            this.label38.Text = "103";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn106.BackColor = System.Drawing.Color.Transparent;
+            this.btn106.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn106.FlatAppearance.BorderSize = 0;
+            this.btn106.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn106.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn106.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn106.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn106.ForeColor = System.Drawing.Color.Black;
+            this.btn106.ImageList = this.ımageList1;
+            this.btn106.Location = new System.Drawing.Point(166, 123);
+            this.btn106.Name = "btn106";
+            this.btn106.Size = new System.Drawing.Size(121, 74);
+            this.btn106.TabIndex = 40;
+            this.btn106.Text = "106";
+            this.btn106.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn106.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn106.UseVisualStyleBackColor = false;
             // 
-            // label35
+            // btn105
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label35.Location = new System.Drawing.Point(239, 98);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(51, 26);
-            this.label35.TabIndex = 19;
-            this.label35.Text = "104";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn105.BackColor = System.Drawing.Color.Transparent;
+            this.btn105.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn105.FlatAppearance.BorderSize = 0;
+            this.btn105.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn105.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn105.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn105.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn105.ForeColor = System.Drawing.Color.Black;
+            this.btn105.ImageKey = "(none)";
+            this.btn105.ImageList = this.ımageList1;
+            this.btn105.Location = new System.Drawing.Point(21, 123);
+            this.btn105.Name = "btn105";
+            this.btn105.Size = new System.Drawing.Size(121, 74);
+            this.btn105.TabIndex = 41;
+            this.btn105.Text = "105";
+            this.btn105.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn105.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn105.UseVisualStyleBackColor = false;
             // 
             // btn104
             // 
+            this.btn104.BackColor = System.Drawing.Color.Transparent;
             this.btn104.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn104.FlatAppearance.BorderSize = 0;
             this.btn104.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn104.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn104.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn104.ForeColor = System.Drawing.Color.Transparent;
+            this.btn104.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn104.ForeColor = System.Drawing.Color.Black;
             this.btn104.ImageList = this.ımageList1;
-            this.btn104.Location = new System.Drawing.Point(244, 21);
+            this.btn104.Location = new System.Drawing.Point(456, 21);
             this.btn104.Name = "btn104";
-            this.btn104.Size = new System.Drawing.Size(43, 74);
+            this.btn104.Size = new System.Drawing.Size(121, 74);
             this.btn104.TabIndex = 38;
-            this.btn104.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn104.UseVisualStyleBackColor = true;
+            this.btn104.Text = "104";
+            this.btn104.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn104.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn104.UseVisualStyleBackColor = false;
             this.btn104.Click += new System.EventHandler(this.btn104_Click);
-            // 
-            // btn103
-            // 
-            this.btn103.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn103.FlatAppearance.BorderSize = 0;
-            this.btn103.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn103.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn103.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn103.ForeColor = System.Drawing.Color.Transparent;
-            this.btn103.ImageList = this.ımageList1;
-            this.btn103.Location = new System.Drawing.Point(175, 18);
-            this.btn103.Name = "btn103";
-            this.btn103.Size = new System.Drawing.Size(41, 74);
-            this.btn103.TabIndex = 12;
-            this.btn103.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn103.UseVisualStyleBackColor = true;
-            this.btn103.Click += new System.EventHandler(this.btn103_Click);
             // 
             // btn102
             // 
+            this.btn102.BackColor = System.Drawing.Color.Transparent;
             this.btn102.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn102.FlatAppearance.BorderSize = 0;
             this.btn102.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn102.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn102.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn102.ForeColor = System.Drawing.Color.Transparent;
+            this.btn102.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn102.ForeColor = System.Drawing.Color.Black;
             this.btn102.ImageList = this.ımageList1;
-            this.btn102.Location = new System.Drawing.Point(106, 18);
+            this.btn102.Location = new System.Drawing.Point(166, 21);
             this.btn102.Name = "btn102";
-            this.btn102.Size = new System.Drawing.Size(41, 74);
+            this.btn102.Size = new System.Drawing.Size(121, 74);
             this.btn102.TabIndex = 12;
-            this.btn102.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn102.UseVisualStyleBackColor = true;
+            this.btn102.Text = "102";
+            this.btn102.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn102.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn102.UseVisualStyleBackColor = false;
             this.btn102.Click += new System.EventHandler(this.btn102_Click);
             // 
             // btn101
             // 
+            this.btn101.BackColor = System.Drawing.Color.Transparent;
             this.btn101.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn101.FlatAppearance.BorderSize = 0;
             this.btn101.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn101.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn101.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn101.ForeColor = System.Drawing.Color.Transparent;
+            this.btn101.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn101.ForeColor = System.Drawing.Color.Black;
+            this.btn101.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn101.ImageKey = "(none)";
             this.btn101.ImageList = this.ımageList1;
-            this.btn101.Location = new System.Drawing.Point(37, 21);
+            this.btn101.Location = new System.Drawing.Point(21, 21);
             this.btn101.Name = "btn101";
-            this.btn101.Size = new System.Drawing.Size(41, 74);
+            this.btn101.Size = new System.Drawing.Size(121, 74);
             this.btn101.TabIndex = 12;
-            this.btn101.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn101.UseVisualStyleBackColor = true;
+            this.btn101.Text = "101";
+            this.btn101.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn101.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn101.UseVisualStyleBackColor = false;
             this.btn101.Click += new System.EventHandler(this.btn101_Click);
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.tableLayoutPanel14);
+            this.tabPage2.Controls.Add(this.btn212);
+            this.tabPage2.Controls.Add(this.btn211);
+            this.tabPage2.Controls.Add(this.btn210);
+            this.tabPage2.Controls.Add(this.btn209);
+            this.tabPage2.Controls.Add(this.btn208);
+            this.tabPage2.Controls.Add(this.btn207);
+            this.tabPage2.Controls.Add(this.btn206);
+            this.tabPage2.Controls.Add(this.btn205);
+            this.tabPage2.Controls.Add(this.btn204);
+            this.tabPage2.Controls.Add(this.btn203);
+            this.tabPage2.Controls.Add(this.btn202);
+            this.tabPage2.Controls.Add(this.btn201);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(691, 273);
+            this.tabPage2.Size = new System.Drawing.Size(947, 495);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel14
-            // 
-            this.tableLayoutPanel14.ColumnCount = 4;
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel15, 3, 2);
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel16, 1, 2);
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel17, 2, 2);
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel18, 3, 1);
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel19, 0, 2);
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel20, 1, 1);
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel21, 2, 1);
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel22, 3, 0);
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel23, 0, 1);
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel24, 1, 0);
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel25, 2, 0);
-            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel26, 0, 0);
-            this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
-            this.tableLayoutPanel14.RowCount = 3;
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(685, 267);
-            this.tableLayoutPanel14.TabIndex = 37;
-            // 
-            // tableLayoutPanel15
-            // 
-            this.tableLayoutPanel15.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel15.ColumnCount = 2;
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel15.Controls.Add(this.label15, 0, 0);
-            this.tableLayoutPanel15.Controls.Add(this.button13, 0, 0);
-            this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(516, 181);
-            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
-            this.tableLayoutPanel15.RowCount = 1;
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(166, 83);
-            this.tableLayoutPanel15.TabIndex = 40;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(86, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(77, 83);
-            this.label15.TabIndex = 19;
-            this.label15.Text = "212";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button13
-            // 
-            this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.ForeColor = System.Drawing.Color.Transparent;
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button13.ImageIndex = 0;
-            this.button13.ImageList = this.ımageList1;
-            this.button13.Location = new System.Drawing.Point(3, 3);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(77, 77);
-            this.button13.TabIndex = 12;
-            this.button13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel16
-            // 
-            this.tableLayoutPanel16.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel16.ColumnCount = 2;
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel16.Controls.Add(this.label16, 0, 0);
-            this.tableLayoutPanel16.Controls.Add(this.button14, 0, 0);
-            this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(174, 181);
-            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
-            this.tableLayoutPanel16.RowCount = 1;
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel16.TabIndex = 40;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(85, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(77, 83);
-            this.label16.TabIndex = 19;
-            this.label16.Text = "210";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button14
-            // 
-            this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.ForeColor = System.Drawing.Color.Transparent;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button14.ImageIndex = 1;
-            this.button14.ImageList = this.ımageList1;
-            this.button14.Location = new System.Drawing.Point(3, 3);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(76, 77);
-            this.button14.TabIndex = 12;
-            this.button14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel17
-            // 
-            this.tableLayoutPanel17.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel17.ColumnCount = 2;
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel17.Controls.Add(this.label17, 0, 0);
-            this.tableLayoutPanel17.Controls.Add(this.button15, 0, 0);
-            this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(345, 181);
-            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
-            this.tableLayoutPanel17.RowCount = 1;
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel17.TabIndex = 39;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label17.Location = new System.Drawing.Point(85, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 83);
-            this.label17.TabIndex = 19;
-            this.label17.Text = "211";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button15
-            // 
-            this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.ForeColor = System.Drawing.Color.Transparent;
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button15.ImageIndex = 0;
-            this.button15.ImageList = this.ımageList1;
-            this.button15.Location = new System.Drawing.Point(3, 3);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(76, 77);
-            this.button15.TabIndex = 12;
-            this.button15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel18
-            // 
-            this.tableLayoutPanel18.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel18.ColumnCount = 2;
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel18.Controls.Add(this.label18, 0, 0);
-            this.tableLayoutPanel18.Controls.Add(this.button16, 0, 0);
-            this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel18.Location = new System.Drawing.Point(516, 92);
-            this.tableLayoutPanel18.Name = "tableLayoutPanel18";
-            this.tableLayoutPanel18.RowCount = 1;
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(166, 83);
-            this.tableLayoutPanel18.TabIndex = 40;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label18.Location = new System.Drawing.Point(86, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(77, 83);
-            this.label18.TabIndex = 19;
-            this.label18.Text = "208";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button16
-            // 
-            this.button16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.ForeColor = System.Drawing.Color.Transparent;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button16.ImageIndex = 0;
-            this.button16.ImageList = this.ımageList1;
-            this.button16.Location = new System.Drawing.Point(3, 3);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(77, 77);
-            this.button16.TabIndex = 12;
-            this.button16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel19
-            // 
-            this.tableLayoutPanel19.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel19.ColumnCount = 2;
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel19.Controls.Add(this.label19, 0, 0);
-            this.tableLayoutPanel19.Controls.Add(this.button17, 0, 0);
-            this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(3, 181);
-            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
-            this.tableLayoutPanel19.RowCount = 1;
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel19.TabIndex = 39;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label19.Location = new System.Drawing.Point(85, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(77, 83);
-            this.label19.TabIndex = 19;
-            this.label19.Text = "209";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button17
-            // 
-            this.button17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.ForeColor = System.Drawing.Color.Transparent;
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button17.ImageIndex = 0;
-            this.button17.ImageList = this.ımageList1;
-            this.button17.Location = new System.Drawing.Point(3, 3);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(76, 77);
-            this.button17.TabIndex = 12;
-            this.button17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel20
-            // 
-            this.tableLayoutPanel20.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel20.ColumnCount = 2;
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel20.Controls.Add(this.label20, 0, 0);
-            this.tableLayoutPanel20.Controls.Add(this.button18, 0, 0);
-            this.tableLayoutPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(174, 92);
-            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
-            this.tableLayoutPanel20.RowCount = 1;
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel20.TabIndex = 40;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label20.Location = new System.Drawing.Point(85, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(77, 83);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "206";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button18
-            // 
-            this.button18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.ForeColor = System.Drawing.Color.Transparent;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button18.ImageIndex = 1;
-            this.button18.ImageList = this.ımageList1;
-            this.button18.Location = new System.Drawing.Point(3, 3);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(76, 77);
-            this.button18.TabIndex = 12;
-            this.button18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel21
-            // 
-            this.tableLayoutPanel21.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel21.ColumnCount = 2;
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel21.Controls.Add(this.label21, 0, 0);
-            this.tableLayoutPanel21.Controls.Add(this.button19, 0, 0);
-            this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(345, 92);
-            this.tableLayoutPanel21.Name = "tableLayoutPanel21";
-            this.tableLayoutPanel21.RowCount = 1;
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel21.TabIndex = 39;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label21.Location = new System.Drawing.Point(85, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(77, 83);
-            this.label21.TabIndex = 19;
-            this.label21.Text = "207";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button19
-            // 
-            this.button19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.ForeColor = System.Drawing.Color.Transparent;
-            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button19.ImageIndex = 1;
-            this.button19.ImageList = this.ımageList1;
-            this.button19.Location = new System.Drawing.Point(3, 3);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(76, 77);
-            this.button19.TabIndex = 12;
-            this.button19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel22
-            // 
-            this.tableLayoutPanel22.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel22.ColumnCount = 2;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel22.Controls.Add(this.label22, 0, 0);
-            this.tableLayoutPanel22.Controls.Add(this.button20, 0, 0);
-            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(516, 3);
-            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
-            this.tableLayoutPanel22.RowCount = 1;
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(166, 83);
-            this.tableLayoutPanel22.TabIndex = 40;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label22.Location = new System.Drawing.Point(86, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(77, 83);
-            this.label22.TabIndex = 19;
-            this.label22.Text = "204";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button20
-            // 
-            this.button20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.ForeColor = System.Drawing.Color.Transparent;
-            this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button20.ImageIndex = 1;
-            this.button20.ImageList = this.ımageList1;
-            this.button20.Location = new System.Drawing.Point(3, 3);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(77, 77);
-            this.button20.TabIndex = 12;
-            this.button20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button20.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel23
-            // 
-            this.tableLayoutPanel23.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel23.ColumnCount = 2;
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel23.Controls.Add(this.label24, 0, 0);
-            this.tableLayoutPanel23.Controls.Add(this.button21, 0, 0);
-            this.tableLayoutPanel23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel23.Location = new System.Drawing.Point(3, 92);
-            this.tableLayoutPanel23.Name = "tableLayoutPanel23";
-            this.tableLayoutPanel23.RowCount = 1;
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel23.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel23.TabIndex = 39;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label24.Location = new System.Drawing.Point(85, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(77, 83);
-            this.label24.TabIndex = 19;
-            this.label24.Text = "205";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button21
-            // 
-            this.button21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.ForeColor = System.Drawing.Color.Transparent;
-            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button21.ImageIndex = 0;
-            this.button21.ImageList = this.ımageList1;
-            this.button21.Location = new System.Drawing.Point(3, 3);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(76, 77);
-            this.button21.TabIndex = 12;
-            this.button21.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel24
-            // 
-            this.tableLayoutPanel24.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel24.ColumnCount = 2;
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel24.Controls.Add(this.label25, 0, 0);
-            this.tableLayoutPanel24.Controls.Add(this.button22, 0, 0);
-            this.tableLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel24.Location = new System.Drawing.Point(174, 3);
-            this.tableLayoutPanel24.Name = "tableLayoutPanel24";
-            this.tableLayoutPanel24.RowCount = 1;
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel24.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel24.TabIndex = 38;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label25.Location = new System.Drawing.Point(85, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(77, 83);
-            this.label25.TabIndex = 19;
-            this.label25.Text = "202";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button22
-            // 
-            this.button22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.ForeColor = System.Drawing.Color.Transparent;
-            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button22.ImageIndex = 0;
-            this.button22.ImageList = this.ımageList1;
-            this.button22.Location = new System.Drawing.Point(3, 3);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(76, 77);
-            this.button22.TabIndex = 12;
-            this.button22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button22.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel25
-            // 
-            this.tableLayoutPanel25.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel25.ColumnCount = 2;
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel25.Controls.Add(this.label26, 0, 0);
-            this.tableLayoutPanel25.Controls.Add(this.button23, 0, 0);
-            this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(345, 3);
-            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
-            this.tableLayoutPanel25.RowCount = 1;
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel25.TabIndex = 39;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label26.Location = new System.Drawing.Point(85, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(77, 83);
-            this.label26.TabIndex = 19;
-            this.label26.Text = "203";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button23
-            // 
-            this.button23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.ForeColor = System.Drawing.Color.Transparent;
-            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button23.ImageIndex = 0;
-            this.button23.ImageList = this.ımageList1;
-            this.button23.Location = new System.Drawing.Point(3, 3);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(76, 77);
-            this.button23.TabIndex = 12;
-            this.button23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel26
-            // 
-            this.tableLayoutPanel26.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel26.ColumnCount = 2;
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel26.Controls.Add(this.label27, 0, 0);
-            this.tableLayoutPanel26.Controls.Add(this.button24, 0, 0);
-            this.tableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel26.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel26.Name = "tableLayoutPanel26";
-            this.tableLayoutPanel26.RowCount = 1;
-            this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel26.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel26.TabIndex = 37;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label27.Location = new System.Drawing.Point(85, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(77, 83);
-            this.label27.TabIndex = 19;
-            this.label27.Text = "201";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button24
-            // 
-            this.button24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.ForeColor = System.Drawing.Color.Transparent;
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button24.ImageIndex = 1;
-            this.button24.ImageList = this.ımageList1;
-            this.button24.Location = new System.Drawing.Point(3, 3);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(76, 77);
-            this.button24.TabIndex = 12;
-            this.button24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button24.UseVisualStyleBackColor = true;
+            // btn212
+            // 
+            this.btn212.BackColor = System.Drawing.Color.Transparent;
+            this.btn212.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn212.FlatAppearance.BorderSize = 0;
+            this.btn212.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn212.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn212.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn212.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn212.ForeColor = System.Drawing.Color.Black;
+            this.btn212.ImageList = this.ımageList1;
+            this.btn212.Location = new System.Drawing.Point(455, 223);
+            this.btn212.Name = "btn212";
+            this.btn212.Size = new System.Drawing.Size(121, 74);
+            this.btn212.TabIndex = 70;
+            this.btn212.Text = "212";
+            this.btn212.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn212.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn212.UseVisualStyleBackColor = false;
+            // 
+            // btn211
+            // 
+            this.btn211.BackColor = System.Drawing.Color.Transparent;
+            this.btn211.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn211.FlatAppearance.BorderSize = 0;
+            this.btn211.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn211.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn211.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn211.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn211.ForeColor = System.Drawing.Color.Black;
+            this.btn211.ImageList = this.ımageList1;
+            this.btn211.Location = new System.Drawing.Point(310, 223);
+            this.btn211.Name = "btn211";
+            this.btn211.Size = new System.Drawing.Size(121, 74);
+            this.btn211.TabIndex = 67;
+            this.btn211.Text = "211";
+            this.btn211.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn211.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn211.UseVisualStyleBackColor = false;
+            // 
+            // btn210
+            // 
+            this.btn210.BackColor = System.Drawing.Color.Transparent;
+            this.btn210.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn210.FlatAppearance.BorderSize = 0;
+            this.btn210.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn210.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn210.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn210.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn210.ForeColor = System.Drawing.Color.Black;
+            this.btn210.ImageList = this.ımageList1;
+            this.btn210.Location = new System.Drawing.Point(165, 222);
+            this.btn210.Name = "btn210";
+            this.btn210.Size = new System.Drawing.Size(121, 74);
+            this.btn210.TabIndex = 68;
+            this.btn210.Text = "210";
+            this.btn210.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn210.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn210.UseVisualStyleBackColor = false;
+            // 
+            // btn209
+            // 
+            this.btn209.BackColor = System.Drawing.Color.Transparent;
+            this.btn209.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn209.FlatAppearance.BorderSize = 0;
+            this.btn209.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn209.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn209.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn209.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn209.ForeColor = System.Drawing.Color.Black;
+            this.btn209.ImageKey = "(none)";
+            this.btn209.ImageList = this.ımageList1;
+            this.btn209.Location = new System.Drawing.Point(20, 222);
+            this.btn209.Name = "btn209";
+            this.btn209.Size = new System.Drawing.Size(121, 74);
+            this.btn209.TabIndex = 69;
+            this.btn209.Text = "209";
+            this.btn209.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn209.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn209.UseVisualStyleBackColor = false;
+            // 
+            // btn208
+            // 
+            this.btn208.BackColor = System.Drawing.Color.Transparent;
+            this.btn208.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn208.FlatAppearance.BorderSize = 0;
+            this.btn208.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn208.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn208.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn208.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn208.ForeColor = System.Drawing.Color.Black;
+            this.btn208.ImageList = this.ımageList1;
+            this.btn208.Location = new System.Drawing.Point(455, 120);
+            this.btn208.Name = "btn208";
+            this.btn208.Size = new System.Drawing.Size(121, 74);
+            this.btn208.TabIndex = 66;
+            this.btn208.Text = "208";
+            this.btn208.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn208.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn208.UseVisualStyleBackColor = false;
+            // 
+            // btn207
+            // 
+            this.btn207.BackColor = System.Drawing.Color.Transparent;
+            this.btn207.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn207.FlatAppearance.BorderSize = 0;
+            this.btn207.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn207.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn207.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn207.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn207.ForeColor = System.Drawing.Color.Black;
+            this.btn207.ImageList = this.ımageList1;
+            this.btn207.Location = new System.Drawing.Point(310, 120);
+            this.btn207.Name = "btn207";
+            this.btn207.Size = new System.Drawing.Size(121, 74);
+            this.btn207.TabIndex = 63;
+            this.btn207.Text = "207";
+            this.btn207.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn207.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn207.UseVisualStyleBackColor = false;
+            // 
+            // btn206
+            // 
+            this.btn206.BackColor = System.Drawing.Color.Transparent;
+            this.btn206.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn206.FlatAppearance.BorderSize = 0;
+            this.btn206.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn206.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn206.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn206.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn206.ForeColor = System.Drawing.Color.Black;
+            this.btn206.ImageList = this.ımageList1;
+            this.btn206.Location = new System.Drawing.Point(165, 120);
+            this.btn206.Name = "btn206";
+            this.btn206.Size = new System.Drawing.Size(121, 74);
+            this.btn206.TabIndex = 64;
+            this.btn206.Text = "206";
+            this.btn206.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn206.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn206.UseVisualStyleBackColor = false;
+            // 
+            // btn205
+            // 
+            this.btn205.BackColor = System.Drawing.Color.Transparent;
+            this.btn205.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn205.FlatAppearance.BorderSize = 0;
+            this.btn205.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn205.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn205.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn205.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn205.ForeColor = System.Drawing.Color.Black;
+            this.btn205.ImageKey = "(none)";
+            this.btn205.ImageList = this.ımageList1;
+            this.btn205.Location = new System.Drawing.Point(20, 120);
+            this.btn205.Name = "btn205";
+            this.btn205.Size = new System.Drawing.Size(121, 74);
+            this.btn205.TabIndex = 65;
+            this.btn205.Text = "205";
+            this.btn205.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn205.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn205.UseVisualStyleBackColor = false;
+            // 
+            // btn204
+            // 
+            this.btn204.BackColor = System.Drawing.Color.Transparent;
+            this.btn204.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn204.FlatAppearance.BorderSize = 0;
+            this.btn204.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn204.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn204.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn204.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn204.ForeColor = System.Drawing.Color.Black;
+            this.btn204.ImageList = this.ımageList1;
+            this.btn204.Location = new System.Drawing.Point(455, 18);
+            this.btn204.Name = "btn204";
+            this.btn204.Size = new System.Drawing.Size(121, 74);
+            this.btn204.TabIndex = 62;
+            this.btn204.Text = "204";
+            this.btn204.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn204.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn204.UseVisualStyleBackColor = false;
+            // 
+            // btn203
+            // 
+            this.btn203.BackColor = System.Drawing.Color.Transparent;
+            this.btn203.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn203.FlatAppearance.BorderSize = 0;
+            this.btn203.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn203.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn203.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn203.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn203.ForeColor = System.Drawing.Color.Black;
+            this.btn203.ImageList = this.ımageList1;
+            this.btn203.Location = new System.Drawing.Point(310, 18);
+            this.btn203.Name = "btn203";
+            this.btn203.Size = new System.Drawing.Size(121, 74);
+            this.btn203.TabIndex = 56;
+            this.btn203.Text = "203";
+            this.btn203.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn203.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn203.UseVisualStyleBackColor = false;
+            // 
+            // btn202
+            // 
+            this.btn202.BackColor = System.Drawing.Color.Transparent;
+            this.btn202.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn202.FlatAppearance.BorderSize = 0;
+            this.btn202.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn202.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn202.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn202.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn202.ForeColor = System.Drawing.Color.Black;
+            this.btn202.ImageList = this.ımageList1;
+            this.btn202.Location = new System.Drawing.Point(165, 18);
+            this.btn202.Name = "btn202";
+            this.btn202.Size = new System.Drawing.Size(121, 74);
+            this.btn202.TabIndex = 57;
+            this.btn202.Text = "202";
+            this.btn202.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn202.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn202.UseVisualStyleBackColor = false;
+            // 
+            // btn201
+            // 
+            this.btn201.BackColor = System.Drawing.Color.Transparent;
+            this.btn201.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn201.FlatAppearance.BorderSize = 0;
+            this.btn201.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn201.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn201.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn201.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn201.ForeColor = System.Drawing.Color.Black;
+            this.btn201.ImageKey = "(none)";
+            this.btn201.ImageList = this.ımageList1;
+            this.btn201.Location = new System.Drawing.Point(20, 18);
+            this.btn201.Name = "btn201";
+            this.btn201.Size = new System.Drawing.Size(121, 74);
+            this.btn201.TabIndex = 55;
+            this.btn201.Text = "201";
+            this.btn201.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn201.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn201.UseVisualStyleBackColor = false;
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.tableLayoutPanel1);
+            this.tabPage3.Controls.Add(this.btn312);
+            this.tabPage3.Controls.Add(this.btn311);
+            this.tabPage3.Controls.Add(this.btn310);
+            this.tabPage3.Controls.Add(this.btn309);
+            this.tabPage3.Controls.Add(this.btn308);
+            this.tabPage3.Controls.Add(this.btn307);
+            this.tabPage3.Controls.Add(this.btn306);
+            this.tabPage3.Controls.Add(this.btn305);
+            this.tabPage3.Controls.Add(this.btn304);
+            this.tabPage3.Controls.Add(this.btn303);
+            this.tabPage3.Controls.Add(this.btn302);
+            this.tabPage3.Controls.Add(this.btn301);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(691, 273);
+            this.tabPage3.Size = new System.Drawing.Size(947, 495);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel12, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel10, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel13, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel11, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel9, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel7, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(685, 267);
-            this.tableLayoutPanel1.TabIndex = 37;
-            // 
-            // tableLayoutPanel12
-            // 
-            this.tableLayoutPanel12.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel12.ColumnCount = 2;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel12.Controls.Add(this.label11, 0, 0);
-            this.tableLayoutPanel12.Controls.Add(this.button11, 0, 0);
-            this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(516, 181);
-            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-            this.tableLayoutPanel12.RowCount = 1;
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(166, 83);
-            this.tableLayoutPanel12.TabIndex = 40;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(86, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(77, 83);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "312";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button11
-            // 
-            this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.ForeColor = System.Drawing.Color.Transparent;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button11.ImageIndex = 0;
-            this.button11.ImageList = this.ımageList1;
-            this.button11.Location = new System.Drawing.Point(3, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(77, 77);
-            this.button11.TabIndex = 12;
-            this.button11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel10
-            // 
-            this.tableLayoutPanel10.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel10.ColumnCount = 2;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel10.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.button9, 0, 0);
-            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(174, 181);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 1;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel10.TabIndex = 40;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(85, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 83);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "310";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button9
-            // 
-            this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.Color.Transparent;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.ImageIndex = 1;
-            this.button9.ImageList = this.ımageList1;
-            this.button9.Location = new System.Drawing.Point(3, 3);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(76, 77);
-            this.button9.TabIndex = 12;
-            this.button9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel13
-            // 
-            this.tableLayoutPanel13.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel13.ColumnCount = 2;
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel13.Controls.Add(this.label12, 0, 0);
-            this.tableLayoutPanel13.Controls.Add(this.button12, 0, 0);
-            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(345, 181);
-            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
-            this.tableLayoutPanel13.RowCount = 1;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel13.TabIndex = 39;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(85, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 83);
-            this.label12.TabIndex = 19;
-            this.label12.Text = "311";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button12
-            // 
-            this.button12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.ForeColor = System.Drawing.Color.Transparent;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button12.ImageIndex = 0;
-            this.button12.ImageList = this.ımageList1;
-            this.button12.Location = new System.Drawing.Point(3, 3);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(76, 77);
-            this.button12.TabIndex = 12;
-            this.button12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel8.ColumnCount = 2;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel8.Controls.Add(this.label7, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button7, 0, 0);
-            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(516, 92);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 1;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(166, 83);
-            this.tableLayoutPanel8.TabIndex = 40;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(86, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 83);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "308";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button7
-            // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.Transparent;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.ImageIndex = 0;
-            this.button7.ImageList = this.ımageList1;
-            this.button7.Location = new System.Drawing.Point(3, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(77, 77);
-            this.button7.TabIndex = 12;
-            this.button7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel11
-            // 
-            this.tableLayoutPanel11.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel11.ColumnCount = 2;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel11.Controls.Add(this.label10, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.button10, 0, 0);
-            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 181);
-            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 1;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel11.TabIndex = 39;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(85, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 83);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "309";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button10
-            // 
-            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ForeColor = System.Drawing.Color.Transparent;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.ImageIndex = 0;
-            this.button10.ImageList = this.ımageList1;
-            this.button10.Location = new System.Drawing.Point(3, 3);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(76, 77);
-            this.button10.TabIndex = 12;
-            this.button10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel6.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button5, 0, 0);
-            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(174, 92);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 1;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel6.TabIndex = 40;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(85, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 83);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "306";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Transparent;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.ImageIndex = 1;
-            this.button5.ImageList = this.ımageList1;
-            this.button5.Location = new System.Drawing.Point(3, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(76, 77);
-            this.button5.TabIndex = 12;
-            this.button5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel9
-            // 
-            this.tableLayoutPanel9.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel9.ColumnCount = 2;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel9.Controls.Add(this.label8, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.button8, 0, 0);
-            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(345, 92);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 1;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel9.TabIndex = 39;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(85, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 83);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "307";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button8
-            // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.Transparent;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.ImageIndex = 1;
-            this.button8.ImageList = this.ımageList1;
-            this.button8.Location = new System.Drawing.Point(3, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(76, 77);
-            this.button8.TabIndex = 12;
-            this.button8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel4.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.button3, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(516, 3);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(166, 83);
-            this.tableLayoutPanel4.TabIndex = 40;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(86, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 83);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "304";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Transparent;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.ImageIndex = 1;
-            this.button3.ImageList = this.ımageList1;
-            this.button3.Location = new System.Drawing.Point(3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(77, 77);
-            this.button3.TabIndex = 12;
-            this.button3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel7.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button6, 0, 0);
-            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 92);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 1;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel7.TabIndex = 39;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(85, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 83);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "305";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button6
-            // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.Transparent;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.ImageIndex = 0;
-            this.button6.ImageList = this.ımageList1;
-            this.button6.Location = new System.Drawing.Point(3, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(76, 77);
-            this.button6.TabIndex = 12;
-            this.button6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.button2, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(174, 3);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel3.TabIndex = 38;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(85, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 83);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "302";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.ImageIndex = 0;
-            this.button2.ImageList = this.ımageList1;
-            this.button2.Location = new System.Drawing.Point(3, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(76, 77);
-            this.button2.TabIndex = 12;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel5.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button4, 0, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(345, 3);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel5.TabIndex = 39;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(85, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 83);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "303";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Transparent;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.ImageIndex = 0;
-            this.button4.ImageList = this.ımageList1;
-            this.button4.Location = new System.Drawing.Point(3, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(76, 77);
-            this.button4.TabIndex = 12;
-            this.button4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btn301, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(165, 83);
-            this.tableLayoutPanel2.TabIndex = 37;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(85, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 83);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "301";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // btn312
+            // 
+            this.btn312.BackColor = System.Drawing.Color.Transparent;
+            this.btn312.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn312.FlatAppearance.BorderSize = 0;
+            this.btn312.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn312.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn312.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn312.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn312.ForeColor = System.Drawing.Color.Black;
+            this.btn312.ImageList = this.ımageList1;
+            this.btn312.Location = new System.Drawing.Point(458, 228);
+            this.btn312.Name = "btn312";
+            this.btn312.Size = new System.Drawing.Size(121, 74);
+            this.btn312.TabIndex = 70;
+            this.btn312.Text = "312";
+            this.btn312.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn312.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn312.UseVisualStyleBackColor = false;
+            // 
+            // btn311
+            // 
+            this.btn311.BackColor = System.Drawing.Color.Transparent;
+            this.btn311.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn311.FlatAppearance.BorderSize = 0;
+            this.btn311.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn311.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn311.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn311.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn311.ForeColor = System.Drawing.Color.Black;
+            this.btn311.ImageList = this.ımageList1;
+            this.btn311.Location = new System.Drawing.Point(313, 228);
+            this.btn311.Name = "btn311";
+            this.btn311.Size = new System.Drawing.Size(121, 74);
+            this.btn311.TabIndex = 67;
+            this.btn311.Text = "311";
+            this.btn311.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn311.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn311.UseVisualStyleBackColor = false;
+            // 
+            // btn310
+            // 
+            this.btn310.BackColor = System.Drawing.Color.Transparent;
+            this.btn310.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn310.FlatAppearance.BorderSize = 0;
+            this.btn310.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn310.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn310.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn310.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn310.ForeColor = System.Drawing.Color.Black;
+            this.btn310.ImageList = this.ımageList1;
+            this.btn310.Location = new System.Drawing.Point(168, 227);
+            this.btn310.Name = "btn310";
+            this.btn310.Size = new System.Drawing.Size(121, 74);
+            this.btn310.TabIndex = 68;
+            this.btn310.Text = "310";
+            this.btn310.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn310.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn310.UseVisualStyleBackColor = false;
+            // 
+            // btn309
+            // 
+            this.btn309.BackColor = System.Drawing.Color.Transparent;
+            this.btn309.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn309.FlatAppearance.BorderSize = 0;
+            this.btn309.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn309.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn309.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn309.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn309.ForeColor = System.Drawing.Color.Black;
+            this.btn309.ImageKey = "(none)";
+            this.btn309.ImageList = this.ımageList1;
+            this.btn309.Location = new System.Drawing.Point(23, 227);
+            this.btn309.Name = "btn309";
+            this.btn309.Size = new System.Drawing.Size(121, 74);
+            this.btn309.TabIndex = 69;
+            this.btn309.Text = "309";
+            this.btn309.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn309.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn309.UseVisualStyleBackColor = false;
+            // 
+            // btn308
+            // 
+            this.btn308.BackColor = System.Drawing.Color.Transparent;
+            this.btn308.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn308.FlatAppearance.BorderSize = 0;
+            this.btn308.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn308.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn308.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn308.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn308.ForeColor = System.Drawing.Color.Black;
+            this.btn308.ImageList = this.ımageList1;
+            this.btn308.Location = new System.Drawing.Point(458, 125);
+            this.btn308.Name = "btn308";
+            this.btn308.Size = new System.Drawing.Size(121, 74);
+            this.btn308.TabIndex = 66;
+            this.btn308.Text = "308";
+            this.btn308.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn308.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn308.UseVisualStyleBackColor = false;
+            // 
+            // btn307
+            // 
+            this.btn307.BackColor = System.Drawing.Color.Transparent;
+            this.btn307.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn307.FlatAppearance.BorderSize = 0;
+            this.btn307.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn307.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn307.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn307.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn307.ForeColor = System.Drawing.Color.Black;
+            this.btn307.ImageList = this.ımageList1;
+            this.btn307.Location = new System.Drawing.Point(313, 125);
+            this.btn307.Name = "btn307";
+            this.btn307.Size = new System.Drawing.Size(121, 74);
+            this.btn307.TabIndex = 63;
+            this.btn307.Text = "307";
+            this.btn307.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn307.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn307.UseVisualStyleBackColor = false;
+            // 
+            // btn306
+            // 
+            this.btn306.BackColor = System.Drawing.Color.Transparent;
+            this.btn306.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn306.FlatAppearance.BorderSize = 0;
+            this.btn306.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn306.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn306.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn306.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn306.ForeColor = System.Drawing.Color.Black;
+            this.btn306.ImageList = this.ımageList1;
+            this.btn306.Location = new System.Drawing.Point(168, 125);
+            this.btn306.Name = "btn306";
+            this.btn306.Size = new System.Drawing.Size(121, 74);
+            this.btn306.TabIndex = 64;
+            this.btn306.Text = "306";
+            this.btn306.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn306.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn306.UseVisualStyleBackColor = false;
+            // 
+            // btn305
+            // 
+            this.btn305.BackColor = System.Drawing.Color.Transparent;
+            this.btn305.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn305.FlatAppearance.BorderSize = 0;
+            this.btn305.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn305.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn305.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn305.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn305.ForeColor = System.Drawing.Color.Black;
+            this.btn305.ImageKey = "(none)";
+            this.btn305.ImageList = this.ımageList1;
+            this.btn305.Location = new System.Drawing.Point(23, 125);
+            this.btn305.Name = "btn305";
+            this.btn305.Size = new System.Drawing.Size(121, 74);
+            this.btn305.TabIndex = 65;
+            this.btn305.Text = "305";
+            this.btn305.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn305.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn305.UseVisualStyleBackColor = false;
+            // 
+            // btn304
+            // 
+            this.btn304.BackColor = System.Drawing.Color.Transparent;
+            this.btn304.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn304.FlatAppearance.BorderSize = 0;
+            this.btn304.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn304.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn304.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn304.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn304.ForeColor = System.Drawing.Color.Black;
+            this.btn304.ImageList = this.ımageList1;
+            this.btn304.Location = new System.Drawing.Point(458, 23);
+            this.btn304.Name = "btn304";
+            this.btn304.Size = new System.Drawing.Size(121, 74);
+            this.btn304.TabIndex = 62;
+            this.btn304.Text = "304";
+            this.btn304.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn304.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn304.UseVisualStyleBackColor = false;
+            // 
+            // btn303
+            // 
+            this.btn303.BackColor = System.Drawing.Color.Transparent;
+            this.btn303.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn303.FlatAppearance.BorderSize = 0;
+            this.btn303.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn303.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn303.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn303.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn303.ForeColor = System.Drawing.Color.Black;
+            this.btn303.ImageList = this.ımageList1;
+            this.btn303.Location = new System.Drawing.Point(313, 23);
+            this.btn303.Name = "btn303";
+            this.btn303.Size = new System.Drawing.Size(121, 74);
+            this.btn303.TabIndex = 56;
+            this.btn303.Text = "303";
+            this.btn303.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn303.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn303.UseVisualStyleBackColor = false;
+            // 
+            // btn302
+            // 
+            this.btn302.BackColor = System.Drawing.Color.Transparent;
+            this.btn302.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn302.FlatAppearance.BorderSize = 0;
+            this.btn302.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn302.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn302.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn302.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn302.ForeColor = System.Drawing.Color.Black;
+            this.btn302.ImageList = this.ımageList1;
+            this.btn302.Location = new System.Drawing.Point(168, 23);
+            this.btn302.Name = "btn302";
+            this.btn302.Size = new System.Drawing.Size(121, 74);
+            this.btn302.TabIndex = 57;
+            this.btn302.Text = "302";
+            this.btn302.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn302.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn302.UseVisualStyleBackColor = false;
             // 
             // btn301
             // 
-            this.btn301.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn301.BackColor = System.Drawing.Color.Transparent;
+            this.btn301.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn301.FlatAppearance.BorderSize = 0;
             this.btn301.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn301.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn301.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn301.ForeColor = System.Drawing.Color.Transparent;
-            this.btn301.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn301.ImageIndex = 1;
+            this.btn301.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn301.ForeColor = System.Drawing.Color.Black;
+            this.btn301.ImageKey = "(none)";
             this.btn301.ImageList = this.ımageList1;
-            this.btn301.Location = new System.Drawing.Point(3, 3);
+            this.btn301.Location = new System.Drawing.Point(23, 23);
             this.btn301.Name = "btn301";
-            this.btn301.Size = new System.Drawing.Size(76, 77);
-            this.btn301.TabIndex = 12;
-            this.btn301.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn301.UseVisualStyleBackColor = true;
+            this.btn301.Size = new System.Drawing.Size(121, 74);
+            this.btn301.TabIndex = 55;
+            this.btn301.Text = "301";
+            this.btn301.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn301.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn301.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -1840,6 +990,27 @@
             this.dtpCikisAra.TabIndex = 23;
             this.dtpCikisAra.ValueChanged += new System.EventHandler(this.dtpCikisAra_ValueChanged);
             // 
+            // btn103
+            // 
+            this.btn103.BackColor = System.Drawing.Color.Transparent;
+            this.btn103.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn103.FlatAppearance.BorderSize = 0;
+            this.btn103.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn103.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn103.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn103.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn103.ForeColor = System.Drawing.Color.Black;
+            this.btn103.ImageList = this.ımageList1;
+            this.btn103.Location = new System.Drawing.Point(311, 21);
+            this.btn103.Name = "btn103";
+            this.btn103.Size = new System.Drawing.Size(121, 74);
+            this.btn103.TabIndex = 47;
+            this.btn103.Text = "103";
+            this.btn103.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn103.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn103.UseVisualStyleBackColor = false;
+            this.btn103.Click += new System.EventHandler(this.btn103_Click);
+            // 
             // frmOdaSec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1856,59 +1027,8 @@
             this.panel3.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tableLayoutPanel14.ResumeLayout(false);
-            this.tableLayoutPanel15.ResumeLayout(false);
-            this.tableLayoutPanel15.PerformLayout();
-            this.tableLayoutPanel16.ResumeLayout(false);
-            this.tableLayoutPanel16.PerformLayout();
-            this.tableLayoutPanel17.ResumeLayout(false);
-            this.tableLayoutPanel17.PerformLayout();
-            this.tableLayoutPanel18.ResumeLayout(false);
-            this.tableLayoutPanel18.PerformLayout();
-            this.tableLayoutPanel19.ResumeLayout(false);
-            this.tableLayoutPanel19.PerformLayout();
-            this.tableLayoutPanel20.ResumeLayout(false);
-            this.tableLayoutPanel20.PerformLayout();
-            this.tableLayoutPanel21.ResumeLayout(false);
-            this.tableLayoutPanel21.PerformLayout();
-            this.tableLayoutPanel22.ResumeLayout(false);
-            this.tableLayoutPanel22.PerformLayout();
-            this.tableLayoutPanel23.ResumeLayout(false);
-            this.tableLayoutPanel23.PerformLayout();
-            this.tableLayoutPanel24.ResumeLayout(false);
-            this.tableLayoutPanel24.PerformLayout();
-            this.tableLayoutPanel25.ResumeLayout(false);
-            this.tableLayoutPanel25.PerformLayout();
-            this.tableLayoutPanel26.ResumeLayout(false);
-            this.tableLayoutPanel26.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel12.ResumeLayout(false);
-            this.tableLayoutPanel12.PerformLayout();
-            this.tableLayoutPanel10.ResumeLayout(false);
-            this.tableLayoutPanel10.PerformLayout();
-            this.tableLayoutPanel13.ResumeLayout(false);
-            this.tableLayoutPanel13.PerformLayout();
-            this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel8.PerformLayout();
-            this.tableLayoutPanel11.ResumeLayout(false);
-            this.tableLayoutPanel11.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel9.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -1928,95 +1048,45 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Button btn102;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Button btn103;
-        private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Button btn101;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel21;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel22;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Button button24;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn301;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btn104;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button btn108;
+        private System.Windows.Forms.Button btn107;
+        private System.Windows.Forms.Button btn106;
+        private System.Windows.Forms.Button btn105;
+        private System.Windows.Forms.Button btn112;
+        private System.Windows.Forms.Button btn111;
+        private System.Windows.Forms.Button btn110;
+        private System.Windows.Forms.Button btn109;
+        private System.Windows.Forms.Button btn212;
+        private System.Windows.Forms.Button btn211;
+        private System.Windows.Forms.Button btn210;
+        private System.Windows.Forms.Button btn209;
+        private System.Windows.Forms.Button btn208;
+        private System.Windows.Forms.Button btn207;
+        private System.Windows.Forms.Button btn206;
+        private System.Windows.Forms.Button btn205;
+        private System.Windows.Forms.Button btn204;
+        private System.Windows.Forms.Button btn203;
+        private System.Windows.Forms.Button btn202;
+        private System.Windows.Forms.Button btn201;
+        private System.Windows.Forms.Button btn312;
+        private System.Windows.Forms.Button btn311;
+        private System.Windows.Forms.Button btn310;
+        private System.Windows.Forms.Button btn309;
+        private System.Windows.Forms.Button btn308;
+        private System.Windows.Forms.Button btn307;
+        private System.Windows.Forms.Button btn306;
+        private System.Windows.Forms.Button btn305;
+        private System.Windows.Forms.Button btn304;
+        private System.Windows.Forms.Button btn303;
+        private System.Windows.Forms.Button btn302;
+        private System.Windows.Forms.Button btn301;
+        private System.Windows.Forms.Button btn103;
     }
 }

@@ -20,8 +20,8 @@ namespace PL.Hotel
         }
         SaleRepository ss = new SaleRepository();
         RoomRepository rr = new RoomRepository();
-        DateTime Gara;
-        DateTime Cara;
+        DateTime Gara = DateTime.Now;
+        DateTime Cara = DateTime.Now ;
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -69,19 +69,19 @@ namespace PL.Hotel
                     }
                 }
             }
-            foreach (Control item in tabControl1.Controls)
+            foreach (Control item in tabPage1.Controls)
             {
-                //if (item is Button)
-                //{
-                foreach (Room rm in rr.GetRooms())
+                if (item is Button)
                 {
-                    //if (rm.RoomNumber == item.Name.Substring(3))
-                    //{
-                    if (rm.State) item.BackgroundImage = ımageList1.Images[0];
-                    else item.BackgroundImage = ımageList1.Images[1];
+                    foreach (Room rm in rr.GetRooms())
+                    {
+                        if (rm.RoomNumber == item.Name.Substring(3))
+                        {
+                            if (rm.State) item.BackgroundImage = ımageList1.Images[0];
+                            else item.BackgroundImage = ımageList1.Images[1];
+                        }
+                    }
                 }
-                // }
-                //}
             }
         }
 
@@ -140,19 +140,19 @@ namespace PL.Hotel
         Random rnd = new Random();
         private void frmOdaSec_Load(object sender, EventArgs e)
         {
-            foreach (Control item in tabPage1.Controls)
-            {
-                if (item is Button)
-                {
-                    if (rnd.Next(1, 25) % 2 == 0) item.BackgroundImage = ımageList1.Images[1];
-                    else item.BackgroundImage = ımageList1.Images[1];
-                }
-            }
+            OdalarıGetir(Gara, Cara);
+            //foreach (Control item in tabPage1.Controls)
+            //{
+            //    if (item is Button)
+            //    {
+            //        if (1==1) item.BackgroundImage = ımageList1.Images[1];
+            //        else item.BackgroundImage = ımageList1.Images[0];
+            //    }
+            //}
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
+       
 
-        }
+        
     }
 }

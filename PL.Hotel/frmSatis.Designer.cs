@@ -80,12 +80,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtTc = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbCinsiyet = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTelefon = new System.Windows.Forms.TextBox();
+            this.txtTc = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -463,6 +463,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtTc);
             this.groupBox1.Controls.Add(this.label29);
             this.groupBox1.Controls.Add(this.label28);
             this.groupBox1.Controls.Add(this.label27);
@@ -479,7 +480,6 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtEmail);
-            this.groupBox1.Controls.Add(this.txtTc);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.cbCinsiyet);
@@ -643,15 +643,6 @@
             this.txtEmail.Size = new System.Drawing.Size(135, 26);
             this.txtEmail.TabIndex = 14;
             // 
-            // txtTc
-            // 
-            this.txtTc.BackColor = System.Drawing.Color.White;
-            this.txtTc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTc.Location = new System.Drawing.Point(128, 107);
-            this.txtTc.Name = "txtTc";
-            this.txtTc.Size = new System.Drawing.Size(135, 26);
-            this.txtTc.TabIndex = 5;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -699,6 +690,16 @@
             this.txtTelefon.Name = "txtTelefon";
             this.txtTelefon.Size = new System.Drawing.Size(135, 26);
             this.txtTelefon.TabIndex = 11;
+            // 
+            // txtTc
+            // 
+            this.txtTc.Location = new System.Drawing.Point(128, 109);
+            this.txtTc.Mask = "00000000000";
+            this.txtTc.Name = "txtTc";
+            this.txtTc.Size = new System.Drawing.Size(135, 26);
+            this.txtTc.TabIndex = 25;
+            this.txtTc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTc.ValidatingType = typeof(int);
             // 
             // frmSatis
             // 
@@ -780,11 +781,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtTc;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbCinsiyet;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTelefon;
+        private System.Windows.Forms.MaskedTextBox txtTc;
     }
 }
