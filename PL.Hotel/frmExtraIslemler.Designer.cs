@@ -30,10 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExtraIslemler));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnAdminn = new System.Windows.Forms.Button();
             this.btnOda = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbEkstra = new System.Windows.Forms.ComboBox();
             this.pnlExtraa = new System.Windows.Forms.Panel();
-            this.btnAdminn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -59,18 +59,38 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(92, 446);
+            this.panel1.Size = new System.Drawing.Size(92, 680);
             this.panel1.TabIndex = 0;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(92, 96);
+            this.button2.TabIndex = 35;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(728, 0);
+            this.panel2.Location = new System.Drawing.Point(925, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(92, 446);
+            this.panel2.Size = new System.Drawing.Size(92, 680);
             this.panel2.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 96);
+            this.button1.TabIndex = 35;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -89,28 +109,21 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(92, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(288, 446);
+            this.panel3.Size = new System.Drawing.Size(288, 680);
             this.panel3.TabIndex = 33;
             // 
-            // button2
+            // btnAdminn
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 96);
-            this.button2.TabIndex = 35;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 96);
-            this.button1.TabIndex = 35;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdminn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdminn.FlatAppearance.BorderSize = 0;
+            this.btnAdminn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdminn.Image = ((System.Drawing.Image)(resources.GetObject("btnAdminn.Image")));
+            this.btnAdminn.Location = new System.Drawing.Point(222, 12);
+            this.btnAdminn.Name = "btnAdminn";
+            this.btnAdminn.Size = new System.Drawing.Size(36, 35);
+            this.btnAdminn.TabIndex = 44;
+            this.btnAdminn.UseVisualStyleBackColor = true;
+            this.btnAdminn.Click += new System.EventHandler(this.btnAdminn_Click);
             // 
             // btnOda
             // 
@@ -213,27 +226,14 @@
             this.pnlExtraa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlExtraa.Location = new System.Drawing.Point(380, 0);
             this.pnlExtraa.Name = "pnlExtraa";
-            this.pnlExtraa.Size = new System.Drawing.Size(348, 446);
+            this.pnlExtraa.Size = new System.Drawing.Size(545, 680);
             this.pnlExtraa.TabIndex = 34;
-            // 
-            // btnAdminn
-            // 
-            this.btnAdminn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdminn.FlatAppearance.BorderSize = 0;
-            this.btnAdminn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdminn.Image = ((System.Drawing.Image)(resources.GetObject("btnAdminn.Image")));
-            this.btnAdminn.Location = new System.Drawing.Point(222, 12);
-            this.btnAdminn.Name = "btnAdminn";
-            this.btnAdminn.Size = new System.Drawing.Size(36, 35);
-            this.btnAdminn.TabIndex = 44;
-            this.btnAdminn.UseVisualStyleBackColor = true;
-            this.btnAdminn.Click += new System.EventHandler(this.btnAdminn_Click);
             // 
             // frmExtraIslemler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(820, 446);
+            this.ClientSize = new System.Drawing.Size(1017, 680);
             this.Controls.Add(this.pnlExtraa);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);

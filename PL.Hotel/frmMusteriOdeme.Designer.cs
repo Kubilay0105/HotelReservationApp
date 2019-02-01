@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMusteriOdeme));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbMusteriTuru = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
+            this.cbMusteriTuru = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBorc = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -51,10 +51,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtPara = new System.Windows.Forms.TextBox();
             this.txtOdenenPara = new System.Windows.Forms.TextBox();
             this.dgvMusteriler = new System.Windows.Forms.DataGridView();
             this.btnOdemeYap = new System.Windows.Forms.Button();
+            this.txtPara = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbMüsteriBilgileri.SuspendLayout();
@@ -71,6 +71,18 @@
             this.panel1.Size = new System.Drawing.Size(736, 67);
             this.panel1.TabIndex = 0;
             // 
+            // label23
+            // 
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label23.Image = ((System.Drawing.Image)(resources.GetObject("label23.Image")));
+            this.label23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label23.Location = new System.Drawing.Point(242, 19);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(295, 33);
+            this.label23.TabIndex = 2;
+            this.label23.Text = "    ÖDEME İŞLEMLERİ";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // cbMusteriTuru
             // 
             this.cbMusteriTuru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -83,18 +95,6 @@
             this.cbMusteriTuru.Size = new System.Drawing.Size(144, 21);
             this.cbMusteriTuru.TabIndex = 2;
             this.cbMusteriTuru.SelectedIndexChanged += new System.EventHandler(this.cbMusteriTuru_SelectedIndexChanged);
-            // 
-            // label23
-            // 
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label23.Image = ((System.Drawing.Image)(resources.GetObject("label23.Image")));
-            this.label23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label23.Location = new System.Drawing.Point(242, 19);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(295, 33);
-            this.label23.TabIndex = 2;
-            this.label23.Text = "    ÖDEME İŞLEMLERİ";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox1
             // 
@@ -281,17 +281,6 @@
             this.label8.TabIndex = 127;
             this.label8.Text = "Ödenen Tutar";
             // 
-            // txtPara
-            // 
-            this.txtPara.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtPara.Location = new System.Drawing.Point(133, 432);
-            this.txtPara.Name = "txtPara";
-            this.txtPara.ReadOnly = true;
-            this.txtPara.Size = new System.Drawing.Size(47, 30);
-            this.txtPara.TabIndex = 126;
-            this.txtPara.Text = "₺ ";
-            this.txtPara.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // txtOdenenPara
             // 
             this.txtOdenenPara.Location = new System.Drawing.Point(12, 432);
@@ -325,6 +314,17 @@
             this.btnOdemeYap.TabIndex = 132;
             this.btnOdemeYap.Text = "Ödeme Onay";
             this.btnOdemeYap.UseVisualStyleBackColor = true;
+            // 
+            // txtPara
+            // 
+            this.txtPara.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtPara.Location = new System.Drawing.Point(133, 432);
+            this.txtPara.Name = "txtPara";
+            this.txtPara.ReadOnly = true;
+            this.txtPara.Size = new System.Drawing.Size(47, 30);
+            this.txtPara.TabIndex = 126;
+            this.txtPara.Text = "₺ ";
+            this.txtPara.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmMusteriOdeme
             // 
@@ -383,9 +383,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtPara;
         private System.Windows.Forms.TextBox txtOdenenPara;
         private System.Windows.Forms.DataGridView dgvMusteriler;
         private System.Windows.Forms.Button btnOdemeYap;
+        private System.Windows.Forms.TextBox txtPara;
     }
 }

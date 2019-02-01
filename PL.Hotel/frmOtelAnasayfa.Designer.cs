@@ -93,7 +93,7 @@
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1000, 64);
+            this.pnlHeader.Size = new System.Drawing.Size(953, 64);
             this.pnlHeader.TabIndex = 0;
             // 
             // panel6
@@ -107,7 +107,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1000, 64);
+            this.panel6.Size = new System.Drawing.Size(953, 64);
             this.panel6.TabIndex = 1;
             // 
             // label8
@@ -125,7 +125,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(917, 34);
+            this.label1.Location = new System.Drawing.Point(870, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 17);
             this.label1.TabIndex = 3;
@@ -137,7 +137,7 @@
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(875, 23);
+            this.button8.Location = new System.Drawing.Point(828, 23);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(36, 35);
             this.button8.TabIndex = 2;
@@ -149,7 +149,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(969, 3);
+            this.button3.Location = new System.Drawing.Point(922, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(28, 23);
             this.button3.TabIndex = 1;
@@ -181,7 +181,7 @@
             this.pnlLeftMenu.Location = new System.Drawing.Point(0, 64);
             this.pnlLeftMenu.Margin = new System.Windows.Forms.Padding(0);
             this.pnlLeftMenu.Name = "pnlLeftMenu";
-            this.pnlLeftMenu.Size = new System.Drawing.Size(188, 499);
+            this.pnlLeftMenu.Size = new System.Drawing.Size(188, 536);
             this.pnlLeftMenu.TabIndex = 1;
             // 
             // btnExtra
@@ -348,9 +348,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 563);
+            this.panel3.Location = new System.Drawing.Point(0, 600);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1000, 37);
+            this.panel3.Size = new System.Drawing.Size(953, 37);
             this.panel3.TabIndex = 2;
             // 
             // panel4
@@ -360,7 +360,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(188, 64);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(812, 53);
+            this.panel4.Size = new System.Drawing.Size(765, 53);
             this.panel4.TabIndex = 3;
             // 
             // panel1
@@ -376,7 +376,7 @@
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Location = new System.Drawing.Point(399, 3);
+            this.panel1.Location = new System.Drawing.Point(352, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(410, 48);
             this.panel1.TabIndex = 1;
@@ -504,7 +504,7 @@
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContent.Location = new System.Drawing.Point(188, 117);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(812, 446);
+            this.pnlContent.Size = new System.Drawing.Size(765, 483);
             this.pnlContent.TabIndex = 4;
             // 
             // panel7
@@ -657,7 +657,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.ClientSize = new System.Drawing.Size(953, 637);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pnlLeftMenu);

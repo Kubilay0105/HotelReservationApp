@@ -46,7 +46,7 @@
             this.checkBoxSifre.AutoSize = true;
             this.checkBoxSifre.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBoxSifre.Location = new System.Drawing.Point(640, 392);
+            this.checkBoxSifre.Location = new System.Drawing.Point(947, 572);
             this.checkBoxSifre.Name = "checkBoxSifre";
             this.checkBoxSifre.Size = new System.Drawing.Size(102, 17);
             this.checkBoxSifre.TabIndex = 27;
@@ -58,7 +58,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
-            this.label5.Location = new System.Drawing.Point(594, 420);
+            this.label5.Location = new System.Drawing.Point(901, 600);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 38);
             this.label5.TabIndex = 26;
@@ -68,7 +68,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
-            this.label4.Location = new System.Drawing.Point(547, 352);
+            this.label4.Location = new System.Drawing.Point(854, 532);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 38);
             this.label4.TabIndex = 25;
@@ -78,7 +78,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(476, 317);
+            this.label3.Location = new System.Drawing.Point(783, 497);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 41);
             this.label3.TabIndex = 24;
@@ -89,7 +89,7 @@
             this.btnGiris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(210)))), ((int)(((byte)(125)))));
             this.btnGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGiris.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGiris.Location = new System.Drawing.Point(640, 413);
+            this.btnGiris.Location = new System.Drawing.Point(947, 593);
             this.btnGiris.Name = "btnGiris";
             this.btnGiris.Size = new System.Drawing.Size(145, 46);
             this.btnGiris.TabIndex = 23;
@@ -103,7 +103,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(587, 358);
+            this.label6.Location = new System.Drawing.Point(894, 538);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 24);
             this.label6.TabIndex = 22;
@@ -115,7 +115,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(521, 325);
+            this.label7.Location = new System.Drawing.Point(828, 505);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(113, 24);
             this.label7.TabIndex = 21;
@@ -125,7 +125,7 @@
             // 
             this.txtSifre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSifre.Location = new System.Drawing.Point(640, 355);
+            this.txtSifre.Location = new System.Drawing.Point(947, 535);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(145, 29);
             this.txtSifre.TabIndex = 20;
@@ -134,7 +134,7 @@
             // 
             this.txtKullaniciAdi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(640, 321);
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(947, 501);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(145, 29);
             this.txtKullaniciAdi.TabIndex = 19;
@@ -143,7 +143,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 471);
+            this.ClientSize = new System.Drawing.Size(1104, 651);
             this.Controls.Add(this.checkBoxSifre);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
